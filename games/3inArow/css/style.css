@@ -311,8 +311,31 @@
     padding: 15px;
     cursor: pointer;
     overflow: hidden;
+    pointer-events: all;
     /* user-select: none; */
 }
 .game__grid:hover {
     background-color: rgba(28, 182, 28, .30);
+}
+.grid--disabled {
+    pointer-events: none;
+}
+.btn__finish--container{
+    background-color: #f25454;
+    display: grid;
+    grid-template-columns:auto auto;
+    align-items: center;
+    justify-content: space-around;
+}
+.cta--finish {
+    /* display: inline-block; */
+    display: none;
+    position: absolute;
+    top: -1vh;
+}
+.cta__flex--left {
+    left: -5vw;
+}
+.cta__flex--right {
+    right: -5vw;
 }
