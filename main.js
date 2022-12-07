@@ -2,31 +2,40 @@ const buildListElement = document.querySelector('.builds__list');
 const buildDetailsElement = document.querySelector('.build__details--container')
 
 const ascendancies = {
-    Elementalist : ["https://poe.ninja/images/classes/Elementalist_avatar.png", "Elementalist"],
-    Occultist : ["https://poe.ninja/images/classes/Occultist_avatar.png", "Occultist"],
-    Deadeye: ["https://poe.ninja/images/classes/Deadeye_avatar.png", "Deadeye"],
-    Raider: ["https://poe.ninja/images/classes/Raider_avatar.png", "Raider"],
-    Juggernaut : ["https://poe.ninja/images/classes/Juggernaut_avatar.png", "Juggernaut"],
-    Gladiator : ["https://poe.ninja/images/classes/Gladiator_avatar.png", "Gladiator"],
-    Inquisitor : ["https://poe.ninja/images/classes/Inquisitor_avatar.png", "Inquisitor"],
-    Trickster : ["https://poe.ninja/images/classes/Trickster_avatar.png", "Trickster"]
+    Elementalist : ["https://poe.ninja/images/classes/Elementalist_avatar.png", "Elementalist", '#7070ff'],
+    Occultist : ["https://poe.ninja/images/classes/Occultist_avatar.png", "Occultist", '#7070ff'],
+    Deadeye: ["https://poe.ninja/images/classes/Deadeye_avatar.png", "Deadeye", '#70ff70'],
+    Raider: ["https://poe.ninja/images/classes/Raider_avatar.png", "Raider", '#70ff70'],
+    Parhfinder: ["https://poe.ninja/images/classes/Pathfinder_avatar.png", "Pathfinder", '#70ff70'],
+    Juggernaut : ["https://poe.ninja/images/classes/Juggernaut_avatar.png", "Juggernaut", '#e05030'],
+    Gladiator : ["https://poe.ninja/images/classes/Gladiator_avatar.png", "Gladiator", '#e0e070'],
+    Inquisitor : ["https://poe.ninja/images/classes/Inquisitor_avatar.png", "Inquisitor", '#c040ff'],
+    Hierophant : ["https://poe.ninja/images/classes/Hierophant_avatar.png", "Hierophant", '#c040ff'],
+    Trickster : ["https://poe.ninja/images/classes/Trickster_avatar.png", "Trickster", '#30c0d0'],
+    Chieftain: ["https://poe.ninja/images/classes/Chieftain_avatar.png","Chieftain", '#e05030']
 }
-const listOfBuilds = ["Ignite_Ethereal_Knives", "Venom_Gyre", "Cold_Dot_Elementalist", "Cold_Dot_Trickster", "Boneshatter_Jugger", "Artillery_Ballista", "Corrupting_Fever", "Vortex_WintertideBrand", "Poisonous_Concoction", "Toxic_Rain", "Spark_Inquisitor", "Bladefall_Blade_Blast", "Vortex_Ignite"]
+const listOfBuilds = ["Ignite Ethereal Knives", "Venom Gyre", "Cold Dot Elementalist", "Cold Dot Trickster", "Boneshatter Jugger", "Artillery Ballista", "Corrupting Fever", "Vortex WintertideBrand", "Poisonous Concoction", "Toxic Rain", "Spark Inquisitor", "Bladefall Blade Blast", "Vortex Ignite", "SST Bleed Glad", "Consecrated Path Totems Chieftain", "Enkis Arc Witch", "Freezing pulse / Ice Spear", "Bane Occultist"]
 
 const starterBuilds = [
-    /* NAME_OF_BUILD : [ HAS_POB, HAS_LEVELING_GUIDE, LINK_TO_BUILD, IMG_SRC, ASCENDANCE_IMG, ASCENDANCE_NAME ] */
-    ["Ignite_Ethereal_Knives", false, false, "https://poe.ninja/challenge/builds/char/HardPrimat/Atza_LCBoom?i=4&search=skill%3DEthereal-Knives%26sort%3Ddps", "https://static.wikia.nocookie.net/pathofexile_gamepedia/images/c/c6/Ethereal_Knives_skill_icon.png", ascendancies.Elementalist[0], ascendancies.Elementalist[1] ],
-    ["Venom_Gyre", true, true, "https://pastebin.com/T66FtWj8", "https://static.wikia.nocookie.net/pathofexile_gamepedia/images/8/87/Venom_Gyre_skill_icon.png", ascendancies.Deadeye[0], ascendancies.Deadeye[1]],
-    ["Cold_Dot_Elementalist", true, false, "https://pobb.in/Dn8NmIPTsRmN", "https://static.wikia.nocookie.net/pathofexile_gamepedia/images/0/06/Vortex_skill_icon.png", ascendancies.Elementalist[0], ascendancies.Elementalist[1]],
-    ["Cold_Dot_Trickster", true, true, "https://pastebin.com/vkyj09nE", "https://static.wikia.nocookie.net/pathofexile_gamepedia/images/0/06/Vortex_skill_icon.png", ascendancies.Trickster[0], ascendancies.Trickster[1]],
-    ["Boneshatter_Jugger", true, false, "https://pobb.in/2CeoUfE7a_Kh","https://www.poewiki.net/images/4/4f/Boneshatter_skill_icon.png", ascendancies.Juggernaut[0], ascendancies.Juggernaut[1] ],
-    ["Artillery_Ballista", true, false, "https://docs.google.com/spreadsheets/d/1h1Perq4qn16sBO1KtgIUgdQvAUAB8ADjrPe-FkXJOuM/edit#gid=0", "https://static.wikia.nocookie.net/pathofexile_gamepedia/images/a/ae/Artillery_Ballista_skill_icon.png", ascendancies.Raider[0], ascendancies.Raider[1]],
-    ["Corrupting_Fever", true, true, "https://docs.google.com/spreadsheets/d/10GrhukrSPpC-mhMenIutX2sGpQdk4YOGfRsaYUN8_IU/edit?usp=sharing", "https://static.wikia.nocookie.net/pathofexile_gamepedia/images/3/3c/Corrupting_Fever_skill_icon.png", ascendancies.Gladiator[0], ascendancies.Gladiator[1]],
-    ["Vortex_WintertideBrand", true, false, "https://pastebin.com/6UZwR4GB", "https://static.wikia.nocookie.net/pathofexile_gamepedia/images/0/06/Vortex_skill_icon.png", ascendancies.Occultist[0], ascendancies.Occultist[1]],
-    ["Spark_Inquisitor", true, true, "https://pastebin.com/iHZQyKhd", "https://static.wikia.nocookie.net/pathofexile_gamepedia/images/a/a6/Spark_skill_icon.png", ascendancies.Inquisitor[0], ascendancies.Inquisitor[1]],
-    ["Poisonous_Concoction", true, true, "https://pastebin.com/knQvkvLT", "https://www.poewiki.net/images/3/38/Poisonous_Concoction_skill_icon.png", ascendancies.Occultist[0], ascendancies.Occultist[1]],
-    ["Bladefall_Blade_Blast", true, true, "https://maxroll.gg/poe/build-guides/bladefall-bladeblast-occultist-league-starter-guide#patoc-heading-15", "https://static.wikia.nocookie.net/pathofexile_gamepedia/images/7/7b/Blade_Blast_skill_icon.png", ascendancies.Occultist[0], ascendancies.Occultist[1]],
-    ["Vortex_Ignite", true, false, "https://pobb.in/Wpgkn_eNGegH", "https://static.wikia.nocookie.net/pathofexile_gamepedia/images/0/06/Vortex_skill_icon.png", ascendancies.Elementalist[0], ascendancies.Elementalist[1]]
+    /* NAME_OF_BUILD : [ HAS_POB, HAS_LEVELING_GUIDE, LINK_TO_BUILD, IMG_SRC, ASCENDANCE_IMG, ASCENDANCE_NAME, ADDITIONAL LINKS, [LINKS] ] */
+    ["Ignite Ethereal Knives", false, false, "https://poe.ninja/challenge/builds/char/HardPrimat/Atza_LCBoom?i=4&search=skill%3DEthereal-Knives%26sort%3Ddps", "https://static.wikia.nocookie.net/pathofexile_gamepedia/images/c/c6/Ethereal_Knives_skill_icon.png", ascendancies.Elementalist[0], ascendancies.Elementalist[1], ascendancies.Elementalist[2], false ],
+    ["Venom Gyre", true, true, "https://pastebin.com/T66FtWj8", "https://static.wikia.nocookie.net/pathofexile_gamepedia/images/8/87/Venom_Gyre_skill_icon.png", ascendancies.Deadeye[0], ascendancies.Deadeye[1],ascendancies.Deadeye[2], false],
+    ["Cold Dot Elementalist", true, false, "https://pobb.in/Dn8NmIPTsRmN", "https://static.wikia.nocookie.net/pathofexile_gamepedia/images/0/06/Vortex_skill_icon.png", ascendancies.Elementalist[0], ascendancies.Elementalist[1], ascendancies.Elementalist[2], false],
+    ["Cold Dot Trickster", true, true, "https://pastebin.com/vkyj09nE", "https://static.wikia.nocookie.net/pathofexile_gamepedia/images/0/06/Vortex_skill_icon.png", ascendancies.Trickster[0], ascendancies.Trickster[1],ascendancies.Trickster[2], false],
+    ["Boneshatter Jugger", true, false, "https://pobb.in/2CeoUfE7a_Kh","https://www.poewiki.net/images/4/4f/Boneshatter_skill_icon.png", ascendancies.Juggernaut[0], ascendancies.Juggernaut[1],ascendancies.Juggernaut[2], false ],
+    ["Artillery Ballista", true, false, "https://docs.google.com/spreadsheets/d/1h1Perq4qn16sBO1KtgIUgdQvAUAB8ADjrPe-FkXJOuM/edit#gid=0", "https://static.wikia.nocookie.net/pathofexile_gamepedia/images/a/ae/Artillery_Ballista_skill_icon.png", ascendancies.Raider[0], ascendancies.Raider[1],ascendancies.Raider[2], false],
+    ["Corrupting Fever", true, true, "https://docs.google.com/spreadsheets/d/10GrhukrSPpC-mhMenIutX2sGpQdk4YOGfRsaYUN8_IU/edit?usp=sharing", "https://static.wikia.nocookie.net/pathofexile_gamepedia/images/3/3c/Corrupting_Fever_skill_icon.png", ascendancies.Gladiator[0], ascendancies.Gladiator[1],ascendancies.Gladiator[2], false],
+    ["Vortex WintertideBrand", true, false, "https://pastebin.com/6UZwR4GB", "https://static.wikia.nocookie.net/pathofexile_gamepedia/images/0/06/Vortex_skill_icon.png", ascendancies.Occultist[0], ascendancies.Occultist[1],ascendancies.Occultist[2], false],
+    ["Spark Inquisitor", true, true, "https://pastebin.com/iHZQyKhd", "https://static.wikia.nocookie.net/pathofexile_gamepedia/images/a/a6/Spark_skill_icon.png", ascendancies.Inquisitor[0], ascendancies.Inquisitor[1],ascendancies.Inquisitor[2], false],
+    ["Poisonous Concoction", true, true, "https://pastebin.com/knQvkvLT", "https://www.poewiki.net/images/3/38/Poisonous_Concoction_skill_icon.png", ascendancies.Occultist[0], ascendancies.Occultist[1],ascendancies.Occultist[2], false],    
+    ["Toxic Rain", true, true, "https://pobb.in/MqBwqqTLVBhW", "https://static.wikia.nocookie.net/pathofexile_gamepedia/images/c/cf/Toxic_Rain_skill_icon.png", ascendancies.Parhfinder[0], ascendancies.Parhfinder[1],ascendancies.Parhfinder[2], false],
+    ["Bladefall Blade Blast", true, true, "https://maxroll.gg/poe/build-guides/bladefall-bladeblast-occultist-league-starter-guide#patoc-heading-15", "https://static.wikia.nocookie.net/pathofexile_gamepedia/images/7/7b/Blade_Blast_skill_icon.png", ascendancies.Occultist[0], ascendancies.Occultist[1],ascendancies.Occultist[2], false],
+    ["Vortex Ignite", true, false, "https://pobb.in/Wpgkn_eNGegH", "https://static.wikia.nocookie.net/pathofexile_gamepedia/images/0/06/Vortex_skill_icon.png", ascendancies.Elementalist[0], ascendancies.Elementalist[1], ascendancies.Elementalist[2], false],
+    ["SST Bleed Glad", true, true, "https://docs.google.com/spreadsheets/d/e/2PACX-1vQKSQdtZzkc8ZJLoNL5opiu26rkT6JXYV1QIAlqBhdw7Ez1eoR-3JQQyQ8h6AJKr1RXsytaitm2nzYg/pubhtml", "https://static.wikia.nocookie.net/pathofexile_gamepedia/images/8/8f/Spectral_Shield_Throw_skill_icon.png", ascendancies.Gladiator[0], ascendancies.Gladiator[1],ascendancies.Gladiator[2], false],
+    ["Consecrated Path Totems Chieftain", true, false, "https://pastebin.com/LdmrDQHM", "https://static.wikia.nocookie.net/pathofexile_gamepedia/images/f/f7/Consecrated_Path_skill_icon.png", ascendancies.Chieftain[0], ascendancies.Chieftain[1],ascendancies.Chieftain[2], false ],
+    ["Enkis Arc Witch", true, true, "https://www.pathofexile.com/forum/view-thread/1147951", "https://static.wikia.nocookie.net/pathofexile_gamepedia/images/0/08/Arc_skill_icon.png", ascendancies.Elementalist[0], ascendancies.Elementalist[1], ascendancies.Elementalist[2], false],
+    ["Freezing pulse / Ice Spear", true, true, "https://pastebin.com/U6BGkuw1","https://static.wikia.nocookie.net/pathofexile_gamepedia/images/1/1b/Freezing_Pulse_skill_icon.png", ascendancies.Hierophant[0], ascendancies.Hierophant[1],ascendancies.Hierophant[2], false],
+    ["Bane Occultist", true, true, "https://pastebin.com/nNZPVUQj", "https://static.wikia.nocookie.net/pathofexile_gamepedia/images/2/2f/Bane_skill_icon.png", ascendancies.Occultist[0], ascendancies.Occultist[1],ascendancies.Occultist[2], true, [["3.20 Atlas", "https://poeplanner.com/AwAAAwAZAAMBAF8Ait83-duD4mH3g-vvlSba9m0TPTYJ-3sQJ5PgVQzInnWKGdXwsH2PGi94es_SfR_QQ2rIG8uHOr4Vzxh9LpXuHgK5QlB-wc_XB1ga2x4H8Cr-RnQGiyT0CIucxlWIJljmiy30IuoiNVM6w4jvir5IDqsPqp2Kxq5UMLcpUrFJBwQfk5YRvxYKKyunWlgZbUi1BaQBMpunCRSzTIJ2UUkLbOV8UBH6j8cfQFwvoYxsGbLFwdtr0bQY7LyvTx2E4wAACAB6QthpB5HdYnB68HyhflR6CABdLxq6eaW26CQBffspVfXGGCsXlvj_8t4mNlYLvwQVLQQAAP______________________AAACAAAAAwD_____________PAAAAAAUAB-LCAAAAAAAAAMDAAAAAAAAAAAA"], ["Crafting Sheet", "https://docs.google.com/spreadsheets/d/1O54mt-OR9iKl6M6-spoNLE18ankeTWQc9n5zhD2ztp8/edit#gid=1431444864"]]]
 ]
 
 let buildListFragment = document.createDocumentFragment()
@@ -71,7 +80,8 @@ const displaySelectedBuild = async (buildSelected)=> {
                 /* ASCENDANCE NAME START */ 
                 let ascenName = document.createElement('P');
                 ascenName.innerHTML = elem[6];
-                ascenName.setAttribute('class', 'ascen__name')
+                ascenName.setAttribute('class', 'ascen__name');
+                ascenName.style.color=elem[7]
                 buildDetailsFragment.appendChild(ascenName)
                 /* ASCENDANCE NAME END */ 
                 /* ------------------- */
@@ -112,8 +122,20 @@ const displaySelectedBuild = async (buildSelected)=> {
                 let buildLink = document.createElement('P');
                 buildLink.setAttribute('class', 'build__link');
                 buildLink.innerHTML = `${elem[0]} build: <a style='color:#75ddf7' href=${elem[3]} target='_blank'>${elem[3]}</a>`;
-
-                buildDetailsFragment.appendChild(buildLink)
+                if (elem[8]) {
+                    // console.log(elem[8])
+                    for (let i = 0; i < elem[9].length; i++) {
+                        const addLinks = elem[9][i];
+                        let additionalLink = document.createElement('P');
+                        additionalLink.setAttribute('class', 'build__link');
+                        additionalLink.innerHTML = `<a style='color:#75ddf7' href=${elem[9][i][1]} target='_blank'>${elem[9][i][0]}</a>`;
+                        buildDetailsFragment.appendChild(additionalLink)
+                        // console.log(addLinks)
+                    }
+                    buildDetailsFragment.appendChild(buildLink)
+                 } else {
+                    buildDetailsFragment.appendChild(buildLink)
+                }
 
                 /* DETAILS SECTION END */ 
 

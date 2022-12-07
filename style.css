@@ -51,7 +51,10 @@ body {
     /* width: 50%; */
     border-right: 1px solid #ccc;
 }
-
+.build__list {
+    max-height: calc(100% - 4rem);
+    overflow: scroll;
+}
 .build__details--container {
     grid-area: 'builddetails';
     background-color: rgb(70, 69, 69);
