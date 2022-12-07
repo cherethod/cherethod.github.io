@@ -47,13 +47,11 @@ body {
 }
 .build__list--container {
     grid-area: 'buildlist';
+    max-height: 100%;
+    overflow: hidden auto;
     background-color: rgb(70, 69, 69);
     /* width: 50%; */
     border-right: 1px solid #ccc;
-}
-.build__list {
-    max-height: calc(100% - 4rem);
-    overflow: scroll;
 }
 .build__details--container {
     grid-area: 'builddetails';
@@ -76,6 +74,7 @@ body {
 .build__info--details {
     display: flex;
     gap: 20px;
+    margin: 20px 0 40px 10px;
 }
 .pob__container, .guide__container {
     display: grid;
@@ -102,7 +101,8 @@ body {
 }
 .build__link {
     color: rgb(211, 211, 211);
-    margin-top: 20px;
-    margin-left: 15px;
+    padding-top: 20px;
     font-size: 2rem;
+    max-width: 98%;
+    margin: auto;
 }
