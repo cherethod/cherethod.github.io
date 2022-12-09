@@ -4,6 +4,7 @@ const buildDetailsElement = document.querySelector('.build__details--container')
 const ascendancies = {
     Elementalist : ["https://poe.ninja/images/classes/Elementalist_avatar.png", "Elementalist", '#7070ff'],
     Occultist : ["https://poe.ninja/images/classes/Occultist_avatar.png", "Occultist", '#7070ff'],
+    Necromancer : ["https://poe.ninja/images/classes/Necromancer_avatar.png", "Necromancer", '#7070ff'],
     Deadeye: ["https://poe.ninja/images/classes/Deadeye_avatar.png", "Deadeye", '#70ff70'],
     Raider: ["https://poe.ninja/images/classes/Raider_avatar.png", "Raider", '#70ff70'],
     Parhfinder: ["https://poe.ninja/images/classes/Pathfinder_avatar.png", "Pathfinder", '#70ff70'],
@@ -14,7 +15,7 @@ const ascendancies = {
     Trickster : ["https://poe.ninja/images/classes/Trickster_avatar.png", "Trickster", '#30c0d0'],
     Chieftain: ["https://poe.ninja/images/classes/Chieftain_avatar.png","Chieftain", '#e05030']
 }
-const listOfBuilds = ["Ignite Ethereal Knives", "Venom Gyre", "Cold Dot Elementalist", "Cold Dot Trickster", "Boneshatter Jugger", "Artillery Ballista", "Corrupting Fever", "Vortex WintertideBrand", "Poisonous Concoction", "Toxic Rain", "Spark Inquisitor", "Bladefall Blade Blast", "Vortex Ignite", "SST Bleed Glad", "Consecrated Path Totems Chieftain", "Enkis Arc Witch", "Freezing pulse / Ice Spear", "Bane Occultist", "Cold Blade Vortex", "Hydrosphere Occultist", "Lightning Conduit", "Caustic Arrow / Toxic Rain - Heist"]
+const listOfBuilds = ["Ignite Ethereal Knives", "Venom Gyre", "Cold Dot Elementalist", "Cold Dot Trickster", "Boneshatter Jugger", "Artillery Ballista", "Corrupting Fever", "Vortex WintertideBrand", "Poisonous Concoction", "Toxic Rain", "Spark Inquisitor", "Bladefall Blade Blast", "Vortex Ignite", "SST Bleed Glad", "Consecrated Path Totems Chieftain", "Enkis Arc Witch", "Freezing pulse / Ice Spear", "Bane Occultist", "Cold Blade Vortex", "Hydrosphere Occultist", "Lightning Conduit", "Caustic Arrow / Toxic Rain - Heist", "SRS Bomber"]
 
 const starterBuilds = [
     /* NAME_OF_BUILD : [ HAS_POB, HAS_LEVELING_GUIDE, LINK_TO_BUILD, IMG_SRC, ASCENDANCE_IMG, ASCENDANCE_NAME, ADDITIONAL LINKS, [LINKS] ] */
@@ -39,7 +40,8 @@ const starterBuilds = [
     ["Cold Blade Vortex", true, true, "https://pastebin.com/YdKEb607", "https://static.wikia.nocookie.net/pathofexile_gamepedia/images/0/00/Blade_Vortex_skill_icon.png", ascendancies.Elementalist[0], ascendancies.Elementalist[1], ascendancies.Elementalist[2], false],
     ["Hydrosphere Occultist", true, true, "https://pastebin.com/KptEhxUr", "https://static.wikia.nocookie.net/pathofexile_gamepedia/images/0/06/Vortex_skill_icon.png", ascendancies.Occultist[0], ascendancies.Occultist[1], ascendancies.Occultist[2], false],
     ["Lightning Conduit", true, false, "https://pobb.in/u/Lolcohol/NUfq9M21A9CW", "https://www.poewiki.net/images/d/d0/Lightning_Conduit_skill_icon.png", ascendancies.Elementalist[0], ascendancies.Elementalist[1], ascendancies.Elementalist[2], false],
-    ["Caustic Arrow / Toxic Rain - Heist", true, true, "https://pobb.in/u/Guitaraholic/9AgmFjQ6pq43", "https://www.poewiki.net/images/9/92/Caustic_Arrow_skill_icon.png", ascendancies.Raider[0], ascendancies.Raider[1],ascendancies.Raider[2], false]
+    ["Caustic Arrow / Toxic Rain - Heist", true, true, "https://pobb.in/u/Guitaraholic/9AgmFjQ6pq43", "https://www.poewiki.net/images/9/92/Caustic_Arrow_skill_icon.png", ascendancies.Raider[0], ascendancies.Raider[1],ascendancies.Raider[2], false],
+    ["SRS Bomber", true, true, "https://pobb.in/u/kayella/FibuMiIgzBnU", "https://static.wikia.nocookie.net/pathofexile_gamepedia/images/d/d5/Summon_Raging_Spirit_skill_icon.png", ascendancies.Necromancer[0], ascendancies.Necromancer[1],ascendancies.Necromancer[2], true, [["Forum Full Guide", "https://www.pathofexile.com/forum/view-thread/3179145"]]]
 ]
 
 let buildListFragment = document.createDocumentFragment()
