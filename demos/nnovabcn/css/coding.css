@@ -1,0 +1,54 @@
+body {
+  position: relative;
+}
+
+.toggle__mode--container {
+  position: absolute;
+  height: 20px;
+  width: 40px;
+  top: 30px;
+  right: 40px;
+  background-color: #1a1a1a;
+  border-radius: 25px;
+  border: 1px solid #000;
+  cursor: pointer;
+  padding: 0 5px;
+}
+.toggle__mode--container .toggle__mode--btn {
+  display: flex;
+  height: 100%;
+}
+.toggle__mode--container .toggle__mode--btn .toggle__mode--sun {
+  position: absolute;
+  left: 5px;
+  top: 0;
+  height: 100%;
+  display: flex;
+  place-items: center;
+  place-content: center;
+  fill: #dfca12;
+}
+.toggle__mode--container .toggle__mode--btn .toggle__mode--moon {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  height: 100%;
+  display: flex;
+  place-items: center;
+  place-content: center;
+  fill: #2a98e2;
+}
+.toggle__mode--container .toggle__mode--btn::before {
+  content: "";
+  width: 28px;
+  height: 100%;
+  transition: all ease-in-out 0.3s;
+  right: 0;
+  border-radius: 25px;
+  position: absolute;
+  background-color: #c7c7c7;
+  z-index: 1;
+}
+.toggle__mode--container .toggle__mode--btn.light::before {
+  right: calc(100% - 28px);
+}/*# sourceMappingURL=coding.css.map */

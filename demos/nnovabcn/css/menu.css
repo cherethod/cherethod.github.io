@@ -1,0 +1,140 @@
+:root {
+  background-color: #1a1a1a;
+}
+
+li {
+  cursor: pointer;
+  display: flex;
+}
+
+li.nav__parent > a::after {
+  content: ">";
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  right: 5px;
+  color: #fff;
+}
+
+.top__nav--container {
+  background-color: blue;
+  height: 50px;
+  display: flex;
+  place-items: center;
+  place-content: end;
+  margin-right: 125px;
+  margin-top: 140px;
+}
+.top__nav--container .nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  place-items: center;
+  gap: 20px;
+}
+.top__nav--container .nav__list .nav__item {
+  padding: 10px 15px;
+}
+.top__nav--container .nav__list .nav__item .nav__link {
+  display: block;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.top__nav--container .nav__list .nav__item .nav__link:hover {
+  color: purple;
+  text-decoration: underline;
+}
+.top__nav--container .nav__list .nav__item--parent {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.top__nav--container .nav__list .nav__item--parent .nav__link {
+  text-decoration: none;
+  color: #fff;
+}
+.top__nav--container .nav__list .nav__item--parent .nav__list--children {
+  position: absolute;
+  top: 100%;
+  left: -150%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 300px;
+  display: none;
+}
+.top__nav--container .nav__list .nav__item--parent .nav__list--children .nav__item--children {
+  padding: 15px 10px;
+  margin-top: 15px;
+  position: relative;
+}
+.top__nav--container .nav__list .nav__item--parent .nav__list--children .nav__item--children .nav__link {
+  text-decoration: none;
+  color: #fff;
+}
+.top__nav--container .nav__list .nav__item--parent .nav__list--children .nav__item--children .nav__list--subchildren {
+  display: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  z-index: 1;
+}
+.top__nav--container .nav__list .nav__item--parent .nav__list--children .nav__item--children .nav__list--subchildren .nav__item--subchildren {
+  position: relative;
+  margin: 0;
+  padding: 15px 10px;
+  color: #fff;
+  list-style: none;
+  width: 150px;
+  outline: 1px solid #800080;
+}
+.top__nav--container .nav__list .nav__item--parent .nav__list--children .nav__item--children .nav__list--subchildren .nav__item--subchildren .nav__list--subchildren-submenu {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: 1px solid #800080;
+}
+.top__nav--container .nav__list .nav__item--parent .nav__list--children .nav__item--children .nav__list--subchildren .nav__item--subchildren .nav__list--subchildren-submenu .nav__item--subchildren-subitem {
+  padding: 15px 10px;
+  outline: 1px solid #800080;
+  width: 145px;
+  text-align: center;
+}
+.top__nav--container .nav__list .nav__item--parent .nav__list--children .nav__item--children .nav__list--subchildren .nav__item--subchildren .nav__list--subchildren-submenu .nav__item--subchildren-subitem:hover {
+  background-color: purple;
+}
+.top__nav--container .nav__list .nav__item--parent .nav__list--children .nav__item--children .nav__list--subchildren .nav__item--subchildren:hover {
+  background-color: purple;
+}
+.top__nav--container .nav__list .nav__item--parent .nav__list--children .nav__item--children .nav__list--subchildren .nav__item--subchildren:hover a {
+  color: #fff;
+}
+.top__nav--container .nav__list .nav__item--parent .nav__list--children .nav__item--children .nav__list--subchildren .nav__item--subchildren:hover .nav__list--subchildren-submenu {
+  display: block;
+}
+.top__nav--container .nav__list .nav__item--parent .nav__list--children .nav__item--children .nav__list--subchildren .nav__item--subchildren:hover .nav__list--subchildren-submenu .nav__item--subchildren-subitem {
+  padding: 15px 10px;
+}
+.top__nav--container .nav__list .nav__item--parent .nav__list--children .nav__item--children:hover {
+  color: #fff;
+  background-color: purple;
+}
+.top__nav--container .nav__list .nav__item--parent .nav__list--children .nav__item--children:hover a {
+  color: #fff;
+}
+.top__nav--container .nav__list .nav__item--parent .nav__list--children .nav__item--children:hover ul {
+  display: block;
+}
+.top__nav--container .nav__list .nav__item--parent:hover .nav__list--children {
+  display: block;
+}/*# sourceMappingURL=menu.css.map */

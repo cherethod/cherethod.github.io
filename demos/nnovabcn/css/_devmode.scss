@@ -1,0 +1,48 @@
+.container.dev__mode {
+    .header__container {
+        .burgermenu__container {
+            .burgermenu__list--container {
+                background-color: orange;
+            }
+            .burgermenu__logo {
+                background-color: blue;
+            }
+        }
+        .mainmenu__container {
+            background-color: blue;
+            .logo__container {
+                background-color: green;
+            }
+            .top__nav--container {
+                background-color: orange;
+            }
+        }
+    }
+    .main__container {        
+        .article__container {
+            background-color: #fff;
+            .section__container {
+                background-color: green;
+                .section__title {
+                    background-color: orange;
+                }
+            }
+        }
+
+        .gallery__container {
+            background-color: pink;
+            .gallery__menu--container {
+                background-color: rgb(1, 49, 1);
+                .gallery__menu {
+                    background-color: aqua;
+                    .gallery__menu--list {
+                        background-color: brown;
+                    }
+                }
+            }
+            .gallery__galleries--container {
+                background-color: rgb(148, 99, 7);
+            }
+        }
+    }
+} 

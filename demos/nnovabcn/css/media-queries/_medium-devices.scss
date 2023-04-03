@@ -1,0 +1,33 @@
+@import '../variables';
+  
+// Tablets (entre 481px y 768px)
+@media (min-width: ($breakpoint-mobile + 1)) and (max-width: $breakpoint-tablet) {
+  .container {
+    .header__container {
+      .mainmenu__container {
+        display: none;
+      }
+    }
+    .main__container {
+      .article__container {
+          grid-template-columns: 1fr;
+          .section__container {
+              .section__paragraph {
+                  width: 80%;
+              }
+          }
+      }         
+      .gallery__container { 
+        grid-template-columns: 1fr;
+        place-content: center;
+        place-items: center;
+        .gallery__menu--mobile {
+          display: flex;
+        }
+        .gallery__menu--desktop {
+          display: none;
+        }
+      }
+    }
+  }
+}

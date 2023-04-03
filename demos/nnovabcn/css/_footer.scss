@@ -1,0 +1,23 @@
+    /* ******************************** */
+    /*      INICIO SECCION FOOTER       */
+    /* ******************************** */
+    .footer__container {
+        background-color: $color__background-dark;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        place-items: center;
+        .footer__section--one {
+            ul {
+                // list-style: none;
+                color: #fff;
+                li {
+                    a{                        
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+        }
+    }

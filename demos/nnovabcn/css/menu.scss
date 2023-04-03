@@ -1,0 +1,156 @@
+:root {
+    background-color: #1a1a1a;
+    // user-select: none;
+}
+li {
+    cursor: pointer;
+    display: flex;
+}
+li.nav__parent > a {
+        &::after{
+            content: '>';
+            height: 25px;
+            width: 25px;
+            position: absolute;
+            right: 5px;
+            color: #fff;        
+        }
+    }
+.top__nav--container {
+    background-color: blue;
+    height: 50px;
+    display: flex;
+    place-items: center;
+    place-content: end;
+    margin-right: 125px;
+    margin-top: 140px;
+    .nav__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        // place-content: center;
+        place-items: center;
+        gap: 20px;
+        .nav__item {            
+            padding: 10px 15px;
+            .nav__link {
+                display: block;
+                color: #fff;
+                // color: #000;
+                text-align: center;
+                letter-spacing: 1px;
+                text-decoration: none;
+                &:hover {
+                    color: purple;
+                    text-decoration: underline;
+                }
+            }
+            &--parent {
+                position: relative;
+                margin: 0;
+                padding: 0;
+                list-style: none;  
+                .nav__link {
+                    text-decoration: none;
+                    color: #fff;
+                    // color: #000;
+                }              
+                .nav__list--children {
+                    position: absolute;
+                    top: 100%;
+                    left: -150%;
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    width: 300px;
+                    // border: 1px solid #800080;
+                    display: none;
+                    .nav__item--children {
+                        padding: 15px 10px;
+                        margin-top: 15px;
+                        position: relative;
+                        .nav__link {                    
+                            text-decoration: none;
+                            color: #fff;
+                            // color: #000;
+                        }
+                        .nav__list--subchildren {
+                            display: none;
+                            margin: 0;
+                            padding: 0;
+                            position: absolute;
+                            left: 100%;
+                            top: 0;
+                            z-index: 1;
+                            .nav__item--subchildren {     
+                                position: relative; 
+                                margin: 0;
+                                padding: 15px 10px;                          
+                                color: #fff;
+                                // color: #000;
+                                list-style: none;
+                                width: 150px;
+                                outline: 1px solid #800080;
+                                .nav__list--subchildren-submenu {
+                                    display: none;
+                                    position: absolute;
+                                    left: 100%;
+                                    top: 0;
+                                    margin: 0;
+                                    padding: 0;
+                                    list-style: none;
+                                    outline: 1px solid #800080;
+                                    .nav__item--subchildren-subitem{
+                                        padding: 15px 10px;
+                                        outline: 1px solid #800080;
+                                        width: 145px;
+                                        text-align: center;
+                                        &:hover {
+                                            background-color: purple;                                            
+                                        }
+
+                                    }
+                                }
+                                &:hover {
+                                    background-color: purple;
+                                    a {
+                                        color: #fff;
+                                    } 
+                                    .nav__list--subchildren-submenu {
+                                    display: block;
+                                    .nav__item--subchildren-subitem{
+                                        padding: 15px 10px;
+                                        
+                                    }
+                                }
+                                }
+                            }
+                        }
+                        
+                        &:hover {
+                            color: #fff;
+                            background-color: purple;
+                            a {
+                                color: #fff;
+                            }
+                            ul {
+                                display: block;
+                                // li{
+                                //     a{
+                                //         color: #000;
+                                //     }
+                                // }
+                            }                          
+                        }
+                    }
+                }
+                &:hover {
+                    .nav__list--children {
+                        display: block;
+                    }
+                }
+            }
+        }      
+    }
+}
