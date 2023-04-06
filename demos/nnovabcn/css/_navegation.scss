@@ -1,5 +1,23 @@
+li.nav__item {
+    cursor: pointer;
+    display: flex;
+    padding: 10px 15px;
+    a {
+        height: 100%;
+    }
+}
+li.nav__parent > a {
+        &::after{
+            content: '>';
+            height: 25px;
+            width: 25px;
+            position: absolute;
+            right: 5px;
+            color: rgb(197, 112, 247);        
+        }
+    }
 .header__container {
-        
+    z-index: 2;
     /* ******************************** */
     /*      INICIO SECCION MENU         */
     /* ******************************** */
@@ -91,7 +109,11 @@
             }
         }
     }
-    .mainmenu__container {
+    
+     /* ******************************** */
+    /*            MENU NUEVO            */
+    /* ******************************** */
+   .mainmenu__container {
         display: none;
         position: relative;
         grid-template-columns: 1fr 2fr;
@@ -115,11 +137,8 @@
                 border-radius: 25px;
                 border: 1px solid #000;
                 cursor: pointer;
-                // display: flex;
-                // place-items: space-between;
                 padding: 0 5px;
                 .toggle__mode--btn {
-                    // position: relative;
                     display: flex;
                     height: 100%;
                     .toggle__mode--sun {
@@ -131,7 +150,6 @@
                         place-items: center;
                         place-content: center;
                         fill: #dfca12;
-                        // background-color: orange;
                     }
                     .toggle__mode--moon {
                         position: absolute;
@@ -148,9 +166,6 @@
                         content: '';
                         width: 28px;
                         height: 100%;
-                        // left: 0;
-                        // transition: all ease-in-out .3s;
-                        // right: 0;
                         border-radius: 25px;
                         position: absolute;
                         background-color: #c7c7c7;
@@ -168,66 +183,157 @@
                     }
                 }
             }
-            .top__nav--container {
+        .top__nav--container {
+            // background-color: blue;
+            height: 50px;
+            display: flex;
+            place-items: center;
+            place-content: end;
+            margin-right: 125px;
+            margin-top: 140px;
+            z-index: 99;
+            .nav__list {
+                list-style: none;
+                margin: 0;
+                padding: 0;
                 display: flex;
-                place-items: start;
-                place-content: end;
-                margin-right: 25px;
-                margin-top: 140px;
-                ul {
-                    list-style: none;
-                    margin: 0;
-                    padding: 0;
-                    display: flex;
-                    li {
-                        padding: 0 15px;
-                      a {
+                place-items: center;
+                gap: 20px;
+                .nav__item {            
+                    .nav__link {
                         display: block;
                         color: #fff;
-                        text-align: center;
-                        padding: 4px 6px;
                         letter-spacing: 1px;
                         text-decoration: none;
                         &:hover {
                             color: $color__primary;
-                            border-bottom: 1px solid $color__primary;
                         }
-                      }
-                      &.list__item--dropdown {
-                        position: relative;
-                        .list__item--parent {
-                          display: block;
-                          text-align: center;
-                          text-decoration: none;
-                        }
-                        .list__item--children {
-                          display: none;
-                          position: absolute;
-                          z-index: 1;
-                          background-color: #f9f9f9;
-                          min-width: 160px;
-                          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                          a {
-                            color: #333;
-                            padding: 12px 16px;
-                            text-decoration: none;
-                            display: block;
-                            text-align: left;
-                            &:hover {
-                                color: #fff;
-                                background-color: $color__primary-light;
-                            }
-                          }
-                        }
-                        &:hover .list__item--children {
-                          display: block;
-                        }
-                      }
                     }
-                  }
+                    &--parent {
+                        position: relative;
+                        margin: 0;
+                        padding: 0;
+                        list-style: none;  
+                        .nav__link {
+                            text-decoration: none;
+                            color: #fff;
+                        }              
+                        .nav__list--children {
+                            background-color: #fff;
+                            border: 2px solid #fff;
+                            position: absolute;
+                            top: 100%;
+                            left: -150%;
+                            margin: 0;
+                            padding: 0;
+                            list-style: none;
+                            width: 350px;
+                            // border: 1px solid #800080;
+                            display: none;
+                            .nav__item--children {
+                                padding: 25px 10px;
+                                // margin-top: 15px;
+                                position: relative;
+                                .nav__link {                    
+                                    text-decoration: none;
+                                    // color: #fff;
+                                    color: #000;
+                                }
+                                .nav__list--subchildren {
+                                    background-color: #fff;
+                                    outline: 2px solid #fff;
+                                    display: none;
+                                    margin: 0;
+                                    padding: 0;
+                                    position: absolute;
+                                    left: 100%;
+                                    top: 0;
+                                    z-index: 1;
+                                    .nav__item--subchildren {     
+                                        position: relative; 
+                                        margin: 0;
+                                        padding: 15px 10px;                          
+                                        // color: #fff;
+                                        list-style: none;
+                                        width: 180px;
+                                        // outline: 1px solid #800080;
+                                        a {                                            
+                                            color: #000;
+                                        }
+                                        .nav__list--subchildren-submenu {
+                                            background-color: #fff;
+                                            outline: 2px solid #fff;
+                                            display: none;
+                                            position: absolute;
+                                            left: 100%;
+                                            top: 0;
+                                            margin: 0;
+                                            padding: 0;
+                                            list-style: none;
+                                            // outline: 1px solid #800080;
+                                            .nav__item--subchildren-subitem{
+                                                padding: 15px 10px;
+                                                // outline: 1px solid #800080;
+                                                width: 145px;
+                                                text-align: center;
+                                                a {
+                                                    color: #000;
+                                                }
+                                                &:hover {
+                                                    background-color: $color__primary;       
+                                                    a {
+                                                        color: #fff;
+                                                    }                                     
+                                                }
+        
+                                            }
+                                        }
+                                        &:hover {
+                                            background-color: $color__primary;
+                                            a {
+                                                color: #fff;
+                                                // &::after {
+                                                //     color: #fff;
+                                                // }
+                                            } 
+                                            .nav__list--subchildren-submenu {
+                                            display: block;
+                                            .nav__item--subchildren-subitem{
+                                                padding: 15px 10px;
+                                                
+                                            }
+                                        }
+                                        }
+                                    }
+                                }
+                                
+                                &:hover {
+                                    color: #fff;
+                                    background-color: $color__primary;
+                                    a {
+                                        color: #fff;
+                                    }
+                                    ul {
+                                        display: block;
+                                        visibility: visible;
+                                        opacity: 1;
+                                    }                          
+                                }
+                            }
+                        }
+                        &:hover {
+                            .nav__list--children {
+                                display: block;
+                                visibility: visible;
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }      
             }
         }
     }
+}
     /* ******************************** */
     /*         FIN SECCION MENU         */
     /* ******************************** */

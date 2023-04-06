@@ -3,7 +3,36 @@
 // Escritorio (entre 769px y 1024px)
 @media (min-width: ($breakpoint-tablet + 1)) and (max-width: $breakpoint-desktop) {   
     .container {        
-        .main__container {        
+        .main__container {   
+            .slider__container {
+                margin-top: 15px;
+                .slider__section--container {
+                    height: 350px;
+                    .slider__item--container {
+                        .slider__image--container {
+                            height: 350px;
+                        }
+                        .slider__card--container {
+                            grid-template-rows: 30% 40% 30%;
+                            background-color: blue;
+                            .slider__texts--title {
+                                .slider-title {
+                                    font-size: 1.3rem;
+                                }
+                            }
+                            .slider__texts--paragraph{
+                                .slider-paragraph {
+                                    font-size: 0.9rem;
+                                }
+                            }
+                            .slider__texts--btn {
+                                padding: 0;
+                                place-content: center;
+                            }
+                        }
+                    }
+                }
+            }     
             .gallery__container { 
                 grid-template-columns: 1fr;
                 place-content: center;
@@ -44,8 +73,7 @@
     }        
 }
 
-@media (min-width: ($breakpoint-tablet + 1)) and (max-width: 850px) {   
- 
+@media (min-width: ($breakpoint-tablet + 1)) and (max-width: 850px) {    
     .section__paragraph {
         width: 70%;
     }
@@ -84,6 +112,106 @@
                 }
             }  
         }
+    }        
+}
+
+/* QUERIES SLIDER */
+
+
+@media (max-width:1700px) {
+    .slider-title {
+        font-size: 1.8rem;
+    }
+}
+@media (max-width:1500px) {
+    .slider__texts--title {
+        width: 90%;
+        .slider-title {
+            font-size: 1.6rem;
+        }
+    }
+    .slider-paragraph {
+        font-size: 1rem;
+    }
+}
+@media (max-width:1200px) {
+    .slider__container {
+        .slider__section--container {
+            height: 350px;
+            .slider__item--container {
+                .slider__image--container {
+                    height: 350px;
+                }
+                .slider__card--container {
+                    .slider__texts--title {
+                        width: 95%;
+                        .slider-title {
+                            font-size: 1.5rem;
+                        }
+                    }
+                    .slider-paragraph {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:1100px) {
+    .slider__container {
+        .slider__section--container {
+            .slider__item--container {
+                .slider__card--container {
+                    grid-template-rows: 30% 45% 25%;
+                    background-color: blue;
+                    .slider__texts--title {
+                        width: 90%;
+                        margin: 0 auto;
+                        padding: 0 20px;
+                        background-color: green;
+                        .slider-title {
+                            font-size: 1.5rem;
+                        }
+                    }
+                    .slider__texts--paragraph{
+                        background-color: red;
+                        .slider-paragraph {
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+            }
+        }
     }    
-    
+}
+
+@media (max-width: 900px) {
+    .slider__container {
+        .slider__section--container {
+            height: 700px !important;  
+            .slider__item--container {
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+                opacity: 0;
+                .slider__image--container {
+                    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 75%, 0 100%);
+                }
+                .slider__card--container {
+                    .slider__texts--title {
+                        place-content: center;
+                        place-items: center;
+                        text-align: center;
+                        padding: 0;
+                        width: 90%;
+                        font-size: 1.8rem;
+                    }
+                    .slider__texts--btn {
+                        place-content: center;
+                        place-items: center;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
 }

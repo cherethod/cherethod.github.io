@@ -1,19 +1,10 @@
-$color__background-dark: #1A1A1A;
-$color__background-light: #dfdfdf;
+$color__background-dark: rgb(26, 26, 26);
+$color__background-light: rgb(223, 223, 223);
 $color__primary-light: #9e00fa70;
 $color__primary: rgba(106, 6, 59,1);
-
-$font-1: 'body text';
-$font-2: 'Corbel';
-$font-3: 'Dubai';
-$font-4: 'Ebrima';
-$font-5: 'Gadugi';
-$font-6: 'Gotham';  // pago muy cara
-$font-7: 'Montserrat';
-$font-8: 'Segoe UI';
-$font-9: 'Sikta Heading';
-$font-10: 'Roboto';
-$font-11: 'Bebas Neue';
+// $color__primary-hover: rgb(218, 117, 197);
+// $color__font-hover: rgb(75, 0, 130);
+// $color__background-hover: rgb(184, 110, 162);
 
 
 $size__header-menu: 330px;

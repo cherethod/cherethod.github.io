@@ -194,6 +194,9 @@ const createGalleryObject = () =>{
                     e.target.classList.toggle('active');
                     (e.target.classList.contains('active')) ? e.target.textContent='- Ocultar galerías -' : e.target.textContent='Mostrar más galerías'
               }
+              else {
+                this.closeViewer();
+              }
             });
           }
         };

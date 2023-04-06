@@ -1,0 +1,31 @@
+
+Develop:
+  ☐ Hacer el "banner rotator" para el header del inicio.
+    Tasks: 
+      ☐ Estructura HTML.
+      ☐ Selección de imágenes.
+      ☐ Script ....
+
+Design:  
+  ✔ Pasar a HTML el texto de "privacidad". @done(23-04-03 13:48)
+  ✔ Pasar a HTML el texto de "aviso legal". @done(23-04-03 13:53)
+  ☐ Menú superior.
+      ☐ Verificar estilos.
+      ☐ Verificar la estructura.
+  ☐ Estilos:
+    ✔ Segmentar estilos menú. @done(23-04-03 15:01)
+    ✔ Segmentar Variables. @done(23-04-03 15:25)
+    ✔ Segmentar footer. @done(23-04-03 15:25)
+    ✔ Segmentar galería. @done(23-04-03 15:25)
+    ✔ Segmentar media queries. @done(23-04-03 15:25)
+    ☐ Verificar que los estilos básicos sigan funcionando. @started(23-04-03 15:53)
+    ☐ Re-hacer media queries del menú.
+    ☐ Re-hacer media queries del contenido.
+    ☐ Re-hacer media queries de la galería.
+  ☐ Crear plantilla para las etiquetas de las redes sociales (OG y TW).
+
+
+Consulting:
+  ✔ Solicitar una plantilla HTML con todas las etiquetas necesarias para el SEO. @done(23-04-03 13:17)
+  ✔ Preguntar si es mejor tener todos los estilos SCSS juntos o segmentados. @done(23-04-03 15:01)
+  ☐ Solicitar métodos para enviar formularios con servidor de correo propio.

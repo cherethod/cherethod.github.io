@@ -66,50 +66,132 @@
                         <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
                     </svg>
                 </div>
-        </div>
-        <nav class="top__nav--container">
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li class="list__item--dropdown">
-                <a href="#" class="list__item--parent">Servicios</a>
-                <div class="list__item--children">
-                    <a href="#">Aislamientos</a>
-                    <a href="#">Iluminación</a>
-                    <a href="#">Reformas</a>
-                    <a href="#">Otros servicios</a>
-                </div>
-                </li>
-                <li><a href="#">Quienes somos</a></li>
-                <li><a href="./galeria.html">Portfolio</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav></div>
+            </div>
+            <nav class="top__nav--container">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="./index.html" class="nav__link">Inicio</a></li>
+                    <li class="nav__item nav__item--parent"><a href="" class="nav__link">Servicios</a>
+                    <ul class="nav__list--children">
+                        <li class="nav__item nav__item--children nav__parent"><a href="#" class="nav__link">Instalaciones de sistemas Durlock</a>
+                            <ul class="nav__list--subchildren">
+                                <li class="nav__item nav__item--subchildren"><a href="#" class="nav__link">Tabiques</a></li>
+                                <li class="nav__item nav__item--subchildren nav__parent"><a href="#" class="nav__link">Falsos techos</a>
+                                    <ul class="nav__list--subchildren-submenu">
+                                        <li class="nav__item nav__item--subchildren-subitem"><a href="#" class="nav__link">Techos registrables</a></li>
+                                        <li class="nav__item nav__item--subchildren-subitem"><a href="#" class="nav__link">Techos decorativos</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item nav__item--children nav__parent"><a href="#" class="nav__link">Aislamientos</a>
+                            <ul class="nav__list--subchildren">
+                                <li class="nav__item nav__item--subchildren"><a href="#" class="nav__link">Acústico</a></li>
+                                <li class="nav__item nav__item--subchildren"><a href="#" class="nav__link">Térmico</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav__item nav__item--children"><a href="#" class="nav__link">Protección pasiva contra el fuego</a></li>
+                        <li class="nav__item nav__item--children nav__parent"><a href="#" class="nav__link">Iluminación y decoración</a>
+                            <ul class="nav__list--subchildren">
+                                <li class="nav__item nav__item--subchildren"><a href="#" class="nav__link">Iluminación indirecta</a></li>
+                                <li class="nav__item nav__item--subchildren"><a href="#" class="nav__link">Muebles decorativos para chimeneas</a></li>
+                            </ul>
+                        </li>
+                        <!-- <li class="nav__item nav__item--children nav__parent"><a href="#" class="nav__link">Otros servicios</a>
+                            <ul class="nav__list--subchildren">
+                                <li class="nav__item nav__item--subchildren"><a href="#" class="nav__link">Pintura</a></li>
+                                <li class="nav__item nav__item--subchildren"><a href="#" class="nav__link">Parquet</a></li>
+                                <li class="nav__item nav__item--subchildren"><a href="#" class="nav__link">Suelos y alicatados</a></li>
+                            </ul>
+                        </li> -->
+                    </ul></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Quienes somos</a></li>                
+                    <li class="nav__item"><a href="./galeria.html" class="nav__link">Portfolio</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Contacto</a></li>
+                </ul>
+            </nav>
+    </div>
         </div> 
      </header>
      <main class="main__container">      
-        <div class="banner__section--container">
-            <p>La innovación es la chispa que enciende nuestra creatividad en cada diseño de nuestros proyectos.</p>
+        <div class="slider__container">
+            <div class="slider__section--container">
+                <div class="slider__item--container">
+                    <figure class="slider__image--container"><img src="./img/slides/slider-1.png" alt="texto alternativo" class="slider-img"></figure>
+                    <div class="slider__card--container">
+                        <div class="slider__texts--title"><h3 class="slider-title">Techos decorativos.<br>
+                            Estilo y sofisticación a cualquier espacio.</h3></div>
+                        <div class="slider__texts--paragraph"><h4 class="slider-paragraph">Personaliza el ambiente con diversos diseños y acabados, ofreciendo mayor facilidad de instalación y variedad de opciones.</h4></div>
+                        <div class="slider__texts--btn"><a href="#" aria-label="Ir al servicio: ******" class="slider-btn link__btn link__btn--slider">Obtener más información</a></div>
+                    </div>
+                </div>
+                <div class="slider__item--container">
+                    <figure class="slider__image--container"><img src="./img/slides/slider-2.webp" alt="texto alternativo" class="slider-img"></figure>
+                    <div class="slider__card--container">
+                        <div class="slider__texts--title"><h3 class="slider-title">Iluminación indirecta, una forma elegante y moderna de mejorar la atmósfera.</h3></div>
+                        <div class="slider__texts--paragraph"><h4 class="slider-paragraph">La iluminación indirecta aporta ambiente y estilo a cualquier espacio. Brindamos soluciones de iluminación indirecta que se adaptan a diversos estilos y necesidades.</h4></div>
+                        <div class="slider__texts--btn"><a href="#" aria-label="Ir al servicio: ******" class="slider-btn link__btn link__btn--slider">Obtener más información</a></div>
+                    </div>
+                </div>
+                <div class="slider__item--container">
+                    <figure class="slider__image--container"><img src="./img/slides/slider-3.webp" alt="texto alternativo" class="slider-img"></figure>
+                    <div class="slider__card--container">
+                        <div class="slider__texts--title"><h3 class="slider-title">Reformas y decoración de interiores.<br>
+                            Transforma y embellece tus espacios.</h3></div>
+                        <div class="slider__texts--paragraph"><h4 class="slider-paragraph">Renueva tus ambientes con soluciones creativas y funcionales, adaptadas a tus gustos y necesidades, potenciando la estética y el confort de tus espacios interiores.</h4></div>
+                        <div class="slider__texts--btn"><a href="#" aria-label="Ir al servicio: ******" class="slider-btn link__btn link__btn--slider">Obtener más información</a></div>
+                    </div>
+                </div>
+            </div> 
+            <div class="slider__navegation--container">
+            </div>
         </div>  
         <article class="article__container">
             <section class="section__container">
                 <h3 class="section__title">¿Qué hacemos?</h3>
                 <p class="section__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate expedita cum fugiat cumque illum rerum consequuntur ullam, in, mollitia necessitatibus eveniet voluptates, minima assumenda maiores dolorum quo! Porro, odio maxime!</p>
-                <button class="section__btn">TEXTO AQUI</button>
+                <a href="#" class="link__btn link__btn--section section__btn">TEXTO AQUI</a>
             </section>
             <section class="section__container">
                 <h3 class="section__title">¿Qué hacemos?</h3>
                 <p class="section__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate expedita cum fugiat cumque illum rerum consequuntur ullam, in, mollitia necessitatibus eveniet voluptates, minima assumenda maiores dolorum quo! Porro, odio maxime!</p>
-                <button class="section__btn">TEXTO AQUI</button>
+                <a href="#" class="link__btn link__btn--section section__btn">TEXTO AQUI</a>
             </section>
             <section class="section__container">
                 <h3 class="section__title">¿Qué hacemos?</h3>
                 <p class="section__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate expedita cum fugiat cumque illum rerum consequuntur ullam, in, mollitia necessitatibus eveniet voluptates, minima assumenda maiores dolorum quo! Porro, odio maxime!</p>
-                <button class="section__btn">TEXTO AQUI</button>
+                <a href="#" class="link__btn link__btn--section section__btn">TEXTO AQUI</a>
             </section>
         </article>
      </main>
       <footer class="footer__container">
         <div class="footer__section--one">
+            <!-- <ul>
+                <li><a href="./privacidad.html">Privacidad</a></li>
+                <li><a href="./aviso-legal.html">Aviso legal</a></li>
+                <li><a href="./privacidad2.html">Privacidad 2</a></li>
+                <li><a href="#">Link</a></li>
+            </ul> -->
+            <div class="footer__logo--container"><img src="./img/Logo_Nnova_white_small.png" alt="" class="footer__logo--img"></div>
+        </div>
+        <div class="footer__section--two">
+            <div class="contact__info--container">
+                <p class="contact__text--address">C\ Pontenpompeta nº 25, 69255 Machupilandia (Bajo la palmera)</p>
+                <p class="contact__text--phone">+69 (627) 708-4864</p>
+                <p class="contact__text--email">nibh.sit.amet@icloud.net</p>              
+            </div>
+            <div class="rrss__info--container">
+                <div class="facebook__icon--container"><a href="#" class="facebook__icon--link">
+                    <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 2h-3a5 5 0 00-5 5v3H6v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3V2z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                </a></div>
+                <div class="instagram__icon--container"><a href="#" class="instagram__icon--link">
+                    <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 16a4 4 0 100-8 4 4 0 000 8z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 16V8a5 5 0 015-5h8a5 5 0 015 5v8a5 5 0 01-5 5H8a5 5 0 01-5-5z" stroke-width="1.5"></path><path d="M17.5 6.51l.01-.011" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                </a></div>
+                <div class="linkedin__icon--container"><a href="#" class="linkedin__icon--link">
+                    <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 8v8a5 5 0 01-5 5H8a5 5 0 01-5-5V8a5 5 0 015-5h8a5 5 0 015 5zM7 17v-7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 17v-3.25M11 10v3.75m0 0c0-3.75 6-3.75 6 0V17M7 7.01l.01-.011" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                </a></div>
+            </div>            
+        </div>
+        <div class="footer__section--three">
             <ul>
                 <li><a href="./privacidad.html">Privacidad</a></li>
                 <li><a href="./aviso-legal.html">Aviso legal</a></li>
@@ -117,10 +199,12 @@
                 <li><a href="#">Link</a></li>
             </ul>
         </div>
+        <div class="copyright__developer--container"><p class="copyright__text">Nnova Designs 2023 © - Todos los derechos reservados.</p></div>
       </footer>  
     </div>
     <script src="./js/burgermenu.js"></script>
     <script src="./js/functions.js"></script>
+    <script src="./js/slider.js"></script>
     <!-- <script>setColorMode()</script> -->
 </body>
 </html>

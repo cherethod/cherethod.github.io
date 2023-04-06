@@ -34,10 +34,12 @@ const toggleColorMode = () => {
     const container = getElement('.container');
     const colorModeBtn = getElement('.toggle__mode--btn');
     const logo = getElement('.logo__img');
+    const footerLogo = getElement('.footer__logo--img');
   
     container.className = `container ${mode}`;
     colorModeBtn.className = `toggle__mode--btn ${mode}`;
     logo.src = mode === 'dark' ? './img/Logo_Nnova_white_very-small.png' : './img/Logo_Nnova_black_very-small.png';
+    footerLogo.src = mode === 'dark' ? './img/Logo_Nnova_white_small.png' : './img/Logo_Nnova_black_small.png';
   };
   
   const initColorMode = () => {
@@ -48,7 +50,10 @@ const toggleColorMode = () => {
     setColorMode(storedMode);
   };
   
-  document.addEventListener('DOMContentLoaded', initColorMode);
+  document.addEventListener('DOMContentLoaded', function () {
+    initColorMode();
+    createSliderObject();
+  });
 
 
 
