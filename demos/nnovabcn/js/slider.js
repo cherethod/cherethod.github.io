@@ -1,5 +1,5 @@
 class Slider {
-    constructor(sliderContainer, navContainer, interval = 99999995000) {
+    constructor(sliderContainer, navContainer, interval = 5000) {
       this.sliderContainer = sliderContainer;
       this.navContainer = navContainer;
       this.sliderItems = sliderContainer.querySelectorAll(".slider__item--container");

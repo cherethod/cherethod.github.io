@@ -879,7 +879,6 @@ li.nav__parent > a::after {
   }
   .container .main__container .slider__container .slider__section--container .slider__item--container .slider__card--container {
     grid-template-rows: 30% 40% 30%;
-    background-color: blue;
   }
   .container .main__container .slider__container .slider__section--container .slider__item--container .slider__card--container .slider__texts--title .slider-title {
     font-size: 1.3rem;
@@ -987,19 +986,14 @@ li.nav__parent > a::after {
 @media (max-width: 1100px) {
   .slider__container .slider__section--container .slider__item--container .slider__card--container {
     grid-template-rows: 30% 45% 25%;
-    background-color: blue;
   }
   .slider__container .slider__section--container .slider__item--container .slider__card--container .slider__texts--title {
     width: 90%;
     margin: 0 auto;
     padding: 0 20px;
-    background-color: green;
   }
   .slider__container .slider__section--container .slider__item--container .slider__card--container .slider__texts--title .slider-title {
     font-size: 1.5rem;
-  }
-  .slider__container .slider__section--container .slider__item--container .slider__card--container .slider__texts--paragraph {
-    background-color: red;
   }
   .slider__container .slider__section--container .slider__item--container .slider__card--container .slider__texts--paragraph .slider-paragraph {
     font-size: 0.9rem;

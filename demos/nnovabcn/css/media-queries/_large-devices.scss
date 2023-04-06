@@ -14,7 +14,7 @@
                         }
                         .slider__card--container {
                             grid-template-rows: 30% 40% 30%;
-                            background-color: blue;
+                            // background-color: blue;
                             .slider__texts--title {
                                 .slider-title {
                                     font-size: 1.3rem;
@@ -163,18 +163,18 @@
             .slider__item--container {
                 .slider__card--container {
                     grid-template-rows: 30% 45% 25%;
-                    background-color: blue;
+                    // background-color: blue;
                     .slider__texts--title {
                         width: 90%;
                         margin: 0 auto;
                         padding: 0 20px;
-                        background-color: green;
+                        // background-color: green;
                         .slider-title {
                             font-size: 1.5rem;
                         }
                     }
                     .slider__texts--paragraph{
-                        background-color: red;
+                        // background-color: red;
                         .slider-paragraph {
                             font-size: 0.9rem;
                         }
