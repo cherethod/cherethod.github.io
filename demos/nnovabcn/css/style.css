@@ -823,6 +823,100 @@ li.nav__parent > a::after {
   background-color: rgb(106, 6, 59);
 }
 
+.centered__title {
+  text-align: center;
+  color: #fff;
+}
+
+h3 {
+  text-align: center;
+  color: #fff;
+}
+
+.services__cards--container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 90%;
+  margin: auto;
+}
+.services__cards--container .card__item--container {
+  margin-top: 20px;
+}
+.services__cards--container .card__item--container .service__title {
+  transition: 0.5s ease all;
+}
+.services__cards--container .card__item--container .card__link {
+  display: inline-block;
+}
+.services__cards--container .card__item--container .card__link .card__container {
+  width: 20vw;
+  height: 300px;
+  position: relative;
+  transform-style: preserve-3d;
+  margin: 0;
+  transition: 0.5s ease all;
+  transform: perspective(40vw) rotateY(0deg);
+  outline: 2px solid rgb(106, 6, 59);
+  border: 2px solid rgb(106, 6, 59);
+}
+.services__cards--container .card__item--container .card__link .card__container .card__rearward, .services__cards--container .card__item--container .card__link .card__container .card__picture {
+  width: 100%;
+  height: 100%;
+}
+.services__cards--container .card__item--container .card__link .card__container .card__picture {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.services__cards--container .card__item--container .card__link .card__container .card__rearward {
+  position: absolute;
+  top: 0;
+  color: #fff;
+  transform: perspective(40vw) rotateY(180deg);
+  backface-visibility: hidden;
+  overflow: auto;
+  background: linear-gradient(0deg, rgb(106, 6, 59), rgba(50, 50, 50, 0.631372549));
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+.services__cards--container .card__item--container .card__link .card__container .card__rearward .card__title {
+  text-align: center;
+  transform: translateY(-20px);
+  color: rgb(188, 111, 254);
+  transition: 0.8s ease all;
+  transition-delay: 0.3s;
+}
+.services__cards--container .card__item--container .card__link .card__container .card__rearward hr {
+  width: 90%;
+  color: #fff;
+}
+.services__cards--container .card__item--container .card__link .card__container .card__rearward .card__description {
+  width: 90%;
+  text-align: center;
+}
+.services__cards--container .card__item--container .card__link .card__container .card__rearward .card__btn {
+  background-color: #daa520;
+  color: rgb(106, 6, 59);
+  padding: 10px 25px;
+}
+.services__cards--container .card__item--container .card__link .card__container .card__rearward .card__btn:hover {
+  background-color: #ffda7c;
+  color: #000;
+  cursor: pointer;
+}
+.services__cards--container .card__item--container:hover .service__title {
+  transform: translateY(50px);
+}
+.services__cards--container .card__item--container:hover .card__link .card__container {
+  transform: perspective(40vw) rotateY(180deg);
+}
+.services__cards--container .card__item--container:hover .card__link .card__container .card__rearward .card__title {
+  color: #fff;
+  transform: translateY(0);
+}
+
 @media (max-width: 480px) {
   .container .header__container .mainmenu__container {
     display: none;
@@ -1079,6 +1173,7 @@ p, a, span {
   border-right: 0;
   border-color: #000;
   border-style: solid;
+  color: #000;
 }
 .container .main__container .article__container .section__container .section__paragraph {
   text-align: center;
@@ -1139,6 +1234,12 @@ p, a, span {
   border-color: #000;
 }
 .container.light .main__container .text__article--container {
+  color: #000;
+}
+.container.light .main__container .centered__title {
+  color: #000;
+}
+.container.light .main__container .services__cards--container .card__item--container .service__title {
   color: #000;
 }
 .container.light .main__container .gallery__container .gallery__menu--desktop .gallery__menu .gallery__menu--list .gallery__menu--item .gallery__menu--link {

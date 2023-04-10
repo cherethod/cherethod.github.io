@@ -5,6 +5,7 @@
 
 @import 'buttons';
 @import 'slider';
+@import 'cards';
 
 @import 'media-queries/small-devices';
 @import 'media-queries/medium-devices';
@@ -82,6 +83,7 @@ p, a, span {
                     border-right: 0;
                     border-color: #000;
                     border-style: solid;
+                    color: #000;
                 }
                 .section__paragraph {
                     text-align: center;
@@ -188,8 +190,17 @@ p, a, span {
             }
             .text__article--container {
                 color: #000;            
-            }       
-
+            }    
+            .centered__title {
+                color: #000;
+            }   
+            .services__cards--container {
+                .card__item--container {
+                    .service__title {
+                        color: #000;
+                    }
+                }
+            }
             .gallery__container {   
                 .gallery__menu--desktop {
                     .gallery__menu {
