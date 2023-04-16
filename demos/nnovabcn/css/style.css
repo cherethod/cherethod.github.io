@@ -31,6 +31,57 @@ li.nav__parent > a::after {
   /*         FIN SECCION MENU         */
   /* ******************************** */
 }
+.header__container .toggle__mode--container {
+  position: absolute;
+  height: 20px;
+  width: 40px;
+  top: 20px;
+  right: 40px;
+  background-color: #1a1a1a;
+  border-radius: 25px;
+  border: 1px solid #000;
+  cursor: pointer;
+  padding: 0 5px;
+}
+.header__container .toggle__mode--container .toggle__mode--btn {
+  display: flex;
+  height: 100%;
+}
+.header__container .toggle__mode--container .toggle__mode--btn .toggle__mode--sun {
+  position: absolute;
+  left: 5px;
+  top: 0;
+  height: 100%;
+  display: flex;
+  place-items: center;
+  place-content: center;
+  fill: #dfca12;
+}
+.header__container .toggle__mode--container .toggle__mode--btn .toggle__mode--moon {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  height: 100%;
+  display: flex;
+  place-items: center;
+  place-content: center;
+  fill: #2a98e2;
+}
+.header__container .toggle__mode--container .toggle__mode--btn::before {
+  content: "";
+  width: 28px;
+  height: 100%;
+  border-radius: 25px;
+  position: absolute;
+  background-color: #c7c7c7;
+  z-index: 1;
+}
+.header__container .toggle__mode--container .toggle__mode--btn.dark::before {
+  right: 0;
+}
+.header__container .toggle__mode--container .toggle__mode--btn.light::before {
+  right: calc(100% - 28px);
+}
 .header__container .burgermenu__container {
   background-color: rgb(26, 26, 26);
   width: 100%;
@@ -128,57 +179,6 @@ li.nav__parent > a::after {
 }
 .header__container .mainmenu__container .header__menu--container {
   position: relative;
-}
-.header__container .mainmenu__container .header__menu--container .toggle__mode--container {
-  position: absolute;
-  height: 20px;
-  width: 40px;
-  top: 30px;
-  right: 40px;
-  background-color: #1a1a1a;
-  border-radius: 25px;
-  border: 1px solid #000;
-  cursor: pointer;
-  padding: 0 5px;
-}
-.header__container .mainmenu__container .header__menu--container .toggle__mode--container .toggle__mode--btn {
-  display: flex;
-  height: 100%;
-}
-.header__container .mainmenu__container .header__menu--container .toggle__mode--container .toggle__mode--btn .toggle__mode--sun {
-  position: absolute;
-  left: 5px;
-  top: 0;
-  height: 100%;
-  display: flex;
-  place-items: center;
-  place-content: center;
-  fill: #dfca12;
-}
-.header__container .mainmenu__container .header__menu--container .toggle__mode--container .toggle__mode--btn .toggle__mode--moon {
-  position: absolute;
-  right: 5px;
-  top: 0;
-  height: 100%;
-  display: flex;
-  place-items: center;
-  place-content: center;
-  fill: #2a98e2;
-}
-.header__container .mainmenu__container .header__menu--container .toggle__mode--container .toggle__mode--btn::before {
-  content: "";
-  width: 28px;
-  height: 100%;
-  border-radius: 25px;
-  position: absolute;
-  background-color: #c7c7c7;
-  z-index: 1;
-}
-.header__container .mainmenu__container .header__menu--container .toggle__mode--container .toggle__mode--btn.dark::before {
-  right: 0;
-}
-.header__container .mainmenu__container .header__menu--container .toggle__mode--container .toggle__mode--btn.light::before {
-  right: calc(100% - 28px);
 }
 .header__container .mainmenu__container .header__menu--container .top__nav--container {
   height: 50px;
@@ -422,7 +422,7 @@ li.nav__parent > a::after {
 .gallery__container .gallery__menu--mobile .gallery__menu .gallery__menu--list-mobile .gallery__menu--item {
   padding: 0;
   margin: 0;
-  padding: 10px 0;
+  padding: 10px 50px;
   text-align: center;
 }
 .gallery__container .gallery__menu--mobile .gallery__menu .gallery__menu--list-mobile .gallery__menu--item .gallery__menu--link {
@@ -606,8 +606,8 @@ li.nav__parent > a::after {
 /*      INICIO SECCION FOOTER       */
 /* ******************************** */
 .footer__container {
-  width: 80%;
-  margin: 25px auto 0 auto;
+  border-top: 2px solid rgb(106, 6, 59);
+  border-top: 2px solid #daa520;
   height: 100%;
   display: grid;
   grid-template-columns: 25% 50% 25%;
@@ -785,6 +785,9 @@ li.nav__parent > a::after {
   width: 80%;
   font-size: 1.8rem;
 }
+.slider__container .slider__section--container .slider__item--container .slider__card--container .slider__texts--title .slider-title {
+  text-align: left;
+}
 .slider__container .slider__section--container .slider__item--container .slider__card--container .slider__texts--paragraph {
   place-content: center;
   place-items: center;
@@ -915,6 +918,102 @@ h3 {
 .services__cards--container .card__item--container:hover .card__link .card__container .card__rearward .card__title {
   color: #fff;
   transform: translateY(0);
+}
+
+.container.light {
+  background-color: rgb(223, 223, 223);
+}
+.container.light .header__container .burgermenu__container {
+  background-color: rgb(26, 26, 26);
+}
+.container.light .header__container .burgermenu__container .burgermenu__icon .burger__icon--svg {
+  fill: #fff;
+}
+.container.light .header__container .burgermenu__container .burgermenu__list--container {
+  background-color: orange;
+}
+.container.light .header__container .burgermenu__container .burgermenu__list--container nav ul li:hover a {
+  color: rgb(106, 6, 59);
+}
+.container.light .header__container .burgermenu__container .burgermenu__list--container nav ul a {
+  color: #000;
+}
+.container.light .header__container .mainmenu__container .header__menu--container .toggle__mode--container {
+  background-color: #1a1a1a;
+  border: 1px solid #000;
+}
+.container.light .header__container .mainmenu__container .header__menu--container .toggle__mode--container .toggle__mode--btn .toggle__mode--sun {
+  fill: #dfca12;
+}
+.container.light .header__container .mainmenu__container .header__menu--container .toggle__mode--container .toggle__mode--btn .toggle__mode--moon {
+  fill: #2a98e2;
+}
+.container.light .header__container .mainmenu__container .header__menu--container .toggle__mode--container .toggle__mode--btn::before {
+  background-color: #c7c7c7;
+}
+.container.light .header__container .mainmenu__container .header__menu--container .top__nav--container .nav__list .nav__item .nav__link {
+  color: #000;
+}
+.container.light .main__container .slider__container .slider__navegation--container .slider__navegation--item {
+  border: 1px solid #000;
+}
+.container.light .main__container .article__container {
+  background-color: #fff;
+  border-color: rgb(106, 6, 59);
+}
+.container.light .main__container .article__container .section__container .section__title {
+  border-color: #000;
+}
+.container.light .main__container .text__article--container {
+  color: #000;
+}
+.container.light .main__container .centered__title {
+  color: #000;
+}
+.container.light .main__container .services__cards--container .card__item--container .service__title {
+  color: #000;
+}
+.container.light .main__container .gallery__container .gallery__menu--desktop .gallery__menu .gallery__menu--list-desktop .gallery__menu--item .gallery__menu--link {
+  color: #000;
+}
+.container.light .main__container .gallery__container .gallery__menu--desktop .gallery__menu .gallery__menu--list-desktop .gallery__menu--item:hover {
+  background-color: rgba(158, 0, 250, 0.4392156863);
+}
+.container.light .main__container .gallery__container .gallery__menu--mobile .gallery__show--more-container .gallery__show--more {
+  color: #000;
+}
+.container.light .main__container .gallery__container .gallery__menu--mobile .gallery__menu .gallery__menu--list-mobile .gallery__menu--item .gallery__menu--link {
+  color: #000;
+}
+.container.light .main__container .gallery__container .gallery__menu--mobile .gallery__menu .gallery__menu--list-mobile .gallery__menu--item:hover {
+  background-color: rgb(106, 6, 59);
+}
+.container.light .main__container .gallery__container .gallery__menu--mobile .gallery__menu .gallery__menu--list-mobile .gallery__menu--item:hover .gallery__menu--link {
+  color: #fff;
+}
+.container.light .main__container .gallery__container .gallery__galleries--container .galleries__container .galleries__items--container.enabled .gallery__img--container .gallery__item--overlay {
+  background: rgba(158, 0, 250, 0.4392156863);
+}
+.container.light .main__container .gallery__container .gallery__galleries--container .galleries__container .galleries__items--container.enabled .gallery__img--container.full-size {
+  background-color: rgba(0, 0, 0, 0.8549019608);
+}
+.container.light .footer__container .footer__section--two .contact__info--container > p {
+  color: #000;
+}
+.container.light .footer__container .footer__section--two .rrss__info--container div > a svg > path {
+  stroke: #000;
+}
+.container.light .footer__container .footer__section--two .rrss__info--container div > a:hover svg > path {
+  stroke: rgb(106, 6, 59);
+}
+.container.light .footer__container .footer__section--three ul > li > a {
+  color: #000;
+}
+.container.light .footer__container .footer__section--three ul > li > a:hover {
+  color: rgb(106, 6, 59);
+}
+.container.light .copyright__developer--container p {
+  color: #000;
 }
 
 @media (max-width: 480px) {
@@ -1139,6 +1238,7 @@ p, a, span {
   overflow: scroll;
   display: grid;
   grid-template-rows: 1fr 3fr;
+  background-color: rgb(26, 26, 26);
 }
 .container .main__container {
   /* ******************************** */
@@ -1183,94 +1283,29 @@ p, a, span {
 }
 .container .main__container .text__article--container {
   width: 80%;
-  margin: auto;
   color: #c2c2c2;
 }
-.container.dark {
-  background-color: rgb(26, 26, 26);
+.container .main__container .values__container {
+  width: 90%;
+  margin: 35px auto 50px auto;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
 }
-.container.light {
-  background-color: rgb(223, 223, 223);
+.container .main__container .values__container .values__item--container {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+  padding: 10px 25px;
 }
-.container.light .header__container .burgermenu__container {
-  background-color: rgb(26, 26, 26);
+.container .main__container .values__container .values__item--container .value__picture--container .value__picture--svg {
+  width: 2.5rem;
+  fill: #daa520;
 }
-.container.light .header__container .burgermenu__container .burgermenu__icon .burger__icon--svg {
-  fill: #fff;
-}
-.container.light .header__container .burgermenu__container .burgermenu__list--container {
-  background-color: orange;
-}
-.container.light .header__container .burgermenu__container .burgermenu__list--container nav ul li:hover a {
-  color: rgb(106, 6, 59);
-}
-.container.light .header__container .burgermenu__container .burgermenu__list--container nav ul a {
-  color: #000;
-}
-.container.light .header__container .mainmenu__container .header__menu--container .toggle__mode--container {
-  background-color: #1a1a1a;
-  border: 1px solid #000;
-}
-.container.light .header__container .mainmenu__container .header__menu--container .toggle__mode--container .toggle__mode--btn .toggle__mode--sun {
-  fill: #dfca12;
-}
-.container.light .header__container .mainmenu__container .header__menu--container .toggle__mode--container .toggle__mode--btn .toggle__mode--moon {
-  fill: #2a98e2;
-}
-.container.light .header__container .mainmenu__container .header__menu--container .toggle__mode--container .toggle__mode--btn::before {
-  background-color: #c7c7c7;
-}
-.container.light .header__container .mainmenu__container .header__menu--container .top__nav--container .nav__list .nav__item .nav__link {
-  color: #000;
-}
-.container.light .main__container .slider__container .slider__navegation--container .slider__navegation--item {
-  border: 1px solid #000;
-}
-.container.light .main__container .article__container {
-  background-color: #fff;
-  border-color: rgb(106, 6, 59);
-}
-.container.light .main__container .article__container .section__container .section__title {
-  border-color: #000;
-}
-.container.light .main__container .text__article--container {
-  color: #000;
-}
-.container.light .main__container .centered__title {
-  color: #000;
-}
-.container.light .main__container .services__cards--container .card__item--container .service__title {
-  color: #000;
-}
-.container.light .main__container .gallery__container .gallery__menu--desktop .gallery__menu .gallery__menu--list .gallery__menu--item .gallery__menu--link {
-  color: #000;
-}
-.container.light .main__container .gallery__container .gallery__menu--desktop .gallery__menu .gallery__menu--list .gallery__menu--item:hover {
-  background-color: rgba(158, 0, 250, 0.4392156863);
-}
-.container.light .main__container .gallery__container .gallery__galleries--container .galleries__container .galleries__items--container.enabled .gallery__img--container .gallery__item--overlay {
-  background: rgba(158, 0, 250, 0.4392156863);
-}
-.container.light .main__container .gallery__container .gallery__galleries--container .galleries__container .galleries__items--container.enabled .gallery__img--container.full-size {
-  background-color: rgba(0, 0, 0, 0.8549019608);
-}
-.container.light .footer__container .footer__section--two .contact__info--container > p {
-  color: #000;
-}
-.container.light .footer__container .footer__section--two .rrss__info--container div > a svg > path {
-  stroke: #000;
-}
-.container.light .footer__container .footer__section--two .rrss__info--container div > a:hover svg > path {
-  stroke: rgb(106, 6, 59);
-}
-.container.light .footer__container .footer__section--three ul > li > a {
-  color: #000;
-}
-.container.light .footer__container .footer__section--three ul > li > a:hover {
-  color: rgb(106, 6, 59);
-}
-.container.light .copyright__developer--container p {
-  color: #000;
+.container .main__container .values__container .values__item--container .value__paragraph--container .value__paragraph--text {
+  text-align: center;
+  color: #fff;
 }
 
 @keyframes burger-appear {

@@ -17,7 +17,64 @@ li.nav__parent > a {
         }
     }
 .header__container {
-    z-index: 2;
+    z-index: 2;   
+    position: relative;
+    .toggle__mode--container {
+        position: absolute;
+        height: 20px;
+        width: 40px;
+        top: 20px;
+        right: 40px;
+        background-color: #1a1a1a;
+        border-radius: 25px;
+        border: 1px solid #000;
+        cursor: pointer;
+        padding: 0 5px;
+        .toggle__mode--btn {
+            display: flex;
+            height: 100%;
+            .toggle__mode--sun {
+                position: absolute;
+                left: 5px;
+                top: 0;
+                height: 100%;
+                display: flex;
+                place-items: center;
+                place-content: center;
+                fill: #dfca12;
+            }
+            .toggle__mode--moon {
+                position: absolute;
+                right: 5px;
+                top: 0;
+                height: 100%;
+                display: flex;
+                place-items: center;
+                place-content: center;
+                fill: #2a98e2;
+                // background-color: orange;
+            }
+            &::before {
+                content: '';
+                width: 28px;
+                height: 100%;
+                border-radius: 25px;
+                position: absolute;
+                background-color: #c7c7c7;
+                z-index: 1;
+            } 
+            &.dark {
+                &::before {
+                    right: 0;
+                }                         
+            }
+            &.light {
+                &::before {
+                    right: calc(100% - 28px);
+                }                         
+            }
+        }
+    }
     /* ******************************** */
     /*      INICIO SECCION MENU         */
     /* ******************************** */
@@ -127,62 +184,7 @@ li.nav__parent > a {
         }
         .header__menu--container {
             position: relative;
-            .toggle__mode--container {
-                position: absolute;
-                height: 20px;
-                width: 40px;
-                top: 30px;
-                right: 40px;
-                background-color: #1a1a1a;
-                border-radius: 25px;
-                border: 1px solid #000;
-                cursor: pointer;
-                padding: 0 5px;
-                .toggle__mode--btn {
-                    display: flex;
-                    height: 100%;
-                    .toggle__mode--sun {
-                        position: absolute;
-                        left: 5px;
-                        top: 0;
-                        height: 100%;
-                        display: flex;
-                        place-items: center;
-                        place-content: center;
-                        fill: #dfca12;
-                    }
-                    .toggle__mode--moon {
-                        position: absolute;
-                        right: 5px;
-                        top: 0;
-                        height: 100%;
-                        display: flex;
-                        place-items: center;
-                        place-content: center;
-                        fill: #2a98e2;
-                        // background-color: orange;
-                    }
-                    &::before {
-                        content: '';
-                        width: 28px;
-                        height: 100%;
-                        border-radius: 25px;
-                        position: absolute;
-                        background-color: #c7c7c7;
-                        z-index: 1;
-                    } 
-                    &.dark {
-                        &::before {
-                            right: 0;
-                        }                         
-                    }
-                    &.light {
-                        &::before {
-                            right: calc(100% - 28px);
-                        }                         
-                    }
-                }
-            }
+         
         .top__nav--container {
             // background-color: blue;
             height: 50px;
