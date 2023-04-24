@@ -21,10 +21,23 @@
             place-items: center;
         }
         .footer__section--one {
+            padding: 5px;
+            // background-color: red;
+            .footer__logo--container {
+                display: flex;
+                place-content: center;
+                place-items: center;
+                // background-color: green;
+                height: 100%;
+                width: 100%;
+                .footer__logo--img {
+                    height: 120px;
+
+                    // width: ;
+                }
+            }
             // background-color: orange;
-           img {
-            width: 80%;
-           }
+           
         }
         .footer__section--two {
             // background-color: green;

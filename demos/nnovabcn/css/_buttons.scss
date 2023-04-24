@@ -7,19 +7,26 @@
         color: #fff;
         background-color: #3f0322;
         border: 1px solid #fff;
+        // &:hover {
+        //     background-color: #daa520;
+        //     color: #000;
+        //     border: 1px solid #000;
+        //     box-shadow: 1px 1px 3px #000;
+        // } 
         &:hover {
-            background-color: #daa520;
-            color: #000;
+            background-color: #ffffff;
+            color: #222222;
             border: 1px solid #000;
-            box-shadow: 1px 1px 3px #000;
+            box-shadow: 1px 1px 1px #000;
+            opacity: .9;
         }
     }
     &--section {
+        background-color: #222222;
         color: #fff;
-        background-color: #3f0322;
         &:hover {
-            background-color: #daa520;
-            color: #000;
+            color: #fff;
+            background-color: $color__primary;
             outline: 1px solid #000;
             box-shadow: 1px 1px 3px #000;
         }

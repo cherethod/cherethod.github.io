@@ -1,0 +1,217 @@
+.article__container {
+    // max-height: 300px;
+    margin-top: 50px;
+    background-color: #fff;
+    border-top: 15px;
+    border-bottom: 15px;
+    border-left: 0;
+    border-right: 0;
+    border-color: $color__primary;
+    border-style: solid;
+    display: grid;
+    // grid-template-columns: 1fr;
+    gap: 20px;
+    .section__container {
+        display: grid;
+        grid-template-rows:25% 50% 25%;
+        place-content: center;
+        place-items: center;
+        .section__title {
+            padding: 10px 30px;
+            border-top: 1px;
+            border-bottom: 1px;
+            border-left: 0;
+            border-right: 0;
+            border-color: #000;
+            border-style: solid;
+            color: #000;
+        }
+        .section__paragraph {
+            text-align: center;
+            // width: 70%;
+        }
+        .section__btn {
+            margin: 15px auto 25px auto;
+            width: 75%;                    
+            text-align: center;
+        }
+    }
+}
+.text__article--container {
+    width: 80%;
+    color: #c2c2c2;   
+    // font-weight: 700;         
+    // letter-spacing: .1em;
+}
+.home__services--container {
+    width: 90%;
+    margin: 30px auto 0 auto;
+    // background-color: orange;
+    .service__container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        margin: 50px 0;
+        width: 100%;
+        height: 100%;
+        .service__text--container {
+            // grid-column: 2/5;
+            grid-row: 2/5;
+            background-color: $color__primary;
+            border: 1px solid #fff;
+            z-index: 99;
+            padding: 15px 0;            
+            min-height: 200px;
+            .service__paragraph {
+                width: 90%;
+                margin: auto;
+                text-align: center;
+                color: #fff;
+                line-height: 1.5em;
+            }
+        }
+        .service__picture--container {
+            // grid-column: 4/-1;
+            grid-row: 1/-1;
+            z-index: 9;
+            width: 100%;
+            height: 100%;
+            // background-color: green;            
+            overflow: hidden; // Añade esta línea
+            .service__img {      
+                width: 100%;          
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &.right {
+            .service__text--container {
+                grid-column: 2/5;
+                // grid-row: 2/5;
+                border-radius: 50px 0 0 50px;
+                margin-right: 20%;
+                margin-top: 10%;
+            }
+            .service__picture--container {
+                grid-column: 4/-1;
+                // grid-row: 1/-1;
+                z-index: 9;
+            }
+        }
+        &.left {
+            .service__text--container {
+                grid-column: 2/5;
+                // grid-row: 2/5;
+                margin-left: 20%;
+                margin-right: 0;
+                margin-top: 10%;
+                border-radius: 0 50px 50px 0;
+            }
+            .service__picture--container {
+                grid-column: 1/3;
+                // grid-row: 1/-1;
+                z-index: 9;
+            }
+
+        }
+    }
+}
+.values__container {
+    
+    // background-color: green;
+    width: 90%;
+    margin: 35px auto 50px auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    .values__item--container {
+        border: 1px solid #fff;
+        border-radius: 15px;
+        // padding: 20px 0;
+        // background-color: green;
+        display: flex;
+        flex-direction: column;
+        place-content: center;
+        place-items: center;
+        padding: 30px 25px;
+        .value__picture--container {
+            // background-color: turquoise;
+            // background-color: #fff;
+            margin-bottom: 5px;
+            .value__picture--svg {
+                padding: 0;
+                margin: 0;
+                height: 50px;
+                // width: 50px;
+                fill: $color__primary;
+                // background-color: orange;
+            }
+        }
+        .value__paragraph--container {
+            .value__paragraph--text {
+                text-align: center;
+                color: #fff;
+            }
+        }
+    }
+}
+.faqs__container {
+    width: 90%;
+    // height: 100%;
+    // background-color: orange;
+    margin: 20px auto;
+    padding: 0;
+    .faqs__title {
+        text-align: center;
+        color: #fff;
+    }
+    .faqs__answer--container {
+        border: 1px solid #fff;
+        margin: 10px 0;
+        width: 100%;
+        height: 100%;
+
+        .faqs__question--container {
+            .question__title {
+                max-width: 100%;
+                align-items: center;
+                // background-color: blue;
+                text-align: left;
+                display: grid;
+                grid-template-columns: 95% 5%;
+                padding-left: 15px;
+
+                .question__open--icon {
+                    justify-self: end; 
+                    align-self: center; 
+                    cursor: pointer;               
+                    padding: 15px;
+                    transform: rotate(0);
+                    transition: transform .3s ease-in-out;
+
+                }
+            }
+            .question__paragraph--text {
+                max-height: 0;    
+                padding: 0 15px;            
+                overflow: hidden;
+                color: #fff;
+                display: none;
+                transition: max-height .3s ease-in-out;
+            }
+        }
+        &.open {
+            .faqs__question--container {
+                .question__title {
+                    .question__open--icon {                        
+                        transform: rotate(90deg);
+                    }
+                }
+                .question__paragraph--text {
+                    max-height: 100%;                    
+                    display: block;
+                }
+            }
+        }
+    }
+}

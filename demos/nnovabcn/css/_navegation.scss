@@ -1,3 +1,5 @@
+$color__secundary: #3f3f3f;
+
 li.nav__item {
     cursor: pointer;
     display: flex;
@@ -6,16 +8,6 @@ li.nav__item {
         height: 100%;
     }
 }
-li.nav__parent > a {
-        &::after{
-            content: '>';
-            height: 25px;
-            width: 25px;
-            position: absolute;
-            right: 5px;
-            color: rgb(197, 112, 247);        
-        }
-    }
 .header__container {
     z-index: 2;   
     position: relative;
@@ -145,6 +137,7 @@ li.nav__parent > a {
                 flex-direction: column;
                 place-items: center;
                 place-content: center;
+                position: fixed;
                 nav {
                     display: block;
                     opacity: 1;
@@ -178,47 +171,64 @@ li.nav__parent > a {
             display: flex;
             place-content: center;
             place-items: center;
-            .logo__img {
+            .logo__link {
                 height: 75%;
+                .logo__img {
+                    height: 100%;
+                }
             }
         }
         .header__menu--container {
             position: relative;
          
         .top__nav--container {
-            // background-color: blue;
-            height: 50px;
+            // background-color: blue;            height: 50px;
             display: flex;
             place-items: center;
             place-content: end;
             margin-right: 125px;
-            margin-top: 140px;
+            margin-top: 100px;
             z-index: 99;
             .nav__list {
                 list-style: none;
                 margin: 0;
                 padding: 0;
                 display: flex;
-                place-items: center;
+                align-items: stretch;
                 gap: 20px;
-                .nav__item {            
+                .nav__item {   
+                      
+                    // height: 100%;   
+                    list-style: none;  
                     .nav__link {
-                        display: block;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                         color: #fff;
+                        line-height: normal;
+                        padding: 0;
+                        margin: 0;
                         letter-spacing: 1px;
                         text-decoration: none;
-                        &:hover {
-                            color: $color__primary;
+                        height: 100%;
+                        .link__arrow, .link__arrow-subitem {
+                            position: absolute;
+                            right: 15px;
+                            color: $color__primary;                           
                         }
                     }
                     &--parent {
                         position: relative;
-                        margin: 0;
-                        padding: 0;
+                        // margin: 0;
+                        // padding: 0;
                         list-style: none;  
+                        // height: 100%;
+                        // background-color: #2a98e2;
                         .nav__link {
                             text-decoration: none;
                             color: #fff;
+                            // display: block;
+                            height: 100%;;
                         }              
                         .nav__list--children {
                             background-color: #fff;
@@ -230,15 +240,12 @@ li.nav__parent > a {
                             padding: 0;
                             list-style: none;
                             width: 350px;
-                            // border: 1px solid #800080;
                             display: none;
                             .nav__item--children {
                                 padding: 25px 10px;
-                                // margin-top: 15px;
                                 position: relative;
                                 .nav__link {                    
                                     text-decoration: none;
-                                    // color: #fff;
                                     color: #000;
                                 }
                                 .nav__list--subchildren {
@@ -254,13 +261,14 @@ li.nav__parent > a {
                                     .nav__item--subchildren {     
                                         position: relative; 
                                         margin: 0;
-                                        padding: 15px 10px;                          
-                                        // color: #fff;
+                                        padding: 15px 10px;  
                                         list-style: none;
                                         width: 180px;
-                                        // outline: 1px solid #800080;
                                         a {                                            
                                             color: #000;
+                                            .link__arrow {
+                                                color: $color__primary;
+                                            }
                                         }
                                         .nav__list--subchildren-submenu {
                                             background-color: #fff;
@@ -272,17 +280,15 @@ li.nav__parent > a {
                                             margin: 0;
                                             padding: 0;
                                             list-style: none;
-                                            // outline: 1px solid #800080;
                                             .nav__item--subchildren-subitem{
                                                 padding: 15px 10px;
-                                                // outline: 1px solid #800080;
                                                 width: 145px;
                                                 text-align: center;
                                                 a {
                                                     color: #000;
                                                 }
                                                 &:hover {
-                                                    background-color: $color__primary;       
+                                                    background-color: $color__secundary;       
                                                     a {
                                                         color: #fff;
                                                     }                                     
@@ -291,12 +297,12 @@ li.nav__parent > a {
                                             }
                                         }
                                         &:hover {
-                                            background-color: $color__primary;
+                                            background-color: $color__secundary;
                                             a {
                                                 color: #fff;
-                                                // &::after {
-                                                //     color: #fff;
-                                                // }
+                                                .link__arrow-subitem {
+                                                    color: #fff;
+                                                }
                                             } 
                                             .nav__list--subchildren-submenu {
                                             display: block;
@@ -311,9 +317,13 @@ li.nav__parent > a {
                                 
                                 &:hover {
                                     color: #fff;
-                                    background-color: $color__primary;
+                                    background-color: $color__secundary;
                                     a {
                                         color: #fff;
+                                        .link__arrow {
+                                            color: #fff;
+                                            fill: #fff;
+                                        }
                                     }
                                     ul {
                                         display: block;
@@ -330,6 +340,9 @@ li.nav__parent > a {
                                 opacity: 1;
                             }
                         }
+                    }
+                    &:hover{
+                        background-color: $color__primary;
                     }
                 }      
             }
