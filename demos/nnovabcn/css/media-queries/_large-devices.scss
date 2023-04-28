@@ -1,5 +1,61 @@
 @import '../variables';
 
+
+@media (max-width: 1600px) {
+    .container {
+        .main__container {
+            .home__services--container {
+                .service__container {
+                    &.right {
+                        .service__text--container {
+                            grid-column: 1/5;
+                        }
+                    }
+                    &.left {
+                        .service__text--container {
+                            grid-column: 2/-1;
+                        }
+                    }
+                }
+            }
+        }
+   }
+}
+
+@media (max-width: 851px) { 
+    .values__container {
+        grid-template-columns: 1fr;   
+    } 
+    .home__services--container {
+        .service__container {
+            &.right {
+                .service__picture--container {
+                    grid-column: 3/-1;
+                }
+            }
+            &.left {
+                .service__picture--container {
+                    grid-column: 1/4;
+                }
+            }
+        }
+    }
+    .footer__container {
+        grid-template-columns: 1fr;
+        .footer__section--two {
+            margin-top: 15px;
+        }
+        .footer__section--three {
+            margin: 25px 0;
+            ul {
+                margin: 0;
+                padding: 0;
+                text-align: center;
+            }
+        }
+    }
+}
+
 // Escritorio (entre 769px y 1024px)
 @media (min-width: ($breakpoint-tablet + 1)) and (max-width: $breakpoint-desktop) {   
     .container {        
@@ -70,13 +126,21 @@
         .section__container:nth-child(3){               
             grid-column: 1/3;
         }
-    }        
+    }  
+    .values__container {
+        grid-template-columns: repeat(2,1fr);    
+        .values__item--container {
+            &:nth-child(3) {
+                grid-column: 1/-1;
+            }
+        }
+    }      
 }
 
 @media (min-width: ($breakpoint-tablet + 1)) and (max-width: 850px) {    
     .section__paragraph {
         width: 70%;
-    }
+    }        
 }
 
 

@@ -11,9 +11,11 @@
 
 @import 'light-mode';
 
-@import 'media-queries/small-devices';
-@import 'media-queries/medium-devices';
-@import 'media-queries/large-devices'; 
+// @import 'media-queries/small-devices';
+// @import 'media-queries/medium-devices';
+// @import 'media-queries/large-devices';
+
+@import 'media-queries/mixin';
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 @import url(https://fonts.googleapis.com/css?family=Voces:regular);
@@ -35,53 +37,7 @@ h4, h5, h6 {
 p, a, span {
     font-family: 'Nunito Sans';
 }
-.slogan__container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    .slogan__nombre {    
-        margin-top: 30px;
-        // padding: 35px 0;
-        font-size: 2rem;
-    }
-    .slogan__seotitle {
-        font-size: 1.5rem;
-        text-align: center;
-        color: #fff;
-    }
-    .slogan__text {
-        font-size: 1.5rem;
-        // color: $color__primary;
-        .slogan__quotes {
-            font-size: 1.8rem;
-            font-family: "Secular One";   
-            letter-spacing: -10px;             
-            // height: 150%;
-        }
-        margin-bottom: 50px;
-    }
-    .slogan__btn {
-       color: #fff;
-       text-decoration: none;
-       border: 1px solid #fff;
-       height: 30px;
-       width: 30px;
-        // height: 50px;
-       padding: 10px;
-       border-radius: 50%;
-       .slogan__btn--arrow {
-        fill: #fff;
-        height: 30px;
-        width: 30px;
-       }
-       &:hover {
-        background-color: $color__primary;
-        border: 1px solid #fff;
-        opacity: .8;
-       }
-    }
-}
+
 .container {
     // font-family: $font-7;
     width: 100vw;
@@ -91,11 +47,6 @@ p, a, span {
     grid-template-rows: 1fr 3fr;
     background-color: $color__background-dark;
     user-select: none;
-    .main__container {        
-       
-    
-    
-    }   
 }
 
 

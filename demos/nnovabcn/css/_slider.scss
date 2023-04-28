@@ -37,7 +37,6 @@
             }
             .slider__card--container {
                 display: grid;
-                // flex-direction: column;
                 grid-template-rows: 25% 50% 25%;
                 .slider__texts--title, .slider__texts--paragraph, .slider__texts--btn {
                     display: flex;
@@ -48,8 +47,7 @@
                     place-items: center;
                     padding-left: 80px;
                     width: 80%;
-                    // max-height: 5rem;
-                    font-size: 1.8rem;
+                    font-size: 1.4rem;
                     .slider-title {                        
                         text-align: left;
                     }
@@ -57,7 +55,6 @@
                 .slider__texts--paragraph {
                     place-content: center;
                     place-items: center;
-                    // height: 100%;
                     padding: 0 50px;
                     font-size: 1.2rem;
                     line-height: 2rem;
@@ -68,11 +65,7 @@
                 .slider__texts--btn {
                     place-content: end;
                     place-items: start;
-                    // align-self: center;
-                    // place-content: end;
-                    // place-items: start;
                     padding-right: 25%;
-                    // height: 200px;
                 }
             }
             &.active {
