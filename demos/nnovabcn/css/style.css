@@ -709,6 +709,122 @@ li.nav__item a {
   color: #fff;
 }
 
+.cookie-consent-modal {
+  padding-top: 0;
+  position: fixed;
+  width: auto;
+  height: auto;
+  z-index: 1000;
+  font-family: sans-serif;
+}
+.cookie-consent-modal .modal-content-wrap {
+  position: fixed;
+  bottom: 0;
+  margin: 1rem;
+}
+.cookie-consent-modal .modal-content-wrap.right {
+  right: 0;
+}
+.cookie-consent-modal .modal-content-wrap.left {
+  left: 0;
+}
+.cookie-consent-modal .modal-content-wrap .modal-content {
+  border: 1px solid #ced4da;
+  background-color: #f8f9fa;
+  color: #212529;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+  padding: 0;
+  max-width: 700px;
+  border-radius: 0.2rem;
+}
+.cookie-consent-modal .modal-content-wrap .modal-content .modal-header {
+  padding: 1rem;
+  border-bottom: #ced4da;
+}
+.cookie-consent-modal .modal-content-wrap .modal-content .modal-header h3 {
+  margin: 0;
+  font-size: 130%;
+  font-weight: 500;
+  position: relative;
+  top: 0.2rem;
+}
+.cookie-consent-modal .modal-content-wrap .modal-content .modal-body {
+  padding: 1rem 1rem;
+  line-height: 1.3;
+}
+.cookie-consent-modal .modal-content-wrap .modal-content .modal-body a {
+  color: #0d6efd;
+}
+.cookie-consent-modal .modal-content-wrap .modal-content .modal-body a:hover {
+  color: #0257d5;
+}
+.cookie-consent-modal .modal-content-wrap .modal-content .modal-footer {
+  padding: 1rem 0.5rem 0.5rem 0.5rem;
+}
+.cookie-consent-modal .modal-content-wrap .modal-content .modal-footer .buttons {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+.cookie-consent-modal .modal-content-wrap .modal-content .modal-footer .buttons .btn {
+  padding: 0.375rem 0.75rem;
+  border: 1px solid #212529;
+  border-radius: 0.2rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.cookie-consent-modal .modal-content-wrap .modal-content .modal-footer .buttons .btn.btn-primary {
+  background-color: #0d6efd;
+  color: #fff;
+  border-color: #0d6efd;
+}
+.cookie-consent-modal .modal-content-wrap .modal-content .modal-footer .buttons .btn.btn-primary:hover {
+  background-color: #0257d5;
+  border-color: #0257d5;
+}
+.cookie-consent-modal .modal-content-wrap .modal-content .modal-footer .buttons .btn.btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+  border-color: #6c757d;
+}
+.cookie-consent-modal .modal-content-wrap .modal-content .modal-footer .buttons .btn.btn-secondary:hover {
+  background-color: #545b62;
+  border-color: #545b62;
+}
+@media screen and (max-width: 620px) {
+  .cookie-consent-modal .btn {
+    width: 100%;
+  }
+}
+.cookie-consent-modal.block-access {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 20vh;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+@media screen and (max-width: 620px) {
+  .cookie-consent-modal.block-access {
+    padding-top: 0;
+  }
+}
+.cookie-consent-modal.block-access .modal-content-wrap {
+  position: relative;
+  margin: 2.5% auto;
+  bottom: auto;
+  width: 95%;
+}
+.cookie-consent-modal.block-access .modal-content-wrap .modal-content {
+  border: none;
+  margin: 0 auto;
+}
+
 .slogan__container {
   display: flex;
   flex-direction: column;
@@ -950,6 +1066,58 @@ li.nav__item a {
 }
 .faqs__container .faqs__answer--container.open .faqs__question--container .question__paragraph--text {
   max-height: 500px;
+}
+
+.text__article--container, .text__content--container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 25px 0 50px 0;
+}
+.text__article--container p, .text__article--container ul, .text__article--container li, .text__content--container p, .text__content--container ul, .text__content--container li {
+  color: #fff;
+}
+.text__article--container h3, .text__article--container h2, .text__content--container h3, .text__content--container h2 {
+  color: #c9c9c9;
+  text-align: left;
+}
+
+.error404 {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  place-items: center;
+  place-content: center;
+  min-height: calc(100vh - 425px);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.error404__title {
+  font-size: 8rem;
+  font-weight: bold;
+  color: #6a063b;
+  margin: 0;
+  padding: 0;
+}
+.error404__description {
+  font-size: 1.25rem;
+  color: #fff;
+  margin: 0;
+  padding: 25px 0;
+}
+.error404__link {
+  display: inline-block;
+  background-color: #008cba;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.error404__link:hover {
+  background-color: #00688b;
 }
 
 .link__btn {
