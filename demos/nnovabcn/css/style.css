@@ -1074,11 +1074,39 @@ li.nav__item a {
   padding: 25px 0 50px 0;
 }
 .text__article--container p, .text__article--container ul, .text__article--container li, .text__content--container p, .text__content--container ul, .text__content--container li {
-  color: #fff;
+  color: #dfdede;
 }
-.text__article--container h3, .text__article--container h2, .text__content--container h3, .text__content--container h2 {
+.text__article--container p span, .text__article--container ul span, .text__article--container li span, .text__content--container p span, .text__content--container ul span, .text__content--container li span {
+  color: #a579ab;
+  font-weight: 600;
+}
+.text__article--container p a, .text__article--container ul a, .text__article--container li a, .text__content--container p a, .text__content--container ul a, .text__content--container li a {
+  color: #7d3c85;
+  font-weight: 600;
+}
+.text__article--container p a:hover, .text__article--container ul a:hover, .text__article--container li a:hover, .text__content--container p a:hover, .text__content--container ul a:hover, .text__content--container li a:hover {
+  color: #a579ab;
+}
+.text__article--container h3, .text__article--container h2, .text__article--container h1, .text__content--container h3, .text__content--container h2, .text__content--container h1 {
   color: #c9c9c9;
   text-align: left;
+}
+.text__article--container .text__columned--container, .text__content--container .text__columned--container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+  place-content: center;
+  place-items: center;
+}
+.text__article--container .text__columned--container .column--left-img, .text__article--container .text__columned--container .column--right-img, .text__content--container .text__columned--container .column--left-img, .text__content--container .text__columned--container .column--right-img {
+  height: 100%;
+  width: 500px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.text__article--container .text__columned--container .column--left-img img, .text__article--container .text__columned--container .column--right-img img, .text__content--container .text__columned--container .column--left-img img, .text__content--container .text__columned--container .column--right-img img {
+  height: 100%;
+  width: 100%;
 }
 
 .error404 {

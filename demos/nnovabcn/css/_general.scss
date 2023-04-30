@@ -3,11 +3,38 @@
     margin: 0 auto;
     padding: 25px 0 50px 0;
     p, ul, li {
-        color: #fff;
+        color: #dfdede;
+        span {
+          color: #a579ab;
+          font-weight: 600;
+        }
+        a {
+          color: #7d3c85;
+          font-weight: 600;
+          &:hover {            
+            color: #a579ab;
+          }
+        }
     }
-    h3, h2 {
+    h3, h2, h1 {
         color: #c9c9c9;
         text-align: left;
+    }
+    .text__columned--container {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 20px;
+      place-content: center;
+      place-items: center;
+      .column--left-img,  .column--right-img {
+        height: 100%;
+        width: 500px;
+        object-fit: contain;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
     }
 }
 
