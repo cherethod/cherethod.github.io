@@ -236,10 +236,13 @@ li.nav__item a {
   display: none;
 }
 .header__container .mainmenu__container .header__menu--container .top__nav--container .nav__list .nav__item--parent .nav__list--children .nav__item--children {
-  padding: 25px 10px;
+  padding: 0;
   position: relative;
 }
 .header__container .mainmenu__container .header__menu--container .top__nav--container .nav__list .nav__item--parent .nav__list--children .nav__item--children .nav__link {
+  width: 100%;
+  height: 100%;
+  padding: 25px 10px;
   text-decoration: none;
   color: #000;
 }
@@ -257,7 +260,7 @@ li.nav__item a {
 .header__container .mainmenu__container .header__menu--container .top__nav--container .nav__list .nav__item--parent .nav__list--children .nav__item--children .nav__list--subchildren .nav__item--subchildren {
   position: relative;
   margin: 0;
-  padding: 15px 10px;
+  padding: 0;
   list-style: none;
   width: 180px;
 }
@@ -584,7 +587,7 @@ li.nav__item a {
   top: 0;
   left: 0;
   transform: scale(0);
-  transition: all 0.2s 0.1s ease-in-out;
+  transition: all 0.2s ease-in-out;
   color: #fff;
   border-radius: 50%;
   display: flex;
@@ -1069,12 +1072,13 @@ li.nav__item a {
 }
 
 .text__article--container, .text__content--container {
-  width: 90%;
+  width: 60%;
   margin: 0 auto;
   padding: 25px 0 50px 0;
 }
 .text__article--container p, .text__article--container ul, .text__article--container li, .text__content--container p, .text__content--container ul, .text__content--container li {
   color: #dfdede;
+  font-size: 18px;
 }
 .text__article--container p span, .text__article--container ul span, .text__article--container li span, .text__content--container p span, .text__content--container ul span, .text__content--container li span {
   color: #a579ab;
@@ -1087,6 +1091,9 @@ li.nav__item a {
 .text__article--container p a:hover, .text__article--container ul a:hover, .text__article--container li a:hover, .text__content--container p a:hover, .text__content--container ul a:hover, .text__content--container li a:hover {
   color: #a579ab;
 }
+.text__article--container p, .text__content--container p {
+  margin-bottom: 50px;
+}
 .text__article--container h3, .text__article--container h2, .text__article--container h1, .text__content--container h3, .text__content--container h2, .text__content--container h1 {
   color: #c9c9c9;
   text-align: left;
@@ -1098,6 +1105,13 @@ li.nav__item a {
   place-content: center;
   place-items: center;
 }
+.text__article--container .text__columned--container .column--left ul li, .text__article--container .text__columned--container .column--right ul li, .text__content--container .text__columned--container .column--left ul li, .text__content--container .text__columned--container .column--right ul li {
+  padding: 10px 0;
+}
+.text__article--container .text__columned--container .column--left ul li a, .text__article--container .text__columned--container .column--right ul li a, .text__content--container .text__columned--container .column--left ul li a, .text__content--container .text__columned--container .column--right ul li a {
+  text-decoration: none;
+  font-size: 21px;
+}
 .text__article--container .text__columned--container .column--left-img, .text__article--container .text__columned--container .column--right-img, .text__content--container .text__columned--container .column--left-img, .text__content--container .text__columned--container .column--right-img {
   height: 100%;
   width: 500px;
@@ -1107,6 +1121,76 @@ li.nav__item a {
 .text__article--container .text__columned--container .column--left-img img, .text__article--container .text__columned--container .column--right-img img, .text__content--container .text__columned--container .column--left-img img, .text__content--container .text__columned--container .column--right-img img {
   height: 100%;
   width: 100%;
+}
+.text__article--container .mobile__index, .text__content--container .mobile__index {
+  display: none;
+}
+.text__article--container .mobile__index ul > li, .text__content--container .mobile__index ul > li {
+  padding: 10px 0;
+}
+.text__article--container .mobile__index ul > li a, .text__content--container .mobile__index ul > li a {
+  text-decoration: none;
+}
+.text__article--container .columned__content, .text__content--container .columned__content {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  gap: 20px;
+}
+.text__article--container .columned__content .index__column, .text__content--container .columned__content .index__column {
+  height: auto;
+}
+.text__article--container .columned__content .index__column img, .text__content--container .columned__content .index__column img {
+  max-width: 100%;
+}
+.text__article--container .columned__content .index__column ul, .text__content--container .columned__content .index__column ul {
+  position: sticky;
+  top: 50px;
+  left: 0;
+}
+.text__article--container .columned__content .index__column ul li, .text__content--container .columned__content .index__column ul li {
+  padding: 15px 0;
+}
+.text__article--container .columned__content .index__column ul li a, .text__content--container .columned__content .index__column ul li a {
+  text-decoration: none;
+}
+.text__article--container .columned__content .content__column, .text__content--container .columned__content .content__column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  place-items: center;
+}
+.text__article--container .columned__content .content__column img, .text__content--container .columned__content .content__column img {
+  max-width: 90%;
+}
+.text__article--container .columned__content .content__column h2, .text__article--container .columned__content .content__column h3, .text__content--container .columned__content .content__column h2, .text__content--container .columned__content .content__column h3 {
+  place-self: start;
+}
+
+.to__top--btn {
+  display: none;
+  position: fixed;
+  height: 20px;
+  width: 20px;
+  bottom: 40px;
+  right: 40px;
+  z-index: 999;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  place-content: center;
+  place-items: center;
+  background-color: #525151;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+.to__top--btn svg {
+  padding: 5px 0 0 0;
+  margin: 0;
+}
+.to__top--btn svg path {
+  stroke: #fff;
 }
 
 .error404 {
@@ -1312,6 +1396,7 @@ h3 {
   gap: 20px;
   width: 90%;
   margin: auto;
+  padding: 25px 0 100px 0;
 }
 .services__cards--container .card__item--container {
   margin-top: 20px;

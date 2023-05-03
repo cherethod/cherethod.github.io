@@ -36,27 +36,7 @@
 </head>
 <body>
     <div class="container">
-     <header class="header__container">
-        <div class="burgermenu__container">
-            <div class="burgermenu__icon"><img src="./img/burgerMenu-icon-wine.svg" alt="icono menú hamburguesa" class="burger__icon--svg"></div>
-            <div class="burgermenu__list--container">
-                <nav class="burger__nav--container">
-                    <ul>
-                        <li><a href="./index.html">Inicio</a></li>
-                        <li><a href="#">Servicios</a></li>
-                        <li><a href="#">Quienes somos</a></li>
-                        <li><a href="./galeria.html">Portfolio</a></li>
-                        <li><a href="#">Contacto</a></li>
-                    </ul>
-                </nav>
-            </div>            
-            <div class="burgermenu__logo"><img src="./img/Logo_Nnova_white_very-small.png" alt="Nnova Barcelona Logo Demo CAMBIAR ESTO AL EDITAR" class="burger__logo--img"></div>
-        </div>
-        <div class="mainmenu__container">
-            <figure class="logo__container">
-                <img src="./img/Logo_Nnova_white_very-small.png" alt="Nnova Barcelona Logo Demo CAMBIAR ESTO AL EDITAR" class="logo__img">
-            </figure>
-        <div class="header__menu--container">           
+        <header class="header__container" id="header-container">           
             <div class="toggle__mode--container">
                 <div class="toggle__mode--btn">
                     <svg class="toggle__mode--sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" title="Light mode" alt="Light mode">
@@ -67,51 +47,70 @@
                     </svg>
                 </div>
             </div>
-            <nav class="top__nav--container">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="./index.html" class="nav__link">Inicio</a></li>
-                    <li class="nav__item nav__item--parent"><a href="" class="nav__link">Servicios</a>
-                    <ul class="nav__list--children">
-                        <li class="nav__item nav__item--children nav__parent"><a href="#" class="nav__link">Instalaciones de sistemas Durlock</a>
-                            <ul class="nav__list--subchildren">
-                                <li class="nav__item nav__item--subchildren"><a href="#" class="nav__link">Tabiques</a></li>
-                                <li class="nav__item nav__item--subchildren nav__parent"><a href="#" class="nav__link">Falsos techos</a>
-                                    <ul class="nav__list--subchildren-submenu">
-                                        <li class="nav__item nav__item--subchildren-subitem"><a href="#" class="nav__link">Techos registrables</a></li>
-                                        <li class="nav__item nav__item--subchildren-subitem"><a href="#" class="nav__link">Techos decorativos</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav__item nav__item--children nav__parent"><a href="#" class="nav__link">Aislamientos</a>
-                            <ul class="nav__list--subchildren">
-                                <li class="nav__item nav__item--subchildren"><a href="#" class="nav__link">Acústico</a></li>
-                                <li class="nav__item nav__item--subchildren"><a href="#" class="nav__link">Térmico</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav__item nav__item--children"><a href="#" class="nav__link">Protección pasiva contra el fuego</a></li>
-                        <li class="nav__item nav__item--children nav__parent"><a href="#" class="nav__link">Iluminación y decoración</a>
-                            <ul class="nav__list--subchildren">
-                                <li class="nav__item nav__item--subchildren"><a href="#" class="nav__link">Iluminación indirecta</a></li>
-                                <li class="nav__item nav__item--subchildren"><a href="#" class="nav__link">Muebles decorativos para chimeneas</a></li>
-                            </ul>
-                        </li>
-                        <!-- <li class="nav__item nav__item--children nav__parent"><a href="#" class="nav__link">Otros servicios</a>
-                            <ul class="nav__list--subchildren">
-                                <li class="nav__item nav__item--subchildren"><a href="#" class="nav__link">Pintura</a></li>
-                                <li class="nav__item nav__item--subchildren"><a href="#" class="nav__link">Parquet</a></li>
-                                <li class="nav__item nav__item--subchildren"><a href="#" class="nav__link">Suelos y alicatados</a></li>
-                            </ul>
-                        </li> -->
-                    </ul></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Quienes somos</a></li>                
-                    <li class="nav__item"><a href="./galeria.html" class="nav__link">Portfolio</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Contacto</a></li>
-                </ul>
-            </nav>
-    </div>
-        </div> 
-     </header>
+            <div class="burgermenu__container">
+                <div class="burgermenu__icon"><img src="./img/burgerMenu-icon-wine.svg" alt="icono menú hamburguesa" class="burger__icon--svg"></div>
+                <div class="burgermenu__list--container">
+                    <nav class="burger__nav--container">
+                        <ul>
+                            <li><a href="./index.html">Inicio</a></li>
+                            <li><a href="./servicios.html">Servicios</a></li>
+                            <li><a href="#">Quienes somos</a></li>
+                            <li><a href="./galeria.html">Portfolio</a></li>
+                            <li><a href="#">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>            
+                <div class="burgermenu__logo"><img src="./img/Logo_Nnova_white_very-small.png" alt="Nnova Barcelona Logo Demo CAMBIAR ESTO AL EDITAR" class="burger__logo--img"></div>
+            </div>
+            <div class="mainmenu__container">
+                <div class="logo__container">
+                    <a href="./index.html" class="logo__link"><img src="./img/Logo_Nnova_white_very-small.png" alt="Nnova Barcelona Logo Demo CAMBIAR ESTO AL EDITAR" class="logo__img"></a>
+                </div>
+            <div class="header__menu--container">
+                <nav class="top__nav--container">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="./index.html" class="nav__link">Inicio</a></li>
+                        <li class="nav__item nav__item--parent"><a href="./servicios.html" class="nav__link">Servicios</a>
+                        <ul class="nav__list--children">
+                            <li class="nav__item nav__item--children nav__parent"><a href="#" class="nav__link"><span class="link__text">Tabiques y Cielorrasos</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="link__arrow" viewBox="0 0 16 16">
+                                <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                            </svg></a>
+                                <ul class="nav__list--subchildren">
+                                    <li class="nav__item nav__item--subchildren"><a href="./tabiques-durlock.html" class="nav__link">Tabiques</a></li>
+                                    <li class="nav__item nav__item--subchildren nav__parent"><a href="./cielorraso-durlock.html" class="nav__link"><span class="link__text">Cielorrasos</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="link__arrow-subitem" viewBox="0 0 16 16">
+                                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                    </svg></a>
+                                        <ul class="nav__list--subchildren-submenu">
+                                            <li class="nav__item nav__item--subchildren-subitem"><a href="./cielorraso-durlock.html" class="nav__link">Durlock simple</a></li>
+                                            <li class="nav__item nav__item--subchildren-subitem"><a href="./cielorraso-registrable-durlock.html" class="nav__link">Registrables</a></li>
+                                            <li class="nav__item nav__item--subchildren-subitem"><a href="./cielorraso-decorativo-durlock.html" class="nav__link">Decorativos</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav__item nav__item--children nav__parent"><a href="./aislamientos-acusticos-termicos.html" class="nav__link"><span class="link__text">Aislamientos</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="link__arrow" viewBox="0 0 16 16">
+                                <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                            </svg></a>
+                                <ul class="nav__list--subchildren">
+                                    <li class="nav__item nav__item--subchildren"><a href="./aislamiento-acustico.html" class="nav__link">Acústico</a></li>
+                                    <li class="nav__item nav__item--subchildren"><a href="./aislamiento-termico.html" class="nav__link">Térmico</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav__item nav__item--children"><a href="./proteccion-pasiva-contra-incendios.html" class="nav__link">Protección pasiva contra el fuego</a></li>
+                            <li class="nav__item nav__item--children"><a href="./iluminacion-indirecta.html" class="nav__link">Iluminación indirecta</a></li>
+                           
+                        </ul></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Quienes somos</a></li>                
+                        <li class="nav__item"><a href="./galeria.html" class="nav__link">Portfolio</a></li>
+                        <li class="nav__item"><a href="./contacto.html" class="nav__link">Contacto</a></li>
+                    </ul>
+                </nav>
+        </div>
+            </div> 
+        </header>
      <main class="main__container">      
       <h1 class="centered__title">Nuestros servicios</h1>
       <div class="services__cards--container">
@@ -231,38 +230,38 @@
 
 
      </main>
-      <footer class="footer__container">
-        <div class="footer__section--one">         
-            <div class="footer__logo--container"><img src="./img/Logo_Nnova_white_small.png" alt="" class="footer__logo--img"></div>
-        </div>
-        <div class="footer__section--two">
-            <div class="contact__info--container">
-                <p class="contact__text--address">C\ Pontenpompeta nº 25, 69255 Machupilandia (Bajo la palmera)</p>
-                <p class="contact__text--phone">+69 (627) 708-4864</p>
-                <p class="contact__text--email">nibh.sit.amet@icloud.net</p>              
-            </div>
-            <div class="rrss__info--container">
-                <div class="facebook__icon--container"><a href="#" class="facebook__icon--link">
-                    <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 2h-3a5 5 0 00-5 5v3H6v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3V2z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                </a></div>
-                <div class="instagram__icon--container"><a href="#" class="instagram__icon--link">
-                    <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 16a4 4 0 100-8 4 4 0 000 8z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 16V8a5 5 0 015-5h8a5 5 0 015 5v8a5 5 0 01-5 5H8a5 5 0 01-5-5z" stroke-width="1.5"></path><path d="M17.5 6.51l.01-.011" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                </a></div>
-                <div class="linkedin__icon--container"><a href="#" class="linkedin__icon--link">
-                    <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 8v8a5 5 0 01-5 5H8a5 5 0 01-5-5V8a5 5 0 015-5h8a5 5 0 015 5zM7 17v-7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 17v-3.25M11 10v3.75m0 0c0-3.75 6-3.75 6 0V17M7 7.01l.01-.011" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                </a></div>
-            </div>            
-        </div>
-        <div class="footer__section--three">
-            <ul>
-                <li><a href="./privacidad.html">Privacidad</a></li>
-                <li><a href="./aviso-legal.html">Aviso legal</a></li>
-                <li><a href="./privacidad2.html">Privacidad 2</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </div>
-        <div class="copyright__developer--container"><p class="copyright__text">Nnova Designs 2023 © - Todos los derechos reservados.</p></div>
-      </footer>  
+     <footer class="footer__container">
+     <div class="footer__section--one">
+         <a href="./index.html" class="footer__logo--container"><img src="./img/Logo_Nnova_white_very-small.png" alt="" class="footer__logo--img"></a>
+     </div>
+     <div class="footer__section--two">
+         <div class="contact__info--container">
+             <p class="contact__text--address">Mariscal Estigarribia 1120 - Panchito López 25<br>Aregua (central)</p>
+             <p class="contact__text--phone">+595 994 13 44 93</p>
+             <p class="contact__text--email"><a href="mailto:nnovadesigns@gmail.com" class="mail--link">nnovadesigns@gmail.com</a></p>              
+         </div>
+         <div class="rrss__info--container">
+             <div class="facebook__icon--container"><a href="#" class="facebook__icon--link">
+                 <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 2h-3a5 5 0 00-5 5v3H6v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3V2z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+             </a></div>
+             <div class="instagram__icon--container"><a href="#" class="instagram__icon--link">
+                 <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 16a4 4 0 100-8 4 4 0 000 8z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 16V8a5 5 0 015-5h8a5 5 0 015 5v8a5 5 0 01-5 5H8a5 5 0 01-5-5z" stroke-width="1.5"></path><path d="M17.5 6.51l.01-.011" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+             </a></div>
+             <div class="linkedin__icon--container"><a href="#" class="linkedin__icon--link">
+                 <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 8v8a5 5 0 01-5 5H8a5 5 0 01-5-5V8a5 5 0 015-5h8a5 5 0 015 5zM7 17v-7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 17v-3.25M11 10v3.75m0 0c0-3.75 6-3.75 6 0V17M7 7.01l.01-.011" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+             </a></div>
+         </div>            
+     </div>
+     <div class="footer__section--three">
+         <ul>
+             <li><a href="./privacidad.html">Privacidad</a></li>
+             <li><a href="./aviso-legal.html">Aviso legal</a></li>
+             <li><a href="./cookies.html">Cookies</a></li>
+             <li><a href="./contacto.html">Contacto</a></li>
+         </ul>
+     </div>
+     <div class="copyright__developer--container"><p class="copyright__text">Nnova Designs 2023 © - Todos los derechos reservados.</p></div>
+     </footer> 
     </div>
     <script src="./js/burgermenu.js"></script>
     <script src="./js/functions.js"></script>

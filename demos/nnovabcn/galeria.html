@@ -36,7 +36,17 @@
 </head>
 <body>
     <div class="container">
-        <header class="header__container">
+        <header class="header__container" id="header-container">           
+            <div class="toggle__mode--container">
+                <div class="toggle__mode--btn">
+                    <svg class="toggle__mode--sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" title="Light mode" alt="Light mode">
+                        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+                    </svg>
+                    <svg class="toggle__mode--moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" title="Dark mode" alt="Dark mode">
+                        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+                    </svg>
+                </div>
+            </div>
             <div class="burgermenu__container">
                 <div class="burgermenu__icon"><img src="./img/burgerMenu-icon-wine.svg" alt="icono menú hamburguesa" class="burger__icon--svg"></div>
                 <div class="burgermenu__list--container">
@@ -53,65 +63,54 @@
                 <div class="burgermenu__logo"><img src="./img/Logo_Nnova_white_very-small.png" alt="Nnova Barcelona Logo Demo CAMBIAR ESTO AL EDITAR" class="burger__logo--img"></div>
             </div>
             <div class="mainmenu__container">
-                <figure class="logo__container">
-                    <img src="./img/Logo_Nnova_white_very-small.png" alt="Nnova Barcelona Logo Demo CAMBIAR ESTO AL EDITAR" class="logo__img">
-                </figure>
-            <div class="header__menu--container">           
-                <div class="toggle__mode--container">
-                    <div class="toggle__mode--btn">
-                        <svg class="toggle__mode--sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" title="Light mode" alt="Light mode">
-                            <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
-                        </svg>
-                        <svg class="toggle__mode--moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" title="Dark mode" alt="Dark mode">
-                            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
-                        </svg>
-                    </div>
+                <div class="logo__container">
+                    <a href="./index.html" class="logo__link"><img src="./img/Logo_Nnova_white_very-small.png" alt="Nnova Barcelona Logo Demo CAMBIAR ESTO AL EDITAR" class="logo__img"></a>
                 </div>
+            <div class="header__menu--container">
                 <nav class="top__nav--container">
                     <ul class="nav__list">
                         <li class="nav__item"><a href="./index.html" class="nav__link">Inicio</a></li>
                         <li class="nav__item nav__item--parent"><a href="./servicios.html" class="nav__link">Servicios</a>
                         <ul class="nav__list--children">
-                            <li class="nav__item nav__item--children nav__parent"><a href="#" class="nav__link">Instalaciones de sistemas Durlock</a>
+                            <li class="nav__item nav__item--children nav__parent"><a href="#" class="nav__link"><span class="link__text">Tabiques y Cielorrasos</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="link__arrow" viewBox="0 0 16 16">
+                                <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                            </svg></a>
                                 <ul class="nav__list--subchildren">
-                                    <li class="nav__item nav__item--subchildren"><a href="#" class="nav__link">Tabiques</a></li>
-                                    <li class="nav__item nav__item--subchildren nav__parent"><a href="#" class="nav__link">Falsos techos</a>
+                                    <li class="nav__item nav__item--subchildren"><a href="./tabiques-durlock.html" class="nav__link">Tabiques</a></li>
+                                    <li class="nav__item nav__item--subchildren nav__parent"><a href="./cielorraso-durlock.html" class="nav__link"><span class="link__text">Cielorrasos</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="link__arrow-subitem" viewBox="0 0 16 16">
+                                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                    </svg></a>
                                         <ul class="nav__list--subchildren-submenu">
-                                            <li class="nav__item nav__item--subchildren-subitem"><a href="#" class="nav__link">Techos registrables</a></li>
-                                            <li class="nav__item nav__item--subchildren-subitem"><a href="#" class="nav__link">Techos decorativos</a></li>
+                                            <li class="nav__item nav__item--subchildren-subitem"><a href="./cielorraso-durlock.html" class="nav__link">Durlock simple</a></li>
+                                            <li class="nav__item nav__item--subchildren-subitem"><a href="./cielorraso-registrable-durlock.html" class="nav__link">Registrables</a></li>
+                                            <li class="nav__item nav__item--subchildren-subitem"><a href="./cielorraso-decorativo-durlock.html" class="nav__link">Decorativos</a></li>
                                         </ul>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="nav__item nav__item--children nav__parent"><a href="#" class="nav__link">Aislamientos</a>
+                            <li class="nav__item nav__item--children nav__parent"><a href="./aislamientos-acusticos-termicos.html" class="nav__link"><span class="link__text">Aislamientos</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="link__arrow" viewBox="0 0 16 16">
+                                <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                            </svg></a>
                                 <ul class="nav__list--subchildren">
-                                    <li class="nav__item nav__item--subchildren"><a href="#" class="nav__link">Acústico</a></li>
-                                    <li class="nav__item nav__item--subchildren"><a href="#" class="nav__link">Térmico</a></li>
+                                    <li class="nav__item nav__item--subchildren"><a href="./aislamiento-acustico.html" class="nav__link">Acústico</a></li>
+                                    <li class="nav__item nav__item--subchildren"><a href="./aislamiento-termico.html" class="nav__link">Térmico</a></li>
                                 </ul>
                             </li>
-                            <li class="nav__item nav__item--children"><a href="#" class="nav__link">Protección pasiva contra el fuego</a></li>
-                            <li class="nav__item nav__item--children nav__parent"><a href="#" class="nav__link">Iluminación y decoración</a>
-                                <ul class="nav__list--subchildren">
-                                    <li class="nav__item nav__item--subchildren"><a href="#" class="nav__link">Iluminación indirecta</a></li>
-                                    <li class="nav__item nav__item--subchildren"><a href="#" class="nav__link">Muebles decorativos para chimeneas</a></li>
-                                </ul>
-                            </li>
-                            <!-- <li class="nav__item nav__item--children nav__parent"><a href="#" class="nav__link">Otros servicios</a>
-                                <ul class="nav__list--subchildren">
-                                    <li class="nav__item nav__item--subchildren"><a href="#" class="nav__link">Pintura</a></li>
-                                    <li class="nav__item nav__item--subchildren"><a href="#" class="nav__link">Parquet</a></li>
-                                    <li class="nav__item nav__item--subchildren"><a href="#" class="nav__link">Suelos y alicatados</a></li>
-                                </ul>
-                            </li> -->
+                            <li class="nav__item nav__item--children"><a href="./proteccion-pasiva-contra-incendios.html" class="nav__link">Protección pasiva contra el fuego</a></li>
+                            <li class="nav__item nav__item--children"><a href="./iluminacion-indirecta.html" class="nav__link">Iluminación indirecta</a></li>
+                           
                         </ul></li>
                         <li class="nav__item"><a href="#" class="nav__link">Quienes somos</a></li>                
                         <li class="nav__item"><a href="./galeria.html" class="nav__link">Portfolio</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Contacto</a></li>
+                        <li class="nav__item"><a href="./contacto.html" class="nav__link">Contacto</a></li>
                     </ul>
                 </nav>
         </div>
             </div> 
-         </header>
+        </header>
      <main class="main__container">        
         <div class="gallery__container">
             <div class="gallery__menu--mobile">
@@ -140,66 +139,42 @@
                 <div class="galleries__container">
                     <div class="galleries__items--container general__gallery--container enabled" titulo="Galería general">
                     </div>
-                    <div class="galleries__items--container" titulo="Restaurante Victoria (Reus)">
-                        <img class="gallery__item--img" src="./img/portfolio/restaurante-victoria-reus/restaurante-victoria-reus_1.webp" alt="restaurante-victoria-reus_1" title="Trabajos pladur" loading="lazy">
-                        <img class="gallery__item--img" src="./img/portfolio/restaurante-victoria-reus/restaurante-victoria-reus_2.webp" alt="restaurante-victoria-reus_2" loading="lazy">
-                        <img class="gallery__item--img" src="./img/portfolio/restaurante-victoria-reus/restaurante-victoria-reus_3.webp" alt="restaurante-victoria-reus_3" loading="lazy">
-                    </div>
-                    <div class="galleries__items--container" titulo="Foseados y luz indirecta">
-                         <img src="./img/portfolio/foseados-luz-indirecta/foseados-luz-indirecta_1.webp" alt="foseados-luz-indirecta_1" class="gallery__item--img featured" loading="lazy">   
-                         <img src="./img/portfolio/foseados-luz-indirecta/foseados-luz-indirecta_3.webp" alt="foseados-luz-indirecta_3" class="gallery__item--img" loading="lazy">
-                         <img src="./img/portfolio/foseados-luz-indirecta/foseados-luz-indirecta_4.webp" alt="foseados-luz-indirecta_4" class="gallery__item--img featured" loading="lazy">
-                    </div>
-                    <div class="galleries__items--container" titulo="forrado-decoracion-chimenas-estufas">
-                        <img src="./img/portfolio/forrado-decoracion-chimenas-estufas/forrado-decoracion-chimenas-estufas_1.webp" alt="forrado-decoracion-chimenas-estufas_1" class="gallery__item--img" loading="lazy">
-                        <img src="./img/portfolio/forrado-decoracion-chimenas-estufas/forrado-decoracion-chimenas-estufas_2.webp" alt="forrado-decoracion-chimenas-estufas_2" class="gallery__item--img" loading="lazy">
-                        <img src="./img/portfolio/forrado-decoracion-chimenas-estufas/forrado-decoracion-chimenas-estufas_3.webp" alt="forrado-decoracion-chimenas-estufas_3" class="gallery__item--img" loading="lazy">
-                        <img src="./img/portfolio/forrado-decoracion-chimenas-estufas/forrado-decoracion-chimenas-estufas_4.webp" alt="forrado-decoracion-chimenas-estufas_4" class="gallery__item--img featured" loading="lazy">
-                        <img src="./img/portfolio/forrado-decoracion-chimenas-estufas/forrado-decoracion-chimenas-estufas_5.webp" alt="forrado-decoracion-chimenas-estufas_5" class="gallery__item--img" loading="lazy">
-                    </div>
-                    <div class="galleries__items--container" titulo="gasolinera-shopping-sabadell">
-                        <img src="./img/portfolio/gasolinera-shopping-sabadell/gasolinera-shopping-sabadell_1.webp" alt="gasolinera-shopping-sabadell_1" class="gallery__item--img featured" loading="lazy">
-                        <img src="./img/portfolio/gasolinera-shopping-sabadell/gasolinera-shopping-sabadell_2.webp" alt="gasolinera-shopping-sabadell_2" class="gallery__item--img featured" loading="lazy">
-                        <img src="./img/portfolio/gasolinera-shopping-sabadell/gasolinera-shopping-sabadell_3.webp" alt="gasolinera-shopping-sabadell_3" class="gallery__item--img" loading="lazy">
-                        <img src="./img/portfolio/gasolinera-shopping-sabadell/gasolinera-shopping-sabadell_4.webp" alt="gasolinera-shopping-sabadell_4" class="gallery__item--img" loading="lazy">
-                    </div>
-                    <div class="galleries__items--container" titulo="hogar-ancianos-montblanc">
-                        <img src="./img/portfolio/hogar-ancianos-montblanc/hogar-ancianos-montblanc_1.webp" alt="hogar-ancianos-montblanc_1" class="gallery__item--img" loading="lazy">
-                        <img src="./img/portfolio/hogar-ancianos-montblanc/hogar-ancianos-montblanc_2.webp" alt="hogar-ancianos-montblanc_2" class="gallery__item--img" loading="lazy">
-                        <img src="./img/portfolio/hogar-ancianos-montblanc/hogar-ancianos-montblanc_3.webp" alt="hogar-ancianos-montblanc_3" class="gallery__item--img" loading="lazy">  
-                        <img src="./img/portfolio/hogar-ancianos-montblanc/hogar-ancianos-montblanc_6.webp" alt="hogar-ancianos-montblanc_6" class="gallery__item--img" loading="lazy">
-                        <img src="./img/portfolio/hogar-ancianos-montblanc/hogar-ancianos-montblanc_7.webp" alt="hogar-ancianos-montblanc_7" class="gallery__item--img featured" loading="lazy">
-                    </div>
-                    <div class="galleries__items--container" titulo="pub-opera-cambrils">
-                        <img src="./img/portfolio/pub-opera-cambrils/pub-opera-cambrils_1.webp" alt="pub-opera-cambrils_1" class="gallery__item--img" loading="lazy">
+                    <div class="galleries__items--container" titulo="Pub Opera (Cambrils)">
+                        <img src="./img/portfolio/pub-opera-cambrils/pub-opera-cambrils_1.webp" alt="pub-opera-cambrils_1" class="gallery__item--img featured" loading="lazy">
                         <img src="./img/portfolio/pub-opera-cambrils/pub-opera-cambrils_2.webp" alt="pub-opera-cambrils_2" class="gallery__item--img" loading="lazy">
                         <img src="./img/portfolio/pub-opera-cambrils/pub-opera-cambrils_3.webp" alt="pub-opera-cambrils_3" class="gallery__item--img" loading="lazy">
                         <img src="./img/portfolio/pub-opera-cambrils/pub-opera-cambrils_4.webp" alt="pub-opera-cambrils_4" class="gallery__item--img" loading="lazy">
                         <img src="./img/portfolio/pub-opera-cambrils/pub-opera-cambrils_5.webp" alt="pub-opera-cambrils_5" class="gallery__item--img" loading="lazy">
                         <img src="./img/portfolio/pub-opera-cambrils/pub-opera-cambrils_6.webp" alt="pub-opera-cambrils_6" class="gallery__item--img featured" loading="lazy">
-                        <img src="./img/portfolio/pub-opera-cambrils/pub-opera-cambrils_7.webp" alt="pub-opera-cambrils_7" class="gallery__item--img featured" loading="lazy">
+                        <img src="./img/portfolio/pub-opera-cambrils/pub-opera-cambrils_7.webp" alt="pub-opera-cambrils_7" class="gallery__item--img " loading="lazy">
                         <img src="./img/portfolio/pub-opera-cambrils/pub-opera-cambrils_8.webp" alt="pub-opera-cambrils_8" class="gallery__item--img" loading="lazy">
                     </div>
-                    <div class="galleries__items--container" titulo="restaurante-gran-muralla-montblanc">
-                        <img src="./img/portfolio/restaurante-gran-muralla-montblanc/restaurante-gran-muralla-montblanc_1.webp" alt="restaurante-gran-muralla-montblanc_1" class="gallery__item--img" loading="lazy">
-                        <img src="./img/portfolio/restaurante-gran-muralla-montblanc/restaurante-gran-muralla-montblanc_2.webp" alt="restaurante-gran-muralla-montblanc_2" class="gallery__item--img" loading="lazy">
-                        <img src="./img/portfolio/restaurante-gran-muralla-montblanc/restaurante-gran-muralla-montblanc_3.webp" alt="restaurante-gran-muralla-montblanc_3" class="gallery__item--img featured" loading="lazy">
+                    <div class="galleries__items--container" titulo="Gasolinera shopping (Sabadell)">
+                        <img src="./img/portfolio/gasolinera-shopping-sabadell/gasolinera-shopping-sabadell_1.webp" alt="gasolinera-shopping-sabadell_1" class="gallery__item--img featured" loading="lazy">
+                        <img src="./img/portfolio/gasolinera-shopping-sabadell/gasolinera-shopping-sabadell_2.webp" alt="gasolinera-shopping-sabadell_2" class="gallery__item--img featured" loading="lazy">
+                        <img src="./img/portfolio/gasolinera-shopping-sabadell/gasolinera-shopping-sabadell_3.webp" alt="gasolinera-shopping-sabadell_3" class="gallery__item--img" loading="lazy">
+                        <img src="./img/portfolio/gasolinera-shopping-sabadell/gasolinera-shopping-sabadell_4.webp" alt="gasolinera-shopping-sabadell_4" class="gallery__item--img" loading="lazy">
                     </div>
-                    <div class="galleries__items--container" titulo="reforma-vivienda-belgica">
+                    <div class="galleries__items--container" titulo="Restaurante Victoria (Reus)">
+                        <img class="gallery__item--img" src="./img/portfolio/restaurante-victoria-reus/restaurante-victoria-reus_1.webp" alt="restaurante-victoria-reus_1" title="Trabajos pladur" loading="lazy">
+                        <img class="gallery__item--img" src="./img/portfolio/restaurante-victoria-reus/restaurante-victoria-reus_2.webp" alt="restaurante-victoria-reus_2" loading="lazy">
+                        <img class="gallery__item--img featured" src="./img/portfolio/restaurante-victoria-reus/restaurante-victoria-reus_3.webp" alt="restaurante-victoria-reus_3" loading="lazy">
+                    </div>
+                    <div class="galleries__items--container" titulo="Reforma Vivienda (Belgica)">
                         <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_1.webp" alt="reforma-vivienda-belgica_1" class="gallery__item--img" loading="lazy">
                         <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_2.webp" alt="reforma-vivienda-belgica_2" class="gallery__item--img" loading="lazy">
                         <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_3.webp" alt="reforma-vivienda-belgica_3" class="gallery__item--img" loading="lazy">
-                        <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_7.webp" alt="reforma-vivienda-belgica_7" class="gallery__item--img featured" loading="lazy">
+                        <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_7.webp" alt="reforma-vivienda-belgica_7" class="gallery__item--img" loading="lazy">
                         <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_8.webp" alt="reforma-vivienda-belgica_8" class="gallery__item--img" loading="lazy">
                         <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_9.webp" alt="reforma-vivienda-belgica_9" class="gallery__item--img" loading="lazy">
                         <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_10.webp" alt="reforma-vivienda-belgica_10" class="gallery__item--img" loading="lazy">
                         <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_13.webp" alt="reforma-vivienda-belgica_13" class="gallery__item--img" loading="lazy">  
                         <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_15.webp" alt="reforma-vivienda-belgica_15" class="gallery__item--img" loading="lazy">
-                        <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_16.webp" alt="reforma-vivienda-belgica_16" class="gallery__item--img featured" loading="lazy">
+                        <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_16.webp" alt="reforma-vivienda-belgica_16" class="gallery__item--img" loading="lazy">
                         <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_17.webp" alt="reforma-vivienda-belgica_17" class="gallery__item--img" loading="lazy">
                         <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_18.webp" alt="reforma-vivienda-belgica_18" class="gallery__item--img" loading="lazy">
                         <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_19.webp" alt="reforma-vivienda-belgica_19" class="gallery__item--img" loading="lazy">
-                        <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_20.webp" alt="reforma-vivienda-belgica_20" class="gallery__item--img" loading="lazy">
+                        <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_20.webp" alt="reforma-vivienda-belgica_20 featured" class="gallery__item--img" loading="lazy">
                         <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_21.webp" alt="reforma-vivienda-belgica_21" class="gallery__item--img" loading="lazy">  
                         <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_23.webp" alt="reforma-vivienda-belgica_23" class="gallery__item--img" loading="lazy">  
                         <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_25.webp" alt="reforma-vivienda-belgica_25" class="gallery__item--img" loading="lazy"> 
@@ -246,37 +221,61 @@
                         <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_87.webp" alt="reforma-vivienda-belgica_87" class="gallery__item--img" loading="lazy">
 
                         <!-- <img src="./img/portfolio/foseados-luz-indirecta/foseados-luz-indirecta_2.webp" alt="foseados-luz-indirecta_2" class="gallery__item--img"> -->
-<!-- <img src="./img/portfolio/hogar-ancianos-montblanc/hogar-ancianos-montblanc_4.webp" alt="hogar-ancianos-montblanc_4" class="gallery__item--img"> -->
-<!-- <img src="./img/portfolio/hogar-ancianos-montblanc/hogar-ancianos-montblanc_5.webp" alt="hogar-ancianos-montblanc_5" class="gallery__item--img"> -->
-<!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_4.webp" alt="reforma-vivienda-belgica_4" class="gallery__item--img"> -->
-<!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_5.webp" alt="reforma-vivienda-belgica_5" class="gallery__item--img"> -->
-<!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_6.webp" alt="reforma-vivienda-belgica_6" class="gallery__item--img"> -->
-<!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_11.webp" alt="reforma-vivienda-belgica_11" class="gallery__item--img"> -->
-<!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_12.webp" alt="reforma-vivienda-belgica_12" class="gallery__item--img"> -->
-<!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_14.webp" alt="reforma-vivienda-belgica_14" class="gallery__item--img"> -->
-<!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_22.webp" alt="reforma-vivienda-belgica_22" class="gallery__item--img"> -->
-<!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_24.webp" alt="reforma-vivienda-belgica_24" class="gallery__item--img"> -->
-<!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_26.webp" alt="reforma-vivienda-belgica_26" class="gallery__item--img"> -->
-<!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_27.webp" alt="reforma-vivienda-belgica_27" class="gallery__item--img"> -->
-<!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_30.webp" alt="reforma-vivienda-belgica_30" class="gallery__item--img"> -->
-<!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_31.webp" alt="reforma-vivienda-belgica_31" class="gallery__item--img"> -->
-<!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_36.webp" alt="reforma-vivienda-belgica_36" class="gallery__item--img"> -->
-<!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_38.webp" alt="reforma-vivienda-belgica_38" class="gallery__item--img"> -->
-<!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_41.webp" alt="reforma-vivienda-belgica_41" class="gallery__item--img"> -->
-<!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_42.webp" alt="reforma-vivienda-belgica_42" class="gallery__item--img"> -->
-<!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_45.webp" alt="reforma-vivienda-belgica_45" class="gallery__item--img"> -->
-<!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_47.webp" alt="reforma-vivienda-belgica_47" class="gallery__item--img"> -->
-<!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_52.webp" alt="reforma-vivienda-belgica_52" class="gallery__item--img"> -->
-<!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_56.webp" alt="reforma-vivienda-belgica_56" class="gallery__item--img"> -->
-<!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_57.webp" alt="reforma-vivienda-belgica_57" class="gallery__item--img"> -->
-<!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_63.webp" alt="reforma-vivienda-belgica_63" class="gallery__item--img"> -->
-<!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_68.webp" alt="reforma-vivienda-belgica_68" class="gallery__item--img"> -->
-<!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_71.webp" alt="reforma-vivienda-belgica_71" class="gallery__item--img"> -->
+                        <!-- <img src="./img/portfolio/hogar-ancianos-montblanc/hogar-ancianos-montblanc_4.webp" alt="hogar-ancianos-montblanc_4" class="gallery__item--img"> -->
+                        <!-- <img src="./img/portfolio/hogar-ancianos-montblanc/hogar-ancianos-montblanc_5.webp" alt="hogar-ancianos-montblanc_5" class="gallery__item--img"> -->
+                        <!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_4.webp" alt="reforma-vivienda-belgica_4" class="gallery__item--img"> -->
+                        <!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_5.webp" alt="reforma-vivienda-belgica_5" class="gallery__item--img"> -->
+                        <!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_6.webp" alt="reforma-vivienda-belgica_6" class="gallery__item--img"> -->
+                        <!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_11.webp" alt="reforma-vivienda-belgica_11" class="gallery__item--img"> -->
+                        <!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_12.webp" alt="reforma-vivienda-belgica_12" class="gallery__item--img"> -->
+                        <!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_14.webp" alt="reforma-vivienda-belgica_14" class="gallery__item--img"> -->
+                        <!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_22.webp" alt="reforma-vivienda-belgica_22" class="gallery__item--img"> -->
+                        <!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_24.webp" alt="reforma-vivienda-belgica_24" class="gallery__item--img"> -->
+                        <!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_26.webp" alt="reforma-vivienda-belgica_26" class="gallery__item--img"> -->
+                        <!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_27.webp" alt="reforma-vivienda-belgica_27" class="gallery__item--img"> -->
+                        <!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_30.webp" alt="reforma-vivienda-belgica_30" class="gallery__item--img"> -->
+                        <!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_31.webp" alt="reforma-vivienda-belgica_31" class="gallery__item--img"> -->
+                        <!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_36.webp" alt="reforma-vivienda-belgica_36" class="gallery__item--img"> -->
+                        <!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_38.webp" alt="reforma-vivienda-belgica_38" class="gallery__item--img"> -->
+                        <!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_41.webp" alt="reforma-vivienda-belgica_41" class="gallery__item--img"> -->
+                        <!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_42.webp" alt="reforma-vivienda-belgica_42" class="gallery__item--img"> -->
+                        <!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_45.webp" alt="reforma-vivienda-belgica_45" class="gallery__item--img"> -->
+                        <!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_47.webp" alt="reforma-vivienda-belgica_47" class="gallery__item--img"> -->
+                        <!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_52.webp" alt="reforma-vivienda-belgica_52" class="gallery__item--img"> -->
+                        <!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_56.webp" alt="reforma-vivienda-belgica_56" class="gallery__item--img"> -->
+                        <!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_57.webp" alt="reforma-vivienda-belgica_57" class="gallery__item--img"> -->
+                        <!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_63.webp" alt="reforma-vivienda-belgica_63" class="gallery__item--img"> -->
+                        <!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_68.webp" alt="reforma-vivienda-belgica_68" class="gallery__item--img"> -->
+                        <!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_71.webp" alt="reforma-vivienda-belgica_71" class="gallery__item--img"> -->
                         <!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_73.webp" alt="reforma-vivienda-belgica_73" class="gallery__item--img"> -->
                         <!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_82.webp" alt="reforma-vivienda-belgica_82" class="gallery__item--img"> -->
                         <!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_83.webp" alt="reforma-vivienda-belgica_83" class="gallery__item--img"> -->
                         <!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_84.webp" alt="reforma-vivienda-belgica_84" class="gallery__item--img"> -->
                         <!-- <img src="./img/portfolio/reforma-vivienda-belgica/reforma-vivienda-belgica_86.webp" alt="reforma-vivienda-belgica_86" class="gallery__item--img"> -->
+                    </div>
+                    <div class="galleries__items--container" titulo="Foseados y luz indirecta">
+                         <img src="./img/portfolio/foseados-luz-indirecta/foseados-luz-indirecta_1.webp" alt="Entrada residencia con foseado para luz indirecta" class="gallery__item--img featured" loading="lazy">   
+                         <img src="./img/portfolio/foseados-luz-indirecta/foseados-luz-indirecta_3.webp" alt="Techo de gran altura con doble foseado " class="gallery__item--img" loading="lazy">
+                         <img src="./img/portfolio/foseados-luz-indirecta/foseados-luz-indirecta_4.webp" alt="Techo con iluminación indirecta estilo moderno" class="gallery__item--img featured" loading="lazy">
+                    </div>
+                    <div class="galleries__items--container" titulo="Forrado decoracion chimenas estufas">
+                        <img src="./img/portfolio/forrado-decoracion-chimenas-estufas/forrado-decoracion-chimenas-estufas_1.webp" alt="forrado-decoracion-chimenas-estufas_1" class="gallery__item--img" loading="lazy">
+                        <img src="./img/portfolio/forrado-decoracion-chimenas-estufas/forrado-decoracion-chimenas-estufas_2.webp" alt="forrado-decoracion-chimenas-estufas_2" class="gallery__item--img" loading="lazy">
+                        <img src="./img/portfolio/forrado-decoracion-chimenas-estufas/forrado-decoracion-chimenas-estufas_3.webp" alt="forrado-decoracion-chimenas-estufas_3" class="gallery__item--img" loading="lazy">
+                        <img src="./img/portfolio/forrado-decoracion-chimenas-estufas/forrado-decoracion-chimenas-estufas_4.webp" alt="forrado-decoracion-chimenas-estufas_4" class="gallery__item--img featured" loading="lazy">
+                        <img src="./img/portfolio/forrado-decoracion-chimenas-estufas/forrado-decoracion-chimenas-estufas_5.webp" alt="forrado-decoracion-chimenas-estufas_5" class="gallery__item--img" loading="lazy">
+                    </div>
+                    <div class="galleries__items--container" titulo="Hogar de ancianos (Montblanc)">
+                        <img src="./img/portfolio/hogar-ancianos-montblanc/hogar-ancianos-montblanc_1.webp" alt="hogar-ancianos-montblanc_1" class="gallery__item--img" loading="lazy">
+                        <img src="./img/portfolio/hogar-ancianos-montblanc/hogar-ancianos-montblanc_2.webp" alt="hogar-ancianos-montblanc_2" class="gallery__item--img" loading="lazy">
+                        <img src="./img/portfolio/hogar-ancianos-montblanc/hogar-ancianos-montblanc_3.webp" alt="hogar-ancianos-montblanc_3" class="gallery__item--img" loading="lazy">  
+                        <img src="./img/portfolio/hogar-ancianos-montblanc/hogar-ancianos-montblanc_6.webp" alt="hogar-ancianos-montblanc_6" class="gallery__item--img" loading="lazy">
+                        <img src="./img/portfolio/hogar-ancianos-montblanc/hogar-ancianos-montblanc_7.webp" alt="hogar-ancianos-montblanc_7" class="gallery__item--img featured" loading="lazy">
+                    </div>
+                    <div class="galleries__items--container" titulo="Restaurante Gran-muralla (Montblanc)">
+                        <img src="./img/portfolio/restaurante-gran-muralla-montblanc/restaurante-gran-muralla-montblanc_1.webp" alt="restaurante-gran-muralla-montblanc_1" class="gallery__item--img" loading="lazy">
+                        <img src="./img/portfolio/restaurante-gran-muralla-montblanc/restaurante-gran-muralla-montblanc_2.webp" alt="restaurante-gran-muralla-montblanc_2" class="gallery__item--img" loading="lazy">
+                        <img src="./img/portfolio/restaurante-gran-muralla-montblanc/restaurante-gran-muralla-montblanc_3.webp" alt="restaurante-gran-muralla-montblanc_3" class="gallery__item--img " loading="lazy">
                     </div>
                     <div class="galleries__items--container" titulo="Bon Area (Montblanc)">
                          <!-- img.gallery__item--img[src=./img/portfolio/NOMBREDELAGALERIA/NOMBREDELAGALERIA_$.webp][alt=NOMBREDELAGALERIA_$] -->
@@ -290,7 +289,7 @@
                     </div>
                 </div> 
             </div>
-        </div>
+        </div>        
      </main>
     </div>
     <script src="./js/burgermenu.js"></script>

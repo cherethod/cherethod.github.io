@@ -65,15 +65,34 @@ const toggleColorMode = () => {
         let parent = e.target.closest('.faqs__answer--container');
         closeAnswers(parent);
         parent.classList.contains('open') ? parent.classList.remove('open') : parent.classList.add('open');
-        console.log(parent.parentElement);
+        // console.log(parent.parentElement);
       });
     });
   };
   
+  const scrollToTop = ()=> {
+    const mainContainer = document.querySelector('.container');
+    const scrollBtn = document.querySelector('.to__top--btn'); 
+    function scrollFunction(e) {
+     if (e.target.scrollTop > 500) {
+        //  console.log('dentro if')
+       scrollBtn.style.display = "flex";
+     } else {
+        //  console.log()
+       scrollBtn.style.display = "none";
+     }
+   }
+    mainContainer.addEventListener('scroll', (e)=> {
+     scrollFunction(e)
+    })
+  }
   
   document.addEventListener('DOMContentLoaded', function () {
     initColorMode();
     openFaqAnswer();
+    if (document.getElementById('scroll-btn')!= null) {
+      scrollToTop()
+    }
     // createSliderObject();
   });
 
