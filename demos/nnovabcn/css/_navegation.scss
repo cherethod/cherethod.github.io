@@ -109,6 +109,7 @@ li.nav__item {
                     display: flex;
                     flex-direction: column;
                     text-align: center;
+                    padding: 0;                    
                     li {
                         opacity: 0;
                         animation: burger-disappear .3s forwards 0s 1 ease-in-out;
@@ -203,8 +204,10 @@ li.nav__item {
                 display: flex;
                 align-items: stretch;
                 gap: 20px;
+                place-items: center;
                 .nav__item {   
-                      
+                    padding: 0;
+                    margin: 0;
                     // height: 100%;   
                     list-style: none;  
                     .nav__link {
@@ -212,8 +215,8 @@ li.nav__item {
                         justify-content: center;
                         align-items: center;
                         color: #fff;
-                        line-height: normal;
-                        padding: 0;
+                        // line-height: normal;
+                        padding: 15px 20px;
                         margin: 0;
                         letter-spacing: 1px;
                         text-decoration: none;
@@ -295,11 +298,15 @@ li.nav__item {
                                             padding: 0;
                                             list-style: none;
                                             .nav__item--subchildren-subitem{
-                                                padding: 15px 10px;
+                                                padding: 0;
+                                                margin: 0;
                                                 width: 145px;
                                                 text-align: center;
+                                                // background-color: blue;
                                                 a {
                                                     color: #000;
+                                                    margin: 0;
+                                                    padding: 10px 10px;
                                                 }
                                                 &:hover {
                                                     background-color: $color__secundary;       

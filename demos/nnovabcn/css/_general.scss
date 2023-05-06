@@ -3,6 +3,7 @@
     margin: 0 auto;
     padding: 25px 0 50px 0;
     p, ul, li {
+      font-family: 'Nunito Sans';
         color: #dfdede;
         font-size: 18px;
         span {
@@ -20,37 +21,37 @@
     p {
       margin-bottom: 50px;
     }
-    h3, h2, h1 {
+    h3, h2, h1, h4 {
         color: #c9c9c9;
         text-align: left;
     }
-    .text__columned--container {
-      display: grid;
-      grid-template-columns: auto 1fr;
-      gap: 20px;
-      place-content: center;
-      place-items: center;
-      .column--left,  .column--right {
-        ul {
-          li {
-            padding: 10px 0;
-            a {
-              text-decoration: none;
-              font-size: 21px;
-            }
-          }
-        }
-        &-img {
-          height: 100%;
-          width: 500px;
-          object-fit: contain;
-          img {
-            height: 100%;
-            width: 100%;
-          }
-        }
-      }
-    }
+    // .text__columned--container {
+    //   display: grid;
+    //   grid-template-columns: auto 1fr;
+    //   gap: 20px;
+    //   place-content: center;
+    //   place-items: center;
+    //   .column--left,  .column--right {
+    //     ul {
+    //       li {
+    //         padding: 10px 0;
+    //         a {
+    //           text-decoration: none;
+    //           font-size: 21px;
+    //         }
+    //       }
+    //     }
+    //     &-img {
+    //       height: 100%;
+    //       width: 500px;
+    //       object-fit: contain;
+    //       img {
+    //         height: 100%;
+    //         width: 100%;
+    //       }
+    //     }
+    //   }
+    // }
     .mobile__index {
       display: none;
       ul > li {
@@ -92,9 +93,22 @@
         place-items: center;
         img {
           max-width: 90%;
+          width: 90%;
         }
-        h2, h3 {
+        h2, h3, h4 {
           place-self: start;
+        }
+        ul {
+          list-style: none;
+          padding: 15px 0 10px 0;
+          margin: 0;
+          li {
+            padding: 0 0 20px 0;
+            margin: 0;
+          }
+        }
+        p {
+          margin: 5px 0 15px 0;
         }
       }
     }

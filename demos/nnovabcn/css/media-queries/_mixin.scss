@@ -109,6 +109,11 @@
       .values__container {
         grid-template-columns: 1fr !important;
       }
+      .services__cards--container {
+        display: flex;
+        flex-direction: column;
+        width: 90% !important;
+      }
       .gallery__container {
         grid-template-columns: 1fr;
         place-content: center;
@@ -185,7 +190,12 @@
         }
       }
       .values__container {
-        grid-template-columns: 1fr !important;
+        grid-template-columns: 1fr;
+      }
+      .services__cards--container {
+        display: flex;
+        flex-direction: column;
+        width: 80% ;
       }
     }
     .footer__container {
@@ -300,6 +310,22 @@
           grid-column: 1/-1;
         }
       }
+      .text__content--container {
+        width: 90%;
+        .mobile__index {
+          display: block;
+        }
+        .columned__content {
+          grid-template-columns: 1fr;
+          .index__column {
+            display: none;
+          }
+        }
+      }
+      .services__cards--container {
+        grid-template-columns: 1fr;
+        width: 70%;
+      }
     }
   }
 
@@ -391,6 +417,26 @@
           grid-column: 1/-1;
         }
       } 
+      .text__content--container {
+        width: 80%;
+      }
+      .services__cards--container {
+        grid-template-columns: repeat(2, 1fr);
+        .card__item--container {
+          .service__title {
+            transform: translateY(50px);
+          }
+          .card__container {
+            transition: .0s ease all;
+            transform: perspective(40vw) rotateY(180deg); 
+            .card__rearward {
+              .card__title {
+                transform: translateY(0);
+              }
+            }
+          }  
+        }
+      }
       .gallery__container {
         grid-template-columns: 1fr;
         place-content: center;
@@ -476,6 +522,25 @@
                 }
             }
         }
+        .text__content--container {
+          width: 70%;
+        }
+        .services__cards--container {
+          grid-template-columns: repeat(3, 1fr);
+          .card__item--container {
+            .card__link {
+              min-width: 100%;
+              .card__container {
+                width: 100%;
+                max-width: 100%;
+                object-fit: cover;
+                img {
+                  min-width: 100%;
+                }
+              }
+            }
+          }
+        }
     }
     .footer__container {
       .footer__section--two {
@@ -510,7 +575,10 @@
             .section__container:nth-child(3) { 
                 grid-column: 3/3;
             }
-        }       
+        }  
+        .text__content--container {
+          width: 60%;
+        }     
         .gallery__container { 
             .gallery__menu--mobile {
                 display: none;

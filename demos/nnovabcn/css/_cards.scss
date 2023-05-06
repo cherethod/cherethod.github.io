@@ -23,8 +23,11 @@ h3 {
         }
         .card__link {
             display: inline-block;
+            min-width: 100%;
             .card__container {
-                width: 20vw;
+                width: 100%;
+                max-width: 100%;
+                // object-fit: cover;
                 height: 300px;
                 position: relative;
                 transform-style: preserve-3d;
@@ -40,6 +43,7 @@ h3 {
                 .card__picture {
                     display: block;
                     object-fit: cover;
+                    min-width: 100%;
                 }
                 .card__rearward {
                     position: absolute;

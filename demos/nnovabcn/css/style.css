@@ -111,6 +111,7 @@ li.nav__item a {
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding: 0;
 }
 .header__container .burgermenu__container .burgermenu__list--container nav ul li {
   opacity: 0;
@@ -193,8 +194,11 @@ li.nav__item a {
   display: flex;
   align-items: stretch;
   gap: 20px;
+  place-items: center;
 }
 .header__container .mainmenu__container .header__menu--container .top__nav--container .nav__list .nav__item {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 .header__container .mainmenu__container .header__menu--container .top__nav--container .nav__list .nav__item .nav__link {
@@ -202,8 +206,7 @@ li.nav__item a {
   justify-content: center;
   align-items: center;
   color: #fff;
-  line-height: normal;
-  padding: 0;
+  padding: 15px 20px;
   margin: 0;
   letter-spacing: 1px;
   text-decoration: none;
@@ -282,12 +285,15 @@ li.nav__item a {
   list-style: none;
 }
 .header__container .mainmenu__container .header__menu--container .top__nav--container .nav__list .nav__item--parent .nav__list--children .nav__item--children .nav__list--subchildren .nav__item--subchildren .nav__list--subchildren-submenu .nav__item--subchildren-subitem {
-  padding: 15px 10px;
+  padding: 0;
+  margin: 0;
   width: 145px;
   text-align: center;
 }
 .header__container .mainmenu__container .header__menu--container .top__nav--container .nav__list .nav__item--parent .nav__list--children .nav__item--children .nav__list--subchildren .nav__item--subchildren .nav__list--subchildren-submenu .nav__item--subchildren-subitem a {
   color: #000;
+  margin: 0;
+  padding: 10px 10px;
 }
 .header__container .mainmenu__container .header__menu--container .top__nav--container .nav__list .nav__item--parent .nav__list--children .nav__item--children .nav__list--subchildren .nav__item--subchildren .nav__list--subchildren-submenu .nav__item--subchildren-subitem:hover {
   background-color: #3f3f3f;
@@ -1077,6 +1083,7 @@ li.nav__item a {
   padding: 25px 0 50px 0;
 }
 .text__article--container p, .text__article--container ul, .text__article--container li, .text__content--container p, .text__content--container ul, .text__content--container li {
+  font-family: "Nunito Sans";
   color: #dfdede;
   font-size: 18px;
 }
@@ -1094,33 +1101,9 @@ li.nav__item a {
 .text__article--container p, .text__content--container p {
   margin-bottom: 50px;
 }
-.text__article--container h3, .text__article--container h2, .text__article--container h1, .text__content--container h3, .text__content--container h2, .text__content--container h1 {
+.text__article--container h3, .text__article--container h2, .text__article--container h1, .text__article--container h4, .text__content--container h3, .text__content--container h2, .text__content--container h1, .text__content--container h4 {
   color: #c9c9c9;
   text-align: left;
-}
-.text__article--container .text__columned--container, .text__content--container .text__columned--container {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 20px;
-  place-content: center;
-  place-items: center;
-}
-.text__article--container .text__columned--container .column--left ul li, .text__article--container .text__columned--container .column--right ul li, .text__content--container .text__columned--container .column--left ul li, .text__content--container .text__columned--container .column--right ul li {
-  padding: 10px 0;
-}
-.text__article--container .text__columned--container .column--left ul li a, .text__article--container .text__columned--container .column--right ul li a, .text__content--container .text__columned--container .column--left ul li a, .text__content--container .text__columned--container .column--right ul li a {
-  text-decoration: none;
-  font-size: 21px;
-}
-.text__article--container .text__columned--container .column--left-img, .text__article--container .text__columned--container .column--right-img, .text__content--container .text__columned--container .column--left-img, .text__content--container .text__columned--container .column--right-img {
-  height: 100%;
-  width: 500px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.text__article--container .text__columned--container .column--left-img img, .text__article--container .text__columned--container .column--right-img img, .text__content--container .text__columned--container .column--left-img img, .text__content--container .text__columned--container .column--right-img img {
-  height: 100%;
-  width: 100%;
 }
 .text__article--container .mobile__index, .text__content--container .mobile__index {
   display: none;
@@ -1161,9 +1144,22 @@ li.nav__item a {
 }
 .text__article--container .columned__content .content__column img, .text__content--container .columned__content .content__column img {
   max-width: 90%;
+  width: 90%;
 }
-.text__article--container .columned__content .content__column h2, .text__article--container .columned__content .content__column h3, .text__content--container .columned__content .content__column h2, .text__content--container .columned__content .content__column h3 {
+.text__article--container .columned__content .content__column h2, .text__article--container .columned__content .content__column h3, .text__article--container .columned__content .content__column h4, .text__content--container .columned__content .content__column h2, .text__content--container .columned__content .content__column h3, .text__content--container .columned__content .content__column h4 {
   place-self: start;
+}
+.text__article--container .columned__content .content__column ul, .text__content--container .columned__content .content__column ul {
+  list-style: none;
+  padding: 15px 0 10px 0;
+  margin: 0;
+}
+.text__article--container .columned__content .content__column ul li, .text__content--container .columned__content .content__column ul li {
+  padding: 0 0 20px 0;
+  margin: 0;
+}
+.text__article--container .columned__content .content__column p, .text__content--container .columned__content .content__column p {
+  margin: 5px 0 15px 0;
 }
 
 .to__top--btn {
@@ -1406,9 +1402,11 @@ h3 {
 }
 .services__cards--container .card__item--container .card__link {
   display: inline-block;
+  min-width: 100%;
 }
 .services__cards--container .card__item--container .card__link .card__container {
-  width: 20vw;
+  width: 100%;
+  max-width: 100%;
   height: 300px;
   position: relative;
   transform-style: preserve-3d;
@@ -1426,6 +1424,7 @@ h3 {
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
+  min-width: 100%;
 }
 .services__cards--container .card__item--container .card__link .card__container .card__rearward {
   position: absolute;
@@ -1627,6 +1626,11 @@ h3 {
   .container .main__container .values__container {
     grid-template-columns: 1fr !important;
   }
+  .container .main__container .services__cards--container {
+    display: flex;
+    flex-direction: column;
+    width: 90% !important;
+  }
   .container .main__container .gallery__container {
     grid-template-columns: 1fr;
     place-content: center;
@@ -1681,7 +1685,12 @@ h3 {
     font-size: 1rem;
   }
   .container .main__container .values__container {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: 1fr;
+  }
+  .container .main__container .services__cards--container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
   }
   .container .footer__container {
     grid-template-columns: 1fr;
@@ -1757,6 +1766,22 @@ h3 {
   .container .main__container .values__container .values__item--container:nth-child(3) {
     grid-column: 1/-1;
   }
+  .container .main__container .text__content--container {
+    width: 90%;
+  }
+  .container .main__container .text__content--container .mobile__index {
+    display: block;
+  }
+  .container .main__container .text__content--container .columned__content {
+    grid-template-columns: 1fr;
+  }
+  .container .main__container .text__content--container .columned__content .index__column {
+    display: none;
+  }
+  .container .main__container .services__cards--container {
+    grid-template-columns: 1fr;
+    width: 70%;
+  }
 }
 @media (max-width: 1024px) {
   .container .header__container .burgermenu__container .burgermenu__logo .burger__logo--img {
@@ -1828,6 +1853,22 @@ h3 {
   .container .main__container .values__container .values__item--container:nth-child(3) {
     grid-column: 1/-1;
   }
+  .container .main__container .text__content--container {
+    width: 80%;
+  }
+  .container .main__container .services__cards--container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container .main__container .services__cards--container .card__item--container .service__title {
+    transform: translateY(50px);
+  }
+  .container .main__container .services__cards--container .card__item--container .card__container {
+    transition: 0s ease all;
+    transform: perspective(40vw) rotateY(180deg);
+  }
+  .container .main__container .services__cards--container .card__item--container .card__container .card__rearward .card__title {
+    transform: translateY(0);
+  }
   .container .main__container .gallery__container {
     grid-template-columns: 1fr;
     place-content: center;
@@ -1882,6 +1923,24 @@ h3 {
   .container .main__container .home__services--container .service__container.left .service__text--container {
     grid-column: 2/-1;
   }
+  .container .main__container .text__content--container {
+    width: 70%;
+  }
+  .container .main__container .services__cards--container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .container .main__container .services__cards--container .card__item--container .card__link {
+    min-width: 100%;
+  }
+  .container .main__container .services__cards--container .card__item--container .card__link .card__container {
+    width: 100%;
+    max-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .container .main__container .services__cards--container .card__item--container .card__link .card__container img {
+    min-width: 100%;
+  }
   .container .footer__container .footer__section--two {
     padding: 15px 0;
   }
@@ -1905,6 +1964,9 @@ h3 {
   }
   .container .main__container .article__container .section__container:nth-child(3) {
     grid-column: 3/3;
+  }
+  .container .main__container .text__content--container {
+    width: 60%;
   }
   .container .main__container .gallery__container .gallery__menu--mobile {
     display: none;
