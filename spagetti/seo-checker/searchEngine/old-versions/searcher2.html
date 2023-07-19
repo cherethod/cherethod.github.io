@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Custom Search API</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <button onclick="findKeyword()" class="start__btn">Iniciar</button>
+        <div class="contenedor__contador">
+            <div class="contador">
+                <h3>Esperando...</h3>
+                <div class="min__title"><p>Minutos</p></div>
+                <div class="sec__title"><p>Segundos</p></div>                
+                <div class="min__title"><p id="mins">05</p></div>
+                <div class="sec__title"><p id="secs">00</p></div>
+            </div>
+        </div>
+        <div class="results__container">            
+        </div>
+    </main>
+    <script src="main2.js"></script>
+</body>
+</html>
