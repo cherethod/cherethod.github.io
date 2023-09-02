@@ -142,6 +142,54 @@ h3 {
   background-color: purple;
 }
 
+/********************
+*  JUSTIFY-CONTENT  *
+********************/
+
+.justify-content > .divs-container {
+  width: 90%;
+  background-color: rgb(95, 95, 95);
+}
+
+.justify-content > .btns-container {
+  width: 80%;
+  flex-wrap: wrap;
+  place-content: center;
+}
+
+/********************
+*    FLEX-SHRINK    *
+********************/
+.flex-shrink > .divs-container {
+  width: 90%;
+}
+
+.flex-shrink > .divs-container > .flex-container {
+  display: flex;
+  align-items: stretch;
+}
+
+/* Aplicar flex-shrink directamente a los elementos padre .flex-container */
+.flex-shrink > .divs-container > .flex-container {
+  flex-shrink: 1; /* Por defecto */
+}
+.flex-shrink > .divs-container > .flex-container > .cell {
+  flex: 1;
+  min-width: 0;
+}
+
+.flex-shrink > .divs-container > .flex-container > .cell:nth-child(3) {
+  background-color: purple;
+}
+
+.flex-shrink > .divs-container > .flex-container > .cell:nth-child(5) {
+  flex-shrink: 2;
+}
+.flex-shrink > .btns-container > .btn.selected {
+  background-color: rgb(0, 153, 255);
+}
+
+
 @keyframes effect {
   0% {
     max-height: 0;
