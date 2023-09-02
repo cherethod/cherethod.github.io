@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Box</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- FLEX DIRECTION BLOCK -->
+    <div class="flex-direction separator">
+      <h3>FLEX DIRECTION</h3>
+      <div class="divs-container">
+        <div class="cell green">1</div>
+        <div class="cell green">2</div>
+        <div class="cell blue">3</div>
+        <div class="cell blue">4</div>
+      </div>
+      <div class="btns-container">
+        <div class="btn flex-direction-btn">ROW (default)</div>
+        <div class="btn flex-direction-btn">ROW-REVERSE</div>
+        <div class="btn flex-direction-btn">COLUMN</div>
+        <div class="btn flex-direction-btn">COLUMN-REVERSE</div>
+        <div class="aditional-info">
+          <div class="info-message"><p>Aditional information</p></div>
+        </div>
+      </div>      
+    </div>
+
+    <!-- ALIGN ITEMS BLOCK -->
+    <div class="align-items separator">
+      <h3>ALIGN-ITEMS</h3>
+      <div class="divs-container">
+        <div class="cell green"><span>text</span></div>
+        <div class="cell green"><span>text</span></div>
+        <div class="cell blue"><span>text</span></div>
+        <div class="cell blue"><span>text</span></div>
+      </div>
+      <div class="btns-container">
+        <div class="btn align-items-btn">FLEX-START</div>
+        <div class="btn align-items-btn">FLEX-END</div>
+        <div class="btn align-items-btn">CENTER</div>
+        <div class="btn align-items-btn">STRETCH (default)</div>
+        <div class="btn align-items-btn">BASELINE</div>
+      </div>
+    </div>
+
+    <!-- FLEX WRAP -->
+    <div class="flex-wrap separator">
+      <h3>FLEX-WRAP</h3>
+      <div class="divs-container">
+        <div class="cell green"><span>1</span></div>
+        <div class="cell green"><span>2</span></div>
+        <div class="cell blue"><span>3</span></div>
+        <div class="cell blue"><span>4</span></div>
+        <div class="cell blue"><span>5</span></div>
+      </div>
+      <div class="btns-container">
+        <div class="btn flex-wrap-btn">NOWRAP (default)</div>
+        <div class="btn flex-wrap-btn">WRAP</div>
+        <div class="btn flex-wrap-btn">WRAP-REVERSE</div>
+      </div>
+    </div>
+  </div>
+  <script src="./includes/main.js"></script>
+</body>
+</html>

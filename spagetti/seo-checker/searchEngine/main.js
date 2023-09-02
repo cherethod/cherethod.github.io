@@ -14,8 +14,17 @@ const keywords = {
 };
 
 // Configura los parámetros de la solicitud
-let apiKey = 'AIzaSyC6Vw8X3gO1YUAaOZGF3CKgXOTHmuLgobc';
-let searchEngineId = 'e68378b4e6da74f5c';
+
+// let apiKey = 'AIzaSyC6Vw8X3gO1YUAaOZGF3CKgXOTHmuLgobc';
+// let searchEngineId = 'e68378b4e6da74f5c';
+
+const apiKey = 'AIzaSyBXM9BxMvEpTcQVEUrKwBIzm01rfL8h4j4';
+const searchEngineId = '54ee821f547114fe1';
+
+// const apiKey = 'AIzaSyAfdhmvrnL-ZLPbKN8kiXrYSfyprSaIoMQ';
+// const searchEngineId = '7062da0f27d584e80';
+
+
 
 // Variables de los elementos
 const counterContainer = document.querySelector('.waiting__container')
@@ -69,46 +78,109 @@ const updateCounter = (remainingTime) => {
   secsElement.textContent = secs;
 };
 
+
+
+
+// const findKeyword = (query, category) => {
+//   let page = 1;
+//   let totalResults = 0;
+
+//   const performSearchPage = (page) => {
+//     return new Promise((resolve, reject) => {
+//       axios
+//         .get('https://www.googleapis.com/customsearch/v1', {
+//           params: {
+//             key: apiKey,
+//             cx: searchEngineId,
+//             q: query,
+//             start: (page - 1) * 10 + 1,
+//           },
+//         })        
+//         .then(response => {
+//           const items = response.data.items;
+//           totalResults += items.length;
+//           items.forEach(item => {
+//             console.log(`Buscando: ${query} en página ${page}`)
+//             console.log(item)
+//             if (item.link.includes('nnovadesigns.com')) {
+//               console.log(`ENCONTRADA: Resultados para la consulta "${query}" encontrados en la página ${page}`);
+//                 createElement(category, query, page)
+//                 resultCount++;
+//             }
+//           });
+//           resolve();
+//         })
+//         .catch(error => {
+//           reject(error);
+//         });
+//     });
+//   };
+
+//   const performSearchPages = async () => {
+//     for (let currentPage = 1; currentPage <= 3; currentPage++) {
+//       await performSearchPage(currentPage);
+//     }
+//     // console.log(`Búsqueda finalizada para la keyword: ${query}`);
+//   };
+
+//   return performSearchPages();
+// };
+
+
 const findKeyword = (query, category) => {
   let page = 1;
   let totalResults = 0;
 
-  const performSearchPage = (page) => {
-    return new Promise((resolve, reject) => {
-      axios
-        .get('https://www.googleapis.com/customsearch/v1', {
-          params: {
-            key: apiKey,
-            cx: searchEngineId,
-            q: query,
-            start: (page - 1) * 10 + 1,
-          },
-        })
-        .then(response => {
-          const items = response.data.items;
-          totalResults += items.length;
-
-          items.forEach(item => {
-            if (item.link.includes('nnovadesigns.com')) {
-              console.log(`ENCONTRADA: Resultados para la consulta "${query}" encontrados en la página ${page}`);
-                createElement(category, query, page)
-                resultCount++;
-            }
-          });
-          resolve();
-        })
-        .catch(error => {
-          reject(error);
-        });
+  const performSearchPage = async (page) => {
+    const results = await axios.get('https://www.googleapis.com/customsearch/v1', {
+      params: {
+        key: apiKey,
+        cx: searchEngineId,
+        q: query,
+        start: (page - 1) * 10 + 1,
+      },
     });
+    
+    const filteredResults = results.data.items.filter(result => result.rank <= 10);
+
+    console.log(filteredResults)
+
+    // return new Promise((resolve, reject) => {
+    // axios
+    //     .get('https://www.googleapis.com/customsearch/v1', {
+    //       params: {
+    //         key: apiKey,
+    //         cx: searchEngineId,
+    //         q: query,
+    //         start: (page - 1) * 10 + 1,
+    //       },
+    //     })
+    //     .then(response => {
+    //       console.log(response.start)
+    //       const items = response.data.items;
+    //       totalResults += items.length;
+    //       items.forEach(item => {
+    //         console.log(`Buscando: ${ query } en página ${ page }`)
+    //         console.log(item)
+    //         if (item.rank <= 10) {
+    //           console.log(`ENCONTRADA: Resultados para la consulta "{query}" encontrados en la página ${page}`);
+    //           createElement(category, query, page)
+    //           resultCount++;
+    //         }
+    //       });
+    //       resolve();
+    //     })
+    //     .catch(error => {
+    //       reject(error);
+    //     });
+    // });
   };
 
   const performSearchPages = async () => {
     for (let currentPage = 1; currentPage <= 3; currentPage++) {
       await performSearchPage(currentPage);
     }
-
-    // console.log(`Búsqueda finalizada para la keyword: ${query}`);
+    // console.log(Búsqueda finalizada para la keyword: ${query});
   };
 
   return performSearchPages();
@@ -190,5 +262,3 @@ const searchAgain = ()=> {
   isSearchComplete = false;
   performSearch();
 }
-
-

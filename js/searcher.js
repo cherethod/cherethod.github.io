@@ -1,6 +1,13 @@
-import { categories } from './menuFunctions.js';
+import { loadDefaultCategories } from './menuFunctions.js';
+
+if (localStorage.getItem('customCategories') === null) {
+  loadDefaultCategories();
+ }
+ else {
+   categories = JSON.parse(localStorage.getItem('customCategories'))
+ }
 // SIDEBAR FUCNCTIONS
-const loadSidebarMenuData = () => {
+export const loadSidebarMenuData = () => {
     clearElement(sidebarNavContainer);
     const fragment = document.createDocumentFragment();
     for (const category in categories) {
@@ -73,7 +80,7 @@ const loadSidebarMenuData = () => {
       fragment.appendChild(ulElem);
       // addMarkerItemsListeners();
     }
-    sidebarNavContainer.appendChild(fragment);
+    return fragment;
   }
   
   const searchMarkers = (query)=> {
@@ -131,3 +138,5 @@ const loadSidebarMenuData = () => {
   
     }
   });
+
+// export { loadSidebarMenuData, searchMarkers, showMatchedResults };
