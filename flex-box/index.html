@@ -93,21 +93,75 @@
     <!-- FLEX-SHRINK -->
     <div class="flex-shrink separator">
       <h3>FLEX-SHRINK</h3>
-      <div class="divs-container">
-        <div class="flex-container">
+      <div class="divs-container shrink-container">
           <div class="cell green"><span>1</span></div>
           <div class="cell green"><span>2</span></div>
           <div class="cell blue"><span>3</span></div>
           <div class="cell blue"><span>4</span></div>
-        </div>
       </div>      
-      <div class="btns-container">
-        <!-- <h3>Elige los divs a los que asignar esta propiedad: </h3> -->
-        <div class="btn flex-shrink-btn">1</div>
-        <div class="btn flex-shrink-btn">2</div>
-        <div class="btn flex-shrink-btn">3</div>
+      <div class="tools-container">
+        <div class="aditional-info">
+          <div class="info-message"><p>Aditional information</p></div>
+        </div>
+        <div class="controls-container">
+          <h4>Container width control</h4>
+          <input type="range" min="10" max="90" name="width-control-shrink" id="width-control-shrink" value="50">
+        </div>
+        <div class="btns-container">
+          <h3>Select button to apply flex-shrink property</h3>
+          <div class="btn flex-shrink-btn">1</div>
+          <div class="btn flex-shrink-btn">2</div>
+          <div class="btn flex-shrink-btn">3</div>
+          <div class="btn flex-shrink-btn">4</div>
+        </div>
+        <div class="shrink-values-container">
+          <h3>Select shrink value to apply at Div</h3>
+         <div class="btn-values">
+          <div class="btn flex-shrink-value">0</div>
+          <div class="btn flex-shrink-value">1</div>
+          <div class="btn flex-shrink-value">2</div>
+          <div class="btn flex-shrink-value">3</div>
+         </div>
+        </div>
       </div>
     </div>
+
+    <!-- FLEX-GROW -->
+    <div class="flex-grow separator">
+      <h3>FLEX-GROW</h3>
+      <div class="divs-container grow-container">
+          <div class="cell green"><span>1</span></div>
+          <div class="cell green"><span>2</span></div>
+          <div class="cell blue"><span>3</span></div>
+          <div class="cell blue"><span>4</span></div>
+      </div>      
+      <div class="tools-container">
+        <div class="aditional-info">
+          <div class="info-message"><p>Aditional information</p></div>
+        </div>
+        <div class="controls-container">
+          <h4>Container width control</h4>
+          <input type="range" min="10" max="90" name="width-control-grow" id="width-control-grow" value="50">
+        </div>
+        <div class="btns-container">
+          <h3>Select button to apply flex-grow property</h3>
+          <div class="btn flex-grow-btn">1</div>
+          <div class="btn flex-grow-btn">2</div>
+          <div class="btn flex-grow-btn">3</div>
+          <div class="btn flex-grow-btn">4</div>
+        </div>
+        <div class="grow-values-container">
+          <h3>Select grow value to apply at Div</h3>
+         <div class="btn-values">
+          <div class="btn flex-grow-value">0</div>
+          <div class="btn flex-grow-value">1</div>
+          <div class="btn flex-grow-value">2</div>
+          <div class="btn flex-grow-value">3</div>
+         </div>
+        </div>
+      </div>
+    </div>
+    
   </div>
   <script src="./includes/main.js"></script>
 </body>
