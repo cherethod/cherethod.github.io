@@ -56,54 +56,15 @@ const showMessages = (atr, value) => {
       '1': "Al establecer el valor 1 a un div hijo, este ganará espacio adicional de igual manera que los elementos sin atributo flex-grow o elementos con valor 0.",
       '2': "Al establecer el valor 2 a un div hijo, este ganará espacio adicional de manera más significativa que los elementos sin atributo flex-grow o con valores inferiores, como 0 o 1.",
       '3': "Al establecer el valor 3 a un div hijo, este ganará espacio adicional de manera aún más pronunciada que los elementos sin atributo flex-grow o con valores inferiores, como 0, 1 o 2."
-    }
-  };  
-  
-  // const msg = {    
-  //   'flex-direction': {
-  //     'row': "Es el valor por defecto. Los elementos hijos se muestran horizontalmente según el orden natural del documento HTML, de izquierda a derecha.",
-  //     'row-reverse': "Mostrará los elementos hijos horizontalmente en orden inverso al valor 'row'. Es decir, de derecha a izquierda.",
-  //     'column': "Mostrará los elementos hijos verticalmente según el orden natural del documento (como si todos fueran elementos 'display: block').",
-  //     'column-reverse': "Mostrará los elementos hijos verticalmente en orden inverso al valor 'column'. Es decir, de abajo hacia arriba."
-  //   },
-          
-  //   'align-items': {
-  //     'flex-start': "Es el valor por defecto. Alinea los elementos hijos ajustándolos en la parte superior del contenedor padre.",
-  //     'flex-end': "Alinea los elementos hijos ajustándolos en la parte inferior del contenedor padre.",
-  //     'center': "Alinea verticalmente los elementos hijos en el centro del contenedor.",
-  //     'stretch': "Estira los elementos hijos verticalmente para que ocupen la altura completa del contenedor.",
-  //     'baseline': "Alinea los elementos hijos verticalmente en función de sus líneas base."
-  //   },
-          
-  //   'flex-wrap': {
-  //     'nowrap': "Es el valor por defecto. Los elementos hijos se muestran horizontalmente según el orden natural del documento HTML, de izquierda a derecha, sin permitir saltos de línea.",
-  //     'wrap': "Cuando el espacio es insuficiente, ajusta los elementos hijo que no caben en el contenedor padre colocándolos en una nueva fila debajo del resto.",
-  //     'wrap-reverse': "Cuando el espacio es insuficiente, ajusta los elementos hijo que no caben en el contenedor padre colocándolos en una nueva fila encima del resto."
-  //   },
-
-  //   'justify-content': {
-  //     'flex-start': "Es el valor por defecto. Alinea los elementos hijos en el comienzo del contenedor padre en la dirección natural.",
-  //     'flex-end': "Alinea los elementos hijos en el final del contenedor en la dirección natural.",
-  //     'center': "Alinea los elementos hijos en el centro del contenedor en la dirección natural.",
-  //     'space-between': "Distribuye uniformemente los elementos hijos a lo largo del contenedor en la dirección natural, con espacio adicional entre ellos.",
-  //     'space-around': "Distribuye uniformemente los elementos hijos a lo largo del contenedor en la dirección natural, con espacio igual alrededor de cada elemento.",
-  //     'space-evenly': "Distribuye uniformemente los elementos hijos a lo largo del contenedor en la dirección natural, con espacio igual entre ellos y en los extremos."
-  //   },
-  //   'flex-shrink': {
-  //     'info': `El atributo flex-shrink establece una prioridad a la hora de "ceder" espacio respecto a los elementos hermanos que comparten un contenedor con display flex.`,
-  //     '0': "Al establecer el valor 0 a un div hijo este nunca perderá espacio respecto al resto de elementos",
-  //     '1': "Al establecer el valor 1 a un div hijo este reducirá el espacio de igual manera que el resto de elementos sin attriburo flex-shrink o elementos con valor 0",
-  //     '2': "Al establecer el valor 1 a un div hijo este reducirá el espacio respecto al resto de elementos sin attriburo flex-shrink o elementos con valor 0",
-  //     '3': "Al establecer el valor 1 a un div hijo este reducirá MÁS RAPIDAMENTE el espacio respecto al resto de elementos sin attriburo flex-shrink o elementos con valor 0"
-  //   },
-  //   'flex-grow': {
-  //     'info': `El atributo flex-shrink establece una prioridad a la hora de "ceder" espacio respecto a los elementos hermanos que comparten un contenedor con display flex.`,
-  //     '0': "Al establecer el valor 0 a un div hijo este nunca perderá espacio respecto al resto de elementos",
-  //     '1': "Al establecer el valor 1 a un div hijo este reducirá el espacio de igual manera que el resto de elementos sin attriburo flex-shrink o elementos con valor 0",
-  //     '2': "Al establecer el valor 1 a un div hijo este reducirá el espacio respecto al resto de elementos sin attriburo flex-shrink o elementos con valor 0",
-  //     '3': "Al establecer el valor 1 a un div hijo este reducirá MÁS RAPIDAMENTE el espacio respecto al resto de elementos sin attriburo flex-shrink o elementos con valor 0"
-  //   }
-  // };
+    }, 
+    'flex-basis': {
+      'info': `El atributo flex-basis establece un ancho que el elemento "intentará" obtener siempre que quede espacio disponible para ello.`,
+      'info2': `El div 2 intentará obtener el tamaño asignado en flex-basis, de manera similar a si asignáramos un ancho (width). Sin embargo, esto solo se aplicará si es posible dentro del espacio disponible entre sus hermanos.`
+    },
+    'gap': {
+      'info': `El atributo gap establece un espaciado entre los elementos hijos, de manera similar a un margen lateral. La diferencia principal con el margen (margin) es que el gap solo agrega espacio entre los hijos, sin afectar los extremos del contenedor.`
+    }    
+  };    
   
   if (msg[atr] && msg[atr][value]) {
     return msg[atr][value];
@@ -128,7 +89,29 @@ const hideTools = (attribute)=> {
   }
 }
 
-
+const resetStyles = (attribute) => {
+  const selectedCells = document.querySelectorAll('.cell');
+  selectedCells.forEach((cell) => {
+    switch (attribute) {
+      case 'shrink':
+        if (cell.parentElement.parentElement.classList.contains('flex-shrink')) {
+          cell.style.flexShrink = '';
+        }
+        break;
+      case 'grow':
+        if (cell.parentElement.parentElement.classList.contains('flex-grow')) {
+          cell.style.flexGrow = '';
+        }
+        break;
+      case 'basis':
+        if (cell.parentElement.parentElement.classList.contains('flex-basis')) {
+          cell.style.flexBasis = '';
+        }
+      default:
+        break;
+    }
+  });
+};
 
 /************************
 **  FLEX - DIRECTION   ** 
@@ -288,7 +271,7 @@ flexShrinkBtns.forEach((btn) => {
     selectedShrinkCell = document.querySelector('.shrink-container').children[targetDiv - 1];
 
     function markAsignedValue() {
-      // I WANT TO DIE... getPropertyValue returns a string (almost in this case), can't compare with a number...
+      // I WANT TO DIE ... getPropertyValue returns a string (almost in this case), can't compare with a number...
       let asignedValue = parseInt(window.getComputedStyle(selectedShrinkCell).getPropertyValue('flex-shrink'));
       const values = document.querySelectorAll('.flex-shrink-value');
       values.forEach((value, i) => {        
@@ -315,7 +298,7 @@ flexShrinkBtns.forEach((btn) => {
         if (valuesDiv.classList.contains('active')) {
           const infoDiv = e.target.parentNode.parentNode.parentNode.children[0];
           const value = e.target.innerHTML;
-          selectedShrinkCell.style.flexShrink = value; // Aplicar el valor al elemento cell seleccionado
+          selectedShrinkCell.style.flexShrink = value; 
           markAsignedValue()
           hideAllInfo('.aditional-info');
           (infoDiv.classList.contains('disappear')) ? infoDiv.classList.remove('disappear') : null;
@@ -329,7 +312,7 @@ flexShrinkBtns.forEach((btn) => {
 
 
 /************************
-**    FLEX - grow    ** 
+**    FLEX - GROW      ** 
 ************************/
 
 const flexgrowBtns = document.querySelectorAll('.flex-grow-btn');
@@ -359,7 +342,6 @@ flexgrowBtns.forEach((btn) => {
     selectedGrowCell = document.querySelector('.grow-container').children[targetDiv - 1];
 
     function markAsignedValue() {
-      // I WANT TO DIE... getPropertyValue returns a string (almost in this case), can't compare with a number...
       let asignedValue = parseInt(window.getComputedStyle(selectedGrowCell).getPropertyValue('flex-grow'));
       const values = document.querySelectorAll('.flex-grow-value');
       values.forEach((value, i) => {        
@@ -386,7 +368,7 @@ flexgrowBtns.forEach((btn) => {
         if (valuesDiv.classList.contains('active')) {
           const infoDiv = e.target.parentNode.parentNode.parentNode.children[0];
           const value = e.target.innerHTML;
-          selectedGrowCell.style.flexGrow = value; // Aplicar el valor al elemento cell seleccionado
+          selectedGrowCell.style.flexGrow = value; 
           markAsignedValue()
           hideAllInfo('.aditional-info');
           (infoDiv.classList.contains('disappear')) ? infoDiv.classList.remove('disappear') : null;
@@ -397,6 +379,63 @@ flexgrowBtns.forEach((btn) => {
     });
   });
 });
+
+
+/************************
+**    FLEX - BASIS     ** 
+************************/
+
+document.querySelector('#width-control-basis').addEventListener('input', (e) => {
+  hideAllInfo('.aditional-info');
+  const infoDiv = e.target.parentNode.children[4];
+  (infoDiv.classList.contains('disappear')) ? infoDiv.classList.remove('disappear') : null;
+  infoDiv.classList.add('appear');
+  infoDiv.children[0].children[0].innerHTML = showMessages('flex-basis', 'info');
+  document.querySelector('.basis-container').style.width = `${e.target.value}%`;
+});
+
+document.querySelector('#flex-basis-control').addEventListener('input', (e) => {
+  hideAllInfo('.aditional-info');
+  const infoDiv = e.target.parentNode.children[4];
+  (infoDiv.classList.contains('disappear')) ? infoDiv.classList.remove('disappear') : null;
+  infoDiv.classList.add('appear');
+  infoDiv.children[0].children[0].innerHTML = showMessages('flex-basis', 'info2');
+  document.querySelector('.basis-container').children[1].style.flexBasis = `${e.target.value}px`;
+  document.querySelector('#basis-size-title').innerHTML = `Div 2 basis control. Size: ${e.target.value}px` 
+});
+
+
+/************************
+**         GAP         ** 
+************************/
+document.querySelector('#gap-control').addEventListener('input', (e) => {
+  hideAllInfo('.aditional-info');
+  const infoDiv = e.target.parentNode.children[1];
+  (infoDiv.classList.contains('disappear')) ? infoDiv.classList.remove('disappear') : null;
+  infoDiv.classList.add('appear');
+  infoDiv.children[0].children[0].innerHTML = showMessages('gap', 'info');
+  document.querySelector('.gap-container').style.gap = `${e.target.value}px`;
+});
+
+/************************
+**        PLACE        ** 
+************************/
+
+const placeItemsBtns = document.querySelectorAll('.place-items-btn');
+const placeContentBtns = document.querySelectorAll('.place-content-btn');
+const placeCellDiv = document.querySelector('.place-container');
+
+placeItemsBtns.forEach((btn) => {
+  btn.addEventListener('click', (e) => {
+    placeCellDiv.style.placeItems = e.target.innerHTML.toLowerCase();
+  })
+})
+
+placeContentBtns.forEach((btn) => {
+  btn.addEventListener('click', (e) => {
+    placeCellDiv.style.placeContent = e.target.innerHTML.toLowerCase();
+  })
+})
 
 // ERROR DE ASIGNACION
 
