@@ -22,10 +22,10 @@ const showMessages = (atr, value) => {
     },
           
     'align-items': {
-      'flex-start': "Alinea los elementos hijos ajustándolos en la parte superior del contenedor padre.",
+      'flex-start': "Es el valor por defecto. Alinea los elementos hijos ajustándolos en la parte superior del contenedor padre.",
       'flex-end': "Alinea los elementos hijos ajustándolos en la parte inferior del contenedor padre.",
       'center': "Alinea verticalmente los elementos hijos en el centro del contenedor.",
-      'stretch': "Es el valor por defecto. Estira los elementos hijos verticalmente para que ocupen la altura completa del contenedor.",
+      'stretch': "Estira los elementos hijos verticalmente para que ocupen la altura completa del contenedor.",
       'baseline': "Alinea los elementos hijos verticalmente en función de sus líneas base."
     },
           
