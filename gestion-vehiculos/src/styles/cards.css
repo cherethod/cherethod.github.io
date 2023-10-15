@@ -1,0 +1,138 @@
+.vehicles__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  gap: 20px; 
+  width: 90%; 
+  margin: 30px auto;
+  place-items: center;
+  place-content: center;
+}
+
+.filter__container {
+  width: 80%;
+  margin: 20px auto 0 auto;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 15px;
+  place-content: center;
+  place-items: center;
+}
+.filter__input {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  height: 50px;
+  font-size: 1.2em;
+}
+.filter__input.search__input {
+  grid-column: span 3;
+}
+
+
+.vehicle__card {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  gap: 10px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  /* padding-bottom: 15px; */
+  cursor: pointer;
+}
+
+.vehicle__card:hover {
+  outline: 2px solid blue;
+  border: 1px solid blue;
+  background-color: #333;  
+}
+
+.vehicle__card > img {
+  height: 125px;
+  width: 300px;
+  min-height: 125px;
+  border-radius: 10px 10px 0 0;
+  object-fit: fill;
+}
+
+.card__edit--btn {
+  background-color: rgb(1, 45, 168);
+  border-radius: 0 0 10px 10px;
+}
+
+.card__edit--btn:hover {
+  background-color: rgb(114, 151, 252);
+}
+
+
+.vehicle__card--editing {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 300px;
+  gap: 10px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  /* padding-bottom: 15px; */
+  cursor: pointer;
+  position: relative;
+}
+
+.vehicle__card--editing > img {
+  height: 125px;
+  min-width: 100%;
+  min-height: 125px;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+
+.vehicle__card--editing >form > .input__container {
+  padding: 5px 0;
+  max-width: 100%;
+}
+
+.vehicle__card--editing > form > .input__container > label {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  padding: 0 5px;
+}
+
+.vehicle__card--editing >form > .btns__container {
+  display: flex;
+  gap: 10px;
+}
+
+.vehicle__card--editing >form > .btns__container > button {
+  min-width: 50%;
+}
+
+.vehicle__card--editing >form > .btns__container > button:nth-child(1) {
+  border-radius: 0 0 0 10px;
+}
+
+.vehicle__card--editing >form > .btns__container > button:nth-child(2) {
+  border-radius: 0 0 10px 0;
+}
+
+.deleteSVG {
+  width: 25px;
+  height: 25px;
+}
+
+#delete-btn {
+ position: absolute; 
+ background-color: rgb(177, 59, 59);
+ display: flex;
+ place-content: center;
+ place-items: center;
+ border-radius: 10px;
+ top: 5px;
+ right: 5px;
+ height: 50px;
+ width: 50px !important;
+}

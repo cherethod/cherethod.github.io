@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let HTML_Fragment = `<p>QBShared = QBShared or {}a/pA\n
+                        <p>QBShared.Vehicles = {</p>\n`
+    fetch('./public/vehicles.json')
+      .then((response) => {
+        if (!response.ok) throw new Error('Error en la solicitud');
+        return response.json();
+      })
+      .then((data) => {
+        data.forEach((item) => {
+          console.log(item.hash);
+          HTML_Fragment += `<p>['${item.hash}'] = {</p>
+            <p>['name'] = '${item.name}',</p>
+            <p>['brand'] = '${item.brand}',</p>
+            <p>['model'] = '${item.model}',</p>
+            <p>['price'] = ${item.price},</p>
+            <p>['category'] = '${item.category}',</p>
+            <p>['hash'] = '${item.hash}',</p>
+            <p>['shop'] = '${item.shop}',</p>
+          <p>},</p>\n`;
+        });
+        HTML_Fragment += `<p>-- REMOVE LAST COMA</p>\n}`;
+        document.write(HTML_Fragment);
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+  </script>
+</body>
+</html>
