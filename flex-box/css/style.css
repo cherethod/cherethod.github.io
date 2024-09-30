@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+h2, h3 {
+  text-align: center;
+  color: #fff;
+  margin: 20px 0;
+  grid-column: span 2;
+}
+h3 {
+  margin: 30px 0;
+}
+.container {
+  min-height: 100vh;
+  max-width: 100vw;
+  background-color: #1a1a1a;
+  padding: 50px 0;
+}
+.divs-container {
+  border: 1px solid lightgray;
+  max-height: 450px;
+  width: min-content;
+  padding: 5px;
+  display: flex;
+  gap: 5px;
+  overflow: hidden;
+  transition: max-height .5s ease;
+}
+.divs-container.animate {
+  animation: effect .5s ease;
+}
+.cell {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  width: 100px;
+  height: 80px;
+}
+.green {
+  background-color: #9acd31;
+}
+.blue {
+  background-color: #8ad9fb;
+}
+.separator {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 62px 1fr;
+  place-items: center;
+  place-content: center;
+  min-height: 450px;
+}
+.btns-container {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  position: relative;
+  height: 100%;
+  place-items: center;
+}
+.btn {
+  height: min-content;
+  width: max-content;
+  padding: 10px 20px;
+  background-color: lightgray;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.aditional-info {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  width: 90%;
+  margin: 0 auto;
+  /* background-color: green; */
+  /* padding: 5px; */
+  transition: height .3s ease;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.aditional-info.appear {
+  animation: info-appear .3s ease 1 forwards;
+}
+.aditional-info.disappear {
+  animation: info-disappear .3s ease 1 forwards;
+}
+.aditional-info  p {
+  color: #fff;
+  font-size: 1.4em;;
+  background-color: #272727;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #fff;
+}
+
+
+/*******************
+*   ALIGN ITEMS    *
+*******************/
+.align-items > .divs-container {
+  height: 200px;
+}
+
+.align-items > .divs-container > div > span {
+  height: 100%;
+}
+
+.align-items > .divs-container > div:nth-child(1)  {
+  min-height: 50%;
+  height: auto;
+}
+
+.align-items > .divs-container > div:nth-child(2)  {
+  min-height: 80%;
+  height: auto;
+}
+
+.align-items > .divs-container > div:nth-child(3)  {
+  min-height: 30%;
+  height: auto;
+}
+
+.align-items > .divs-container > div:nth-child(4)  {
+  min-height: 50%;
+  height: auto;
+}
+
+/*******************
+*    FLEX WRAP     *
+*******************/
+
+.flex-wrap > .divs-container {
+  width: 428px;
+  flex-direction: row;
+  overflow: visible;
+}
+.flex-wrap > .divs-container > .cell {
+  min-width: 100px;
+}
+.flex-wrap > .divs-container > div:nth-child(5)  {
+  background-color: purple;
+}
+
+/********************
+*  JUSTIFY-CONTENT  *
+********************/
+
+.justify-content > .divs-container {
+  width: 90%;
+  background-color: rgb(95, 95, 95);
+}
+
+.justify-content > .btns-container {
+  width: 80%;
+  flex-wrap: wrap;
+  place-content: center;
+}
+
+/********************
+*    FLEX-SHRINK    *
+********************/
+:is(.flex-shrink, .flex-grow) > .tools-container {
+  position: relative;
+  height: 100%;
+  width: 90%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  place-content: center;
+  place-items: center;
+}
+
+:is(.flex-shrink, .flex-grow) > .tools-container > .controls-container {
+  margin-top: 150px;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  place-self: end;
+}
+
+:is(.flex-shrink, .flex-grow) > .tools-container > .controls-container > h4 {
+  text-align: center;
+  color: #fff;
+  padding: 10px 0;
+  font-size: 1.2em;
+  width: 100%;
+}
+:is(.flex-shrink, .flex-grow) > .tools-container > .controls-container > :where(#width-control-shrink, #width-control-grow) {
+  width: 100%;
+}
+
+:is(.flex-shrink, .flex-grow) > .tools-container > .btns-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);  
+  place-content: center;
+  width: min-content;
+}
+
+:is(.flex-shrink, .flex-grow) > .tools-container > .btns-container > h3 {
+  grid-column: span 4;
+  width: 200%;
+}
+
+:is(.flex-shrink, .flex-grow) > .tools-container > .btns-container > .btn.selected {
+  background-color: rgb(0, 153, 255);
+}
+
+:is(.flex-shrink, .flex-grow) > .tools-container > :where(.shrink-values-container , .grow-values-container ) {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+}
+:is(.flex-shrink, .flex-grow) > .tools-container > :where(.shrink-values-container , .grow-values-container ) > .btn-values {
+  display: flex;
+  place-content: center;
+  gap: 10px;
+}
+:is(.flex-shrink, .flex-grow, .flex-basis) button {
+  position: absolute;
+  right: 20px;
+  padding: 10px 20px;
+}
+
+.flex-basis > .divs-container {
+  width: 700px;
+}
+.flex-basis > .btns-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  place-content: center;
+  width: 90%;
+}
+
+.gap > .btns-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+}
+
+#gap-control {
+  width: 50%;
+}
+
+.place-container {
+  width: 90%;
+  height: 90%;
+  display: flex;
+}
+
+
+.separator.place > .btns-container {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+.separator.place > .btns-container > div {  
+  display: flex;
+  place-items: center;
+  gap: 20px;
+}
+
+/* .flex-basis > .btns-container > .aditional-info {
+  min-width: 90%;
+} */
+@keyframes effect {
+  0% {
+    max-height: 0;
+  }
+  100% {
+    max-height: 450px; /* Ajusta según sea necesario */
+  }
+}
+
+@keyframes info-appear {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 100%;
+  }
+}
+
+@keyframes info-disappear {
+  from {
+    max-height: 100%;
+  }
+  to {
+    max-height: 0;
+  }
+}
