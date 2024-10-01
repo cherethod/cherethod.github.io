@@ -1,0 +1,2581 @@
+{
+    "standings": {
+        "roster": [
+            {
+                "uid": 1727787898,
+                "name": "brujita coñazp",
+                "fieldNames": [],
+                "standings": {
+                    "player": [
+                        {
+                            "role": "",
+                            "name": "Nicper-Mandokir",
+                            "guid": "Player-4813-04EDD811",
+                            "spent": 0,
+                            "class": "Warrior",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Hulnn-Mandokir",
+                            "guid": "Player-4813-032E6C04",
+                            "spent": 0,
+                            "class": "Shaman",
+                            "points": 0,
+                            "spec": "elemental"
+                        },
+                        {
+                            "role": "",
+                            "name": "Hincapie-Mandokir",
+                            "guid": "Player-4813-05904EF9",
+                            "spent": 0,
+                            "class": "Priest",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Meagopis-Mandokir",
+                            "guid": "Player-4813-02FEE927",
+                            "spent": 0,
+                            "class": "Mage",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Kirdape-Mandokir",
+                            "guid": "Player-4813-04ADC62C",
+                            "spent": 0,
+                            "class": "Warrior",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Erdany-Mandokir",
+                            "guid": "Player-4813-057DA8C2",
+                            "spent": 0,
+                            "class": "Hunter",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Dkdq-Mandokir",
+                            "guid": "Player-4813-05924054",
+                            "spent": 0,
+                            "class": "DeathKnight",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Pochina-Mandokir",
+                            "guid": "Player-4813-057E0933",
+                            "spent": 0,
+                            "class": "DeathKnight",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Ziskiti-Mandokir",
+                            "guid": "Player-4813-0588801A",
+                            "spent": 0,
+                            "class": "Warlock",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Domins-Mandokir",
+                            "guid": "Player-4813-04DBBE72",
+                            "spent": 0,
+                            "class": "Priest",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Zorororonoa-Mandokir",
+                            "guid": "Player-4813-0580D3B5",
+                            "spent": 0,
+                            "class": "Rogue",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Coscadk-Mandokir",
+                            "guid": "Player-4813-04760BDD",
+                            "spent": 0,
+                            "class": "DeathKnight",
+                            "points": 0,
+                            "spec": "frost"
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Akranaz-Mandokir",
+                            "guid": "Player-4813-025CA703",
+                            "spent": 0,
+                            "class": "Shaman",
+                            "points": 0,
+                            "spec": "elemental"
+                        },
+                        {
+                            "role": "",
+                            "name": "Kylopower-Mandokir",
+                            "guid": "Player-4813-0361D2A4",
+                            "spent": 0,
+                            "class": "Paladin",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Zoilada-Mandokir",
+                            "guid": "Player-4813-0272DDBE",
+                            "spent": 0,
+                            "class": "Hunter",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Franshu-Mandokir",
+                            "guid": "Player-4813-03116216",
+                            "spent": 0,
+                            "class": "Priest",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Alsak-Mandokir",
+                            "guid": "Player-4813-056F3497",
+                            "spent": 0,
+                            "class": "Priest",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Kurösh-Mandokir",
+                            "guid": "Player-4813-04EF0938",
+                            "spent": 0,
+                            "class": "DeathKnight",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Bousalcarrer-Mandokir",
+                            "guid": "Player-4813-056F18CD",
+                            "spent": 0,
+                            "class": "Paladin",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Brutnature-Mandokir",
+                            "guid": "Player-4813-058C4E43",
+                            "spent": 0,
+                            "class": "Hunter",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Könë-Mandokir",
+                            "guid": "Player-4813-05927B1F",
+                            "spent": 0,
+                            "class": "Paladin",
+                            "points": 0,
+                            "spec": "holy"
+                        },
+                        {
+                            "role": "",
+                            "name": "Steroids-Mandokir",
+                            "guid": "Player-4813-04B5D480",
+                            "spent": 0,
+                            "class": "DeathKnight",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Lepidor-Mandokir",
+                            "guid": "Player-4813-0329BA54",
+                            "spent": 0,
+                            "class": "Rogue",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Cleaning-Mandokir",
+                            "guid": "Player-4813-058FB4C9",
+                            "spent": 0,
+                            "class": "Rogue",
+                            "points": 0,
+                            "spec": "combat"
+                        },
+                        {
+                            "role": "",
+                            "name": "Otmin-Mandokir",
+                            "guid": "Player-4813-058EF21D",
+                            "spent": 0,
+                            "class": "Druid",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Larrubia-Mandokir",
+                            "guid": "Player-4813-059A0A49",
+                            "spent": 0,
+                            "class": "Paladin",
+                            "points": 0,
+                            "spec": "retribution"
+                        },
+                        {
+                            "role": "",
+                            "name": "Shiver-Mandokir",
+                            "guid": "Player-4813-0595B7DE",
+                            "spent": 0,
+                            "class": "Mage",
+                            "points": 0,
+                            "spec": "fire"
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Dfamy-Mandokir",
+                            "guid": "Player-4813-057DAA2A",
+                            "spent": 0,
+                            "class": "Druid",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Licharthas-Mandokir",
+                            "guid": "Player-4813-05954167",
+                            "spent": 0,
+                            "class": "DeathKnight",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Luisaragones-Mandokir",
+                            "guid": "Player-4813-04C31B0B",
+                            "spent": 0,
+                            "class": "Warlock",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Cissalc-Mandokir",
+                            "guid": "Player-4813-05840110",
+                            "spent": 0,
+                            "class": "Shaman",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Trasthornado-Mandokir",
+                            "guid": "Player-4813-05939D15",
+                            "spent": 0,
+                            "class": "Warrior",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Coscachami-Mandokir",
+                            "guid": "Player-4813-0564572B",
+                            "spent": 0,
+                            "class": "Shaman",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Dominwar-Mandokir",
+                            "guid": "Player-4813-04C0821D",
+                            "spent": 0,
+                            "class": "Warrior",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "TANK",
+                            "name": "Kaeltasia-Mandokir",
+                            "guid": "Player-4813-0338BBFE",
+                            "spent": 0,
+                            "class": "Paladin",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Cataras-Mandokir",
+                            "guid": "Player-4813-055E38D0",
+                            "spent": 0,
+                            "class": "Warlock",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Canidos-Mandokir",
+                            "guid": "Player-4813-05946958",
+                            "spent": 0,
+                            "class": "Mage",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Darkthrom-Mandokir",
+                            "guid": "Player-4813-05979E41",
+                            "spent": 0,
+                            "class": "DeathKnight",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Adparo-Mandokir",
+                            "guid": "Player-4813-058E828E",
+                            "spent": 0,
+                            "class": "Warrior",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Theobelix-Mandokir",
+                            "guid": "Player-4813-04CE01B8",
+                            "spent": 0,
+                            "class": "DeathKnight",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Acelgaletal-Mandokir",
+                            "guid": "Player-4813-05982F73",
+                            "spent": 0,
+                            "class": "Druid",
+                            "points": 0,
+                            "spec": "restoration"
+                        },
+                        {
+                            "role": "",
+                            "name": "Smüz-Mandokir",
+                            "guid": "Player-4813-057FEC87",
+                            "spent": 0,
+                            "class": "Warrior",
+                            "points": 0,
+                            "spec": "arms"
+                        },
+                        {
+                            "role": "",
+                            "name": "Chafamoskas-Mandokir",
+                            "guid": "Player-4813-01D61591",
+                            "spent": 0,
+                            "class": "Priest",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Capïtalista-Mandokir",
+                            "guid": "Player-4813-0591D3AE",
+                            "spent": 0,
+                            "class": "Shaman",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Lactosio-Mandokir",
+                            "guid": "Player-4813-0384837D",
+                            "spent": 0,
+                            "class": "Shaman",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Find-Mandokir",
+                            "guid": "Player-4813-058A1E09",
+                            "spent": 0,
+                            "class": "Hunter",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Ermanué-Mandokir",
+                            "guid": "Player-4813-05654BE7",
+                            "spent": 0,
+                            "class": "Hunter",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Srbig-Mandokir",
+                            "guid": "Player-4813-05944CD3",
+                            "spent": 0,
+                            "class": "Warrior",
+                            "points": 0,
+                            "spec": "arms"
+                        },
+                        {
+                            "role": "",
+                            "name": "Asmutt-Mandokir",
+                            "guid": "Player-4813-0478A2F9",
+                            "spent": 0,
+                            "class": "Hunter",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Pieträ-Mandokir",
+                            "guid": "Player-4813-0510FED8",
+                            "spent": 0,
+                            "class": "Paladin",
+                            "points": 0,
+                            "spec": "retribution"
+                        },
+                        {
+                            "role": "",
+                            "name": "Dormami-Mandokir",
+                            "guid": "Player-4813-04D012E6",
+                            "spent": 0,
+                            "class": "Priest",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Patatillas-Mandokir",
+                            "guid": "Player-4813-03308E9F",
+                            "spent": 0,
+                            "class": "Paladin",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Retrosmite-Mandokir",
+                            "guid": "Player-4813-0562B595",
+                            "spent": 0,
+                            "class": "Priest",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Javata-Mandokir",
+                            "guid": "Player-4813-05034756",
+                            "spent": 0,
+                            "class": "Warrior",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Jäcky-Mandokir",
+                            "guid": "Player-4813-0495C706",
+                            "spent": 0,
+                            "class": "Hunter",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Thesurgeon-Mandokir",
+                            "guid": "Player-4813-057F16AC",
+                            "spent": 0,
+                            "class": "Shaman",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Deathknigth-Mandokir",
+                            "guid": "Player-4813-057DA991",
+                            "spent": 0,
+                            "class": "DeathKnight",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Trumpeitor-Mandokir",
+                            "guid": "Player-4813-0593E90D",
+                            "spent": 0,
+                            "class": "Hunter",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Trifurquita-Mandokir",
+                            "guid": "Player-4813-0366AF3F",
+                            "spent": 0,
+                            "class": "Hunter",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Spunkmeyer-Mandokir",
+                            "guid": "Player-4813-04DE2A7E",
+                            "spent": 0,
+                            "class": "Paladin",
+                            "points": 0,
+                            "spec": "retribution"
+                        },
+                        {
+                            "role": "",
+                            "name": "Ëlron-Mandokir",
+                            "guid": "Player-4813-03337DCD",
+                            "spent": 0,
+                            "class": "Paladin",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Bayaspirina-Mandokir",
+                            "guid": "Player-4813-05947511",
+                            "spent": 0,
+                            "class": "Warlock",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Rayovallecas-Mandokir",
+                            "guid": "Player-4813-053FE21F",
+                            "spent": 0,
+                            "class": "Shaman",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Hellbron-Mandokir",
+                            "guid": "Player-4813-03411701",
+                            "spent": 0,
+                            "class": "Paladin",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Chuminola-Mandokir",
+                            "guid": "Player-4813-0258B8F1",
+                            "spent": 0,
+                            "class": "Mage",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Trannpas-Mandokir",
+                            "guid": "Player-4813-04F7A25C",
+                            "spent": 0,
+                            "class": "Hunter",
+                            "points": 0,
+                            "spec": "survival"
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Puntillita-Mandokir",
+                            "guid": "Player-4813-02F44568",
+                            "spent": 0,
+                            "class": "Hunter",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Vexên-Mandokir",
+                            "guid": "Player-4813-031D581F",
+                            "spent": 0,
+                            "class": "Druid",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Trolaxd-Mandokir",
+                            "guid": "Player-4813-05226528",
+                            "spent": 0,
+                            "class": "Rogue",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Shamanalekum-Mandokir",
+                            "guid": "Player-4813-05546E07",
+                            "spent": 0,
+                            "class": "Shaman",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Roocosifredy-Mandokir",
+                            "guid": "Player-4813-01D5756E",
+                            "spent": 0,
+                            "class": "Mage",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Shadic-Mandokir",
+                            "guid": "Player-4813-045D267C",
+                            "spent": 0,
+                            "class": "Rogue",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Biske-Mandokir",
+                            "guid": "Player-4813-04F119F0",
+                            "spent": 0,
+                            "class": "Mage",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Wartrx-Mandokir",
+                            "guid": "Player-4813-0313832B",
+                            "spent": 0,
+                            "class": "Druid",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Naiven-Mandokir",
+                            "guid": "Player-4813-0495E775",
+                            "spent": 0,
+                            "class": "Druid",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Takelberry-Mandokir",
+                            "guid": "Player-4813-04D1B96A",
+                            "spent": 0,
+                            "class": "Hunter",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Asesinocruel-Mandokir",
+                            "guid": "Player-4813-058BC61D",
+                            "spent": 0,
+                            "class": "Mage",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Requëzzon-Mandokir",
+                            "guid": "Player-4813-05982739",
+                            "spent": 0,
+                            "class": "DeathKnight",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Urden-Mandokir",
+                            "guid": "Player-4813-04B388FC",
+                            "spent": 0,
+                            "class": "Hunter",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Catdog-Mandokir",
+                            "guid": "Player-4813-058AC767",
+                            "spent": 0,
+                            "class": "Druid",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Kapmanius-Mandokir",
+                            "guid": "Player-4813-051A504F",
+                            "spent": 0,
+                            "class": "Druid",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Rockks-Mandokir",
+                            "guid": "Player-4813-031888F0",
+                            "spent": 0,
+                            "class": "Mage",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Melnibonés-Mandokir",
+                            "guid": "Player-4813-05265A76",
+                            "spent": 0,
+                            "class": "DeathKnight",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Munker-Mandokir",
+                            "guid": "Player-4813-05945ADA",
+                            "spent": 0,
+                            "class": "DeathKnight",
+                            "points": 0,
+                            "spec": "frost"
+                        },
+                        {
+                            "role": "",
+                            "name": "Bodian-Mandokir",
+                            "guid": "Player-4813-058E9869",
+                            "spent": 0,
+                            "class": "Druid",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Puinod-Mandokir",
+                            "guid": "Player-4813-05641E54",
+                            "spent": 0,
+                            "class": "Druid",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "HEALER",
+                            "name": "Vegani-Mandokir",
+                            "guid": "Player-4813-034BB174",
+                            "spent": 0,
+                            "class": "Druid",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Tráka-Mandokir",
+                            "guid": "Player-4813-058CD050",
+                            "spent": 0,
+                            "class": "Mage",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Handcapped-Mandokir",
+                            "guid": "Player-4813-04F73FE6",
+                            "spent": 0,
+                            "class": "Druid",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Risiel-Mandokir",
+                            "guid": "Player-4813-04ADB1A1",
+                            "spent": 0,
+                            "class": "Rogue",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Ýò-Mandokir",
+                            "guid": "Player-4813-0599F660",
+                            "spent": 0,
+                            "class": "Druid",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Kronilak-Mandokir",
+                            "guid": "Player-4813-0597D589",
+                            "spent": 0,
+                            "class": "Hunter",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Pyroxido-Mandokir",
+                            "guid": "Player-4813-04F6A2DB",
+                            "spent": 0,
+                            "class": "Paladin",
+                            "points": 0,
+                            "spec": "protection"
+                        },
+                        {
+                            "role": "",
+                            "name": "Fundhit-Mandokir",
+                            "guid": "Player-4813-0553CFC3",
+                            "spent": 0,
+                            "class": "Rogue",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Xerion-Mandokir",
+                            "guid": "Player-4813-0594D160",
+                            "spent": 0,
+                            "class": "Paladin",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Arrowoman-Mandokir",
+                            "guid": "Player-4813-0580B11D",
+                            "spent": 0,
+                            "class": "Hunter",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Baltar-Mandokir",
+                            "guid": "Player-4813-025FA178",
+                            "spent": 0,
+                            "class": "Warlock",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Bpx-Mandokir",
+                            "guid": "Player-4813-05693138",
+                            "spent": 0,
+                            "class": "Warlock",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Estick-Mandokir",
+                            "guid": "Player-4813-0591A50A",
+                            "spent": 0,
+                            "class": "Priest",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Cagontot-Mandokir",
+                            "guid": "Player-4813-047C54E6",
+                            "spent": 0,
+                            "class": "Warlock",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Tryni-Mandokir",
+                            "guid": "Player-4813-0593BAF2",
+                            "spent": 0,
+                            "class": "Mage",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Seanconnery-Mandokir",
+                            "guid": "Player-4813-0565B111",
+                            "spent": 0,
+                            "class": "Priest",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Shadøwmage-Mandokir",
+                            "guid": "Player-4813-04D245DB",
+                            "spent": 0,
+                            "class": "Mage",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Neurovice-Mandokir",
+                            "guid": "Player-4813-0586B7E0",
+                            "spent": 0,
+                            "class": "DeathKnight",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Mekxark-Mandokir",
+                            "guid": "Player-4813-0596933C",
+                            "spent": 0,
+                            "class": "Priest",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Lumbalgia-Mandokir",
+                            "guid": "Player-4813-0449D634",
+                            "spent": 0,
+                            "class": "Mage",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Kvisma-Mandokir",
+                            "guid": "Player-4813-0590590F",
+                            "spent": 0,
+                            "class": "Mage",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Zekel-Mandokir",
+                            "guid": "Player-4813-0261F16A",
+                            "spent": 0,
+                            "class": "Hunter",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Köning-Mandokir",
+                            "guid": "Player-4813-0584C62C",
+                            "spent": 0,
+                            "class": "DeathKnight",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Selendra-Mandokir",
+                            "guid": "Player-4813-0594FEEF",
+                            "spent": 0,
+                            "class": "Paladin",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Kÿos-Mandokir",
+                            "guid": "Player-4813-058096E0",
+                            "spent": 0,
+                            "class": "Warrior",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Keti-Mandokir",
+                            "guid": "Player-4813-04F231F7",
+                            "spent": 0,
+                            "class": "Mage",
+                            "points": 0,
+                            "spec": "fire"
+                        },
+                        {
+                            "role": "",
+                            "name": "Ushin-Mandokir",
+                            "guid": "Player-4813-05610BB9",
+                            "spent": 0,
+                            "class": "Hunter",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Gilghamesh-Mandokir",
+                            "guid": "Player-4813-0597CDE8",
+                            "spent": 0,
+                            "class": "Paladin",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Halopecia-Mandokir",
+                            "guid": "Player-4813-02755F30",
+                            "spent": 0,
+                            "class": "Warlock",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Bestiako-Mandokir",
+                            "guid": "Player-4813-0479D342",
+                            "spent": 0,
+                            "class": "Warrior",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Partevidas-Mandokir",
+                            "guid": "Player-4813-0589F27B",
+                            "spent": 0,
+                            "class": "DeathKnight",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Diddykong-Mandokir",
+                            "guid": "Player-4813-05737AB3",
+                            "spent": 0,
+                            "class": "DeathKnight",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Vacantando-Mandokir",
+                            "guid": "Player-4813-0205DE47",
+                            "spent": 0,
+                            "class": "Druid",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Tirotenso-Mandokir",
+                            "guid": "Player-4813-0577A65E",
+                            "spent": 0,
+                            "class": "Hunter",
+                            "points": 0,
+                            "spec": "survival"
+                        },
+                        {
+                            "role": "",
+                            "name": "Helohim-Mandokir",
+                            "guid": "Player-4813-05975CAD",
+                            "spent": 0,
+                            "class": "DeathKnight",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Kumø-Mandokir",
+                            "guid": "Player-4813-043626B3",
+                            "spent": 0,
+                            "class": "Paladin",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Fulax-Mandokir",
+                            "guid": "Player-4813-05955384",
+                            "spent": 0,
+                            "class": "DeathKnight",
+                            "points": 0,
+                            "spec": "blood"
+                        },
+                        {
+                            "role": "",
+                            "name": "Couls-Mandokir",
+                            "guid": "Player-4813-01D4C009",
+                            "spent": 0,
+                            "class": "Shaman",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Manlia-Mandokir",
+                            "guid": "Player-4813-0589E428",
+                            "spent": 0,
+                            "class": "Hunter",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Coscafrio-Mandokir",
+                            "guid": "Player-4813-04002BC0",
+                            "spent": 0,
+                            "class": "Mage",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Cristianmg-Mandokir",
+                            "guid": "Player-4813-0592FD2D",
+                            "spent": 0,
+                            "class": "Hunter",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Kratseath-Mandokir",
+                            "guid": "Player-4813-058CD222",
+                            "spent": 0,
+                            "class": "DeathKnight",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Oleguer-Mandokir",
+                            "guid": "Player-4813-058E4BDD",
+                            "spent": 0,
+                            "class": "Hunter",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Appletini-Mandokir",
+                            "guid": "Player-4813-0585230A",
+                            "spent": 0,
+                            "class": "Druid",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "TANK",
+                            "name": "Eralie-Mandokir",
+                            "guid": "Player-4813-032F9DF6",
+                            "spent": 0,
+                            "class": "Paladin",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Desangre-Mandokir",
+                            "guid": "Player-4813-052A8444",
+                            "spent": 0,
+                            "class": "DeathKnight",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Heteër-Mandokir",
+                            "guid": "Player-4813-059457B4",
+                            "spent": 0,
+                            "class": "Hunter",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Teslo-Mandokir",
+                            "guid": "Player-4813-03A3AA38",
+                            "spent": 0,
+                            "class": "Shaman",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Chaosorb-Mandokir",
+                            "guid": "Player-4813-03620E96",
+                            "spent": 0,
+                            "class": "Priest",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Vacabreado-Mandokir",
+                            "guid": "Player-4813-05223D12",
+                            "spent": 0,
+                            "class": "Druid",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Eustaquia-Mandokir",
+                            "guid": "Player-4813-03A0612A",
+                            "spent": 0,
+                            "class": "Priest",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Temeroso-Mandokir",
+                            "guid": "Player-4813-02DAD632",
+                            "spent": 0,
+                            "class": "Priest",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "TANK",
+                            "name": "Cripten-Mandokir",
+                            "guid": "Player-4813-02144E98",
+                            "spent": 0,
+                            "class": "Warrior",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Shadowhime-Mandokir",
+                            "guid": "Player-4813-0381E28D",
+                            "spent": 0,
+                            "class": "Priest",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Atoi-Mandokir",
+                            "guid": "Player-4813-03BF3D05",
+                            "spent": 0,
+                            "class": "Warlock",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Cosquillaz-Mandokir",
+                            "guid": "Player-4813-0581E1B9",
+                            "spent": 0,
+                            "class": "Rogue",
+                            "points": 0,
+                            "spec": "assassination"
+                        },
+                        {
+                            "role": "",
+                            "name": "Bkn-Mandokir",
+                            "guid": "Player-4813-05511BAC",
+                            "spent": 0,
+                            "class": "Rogue",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Chinol-Mandokir",
+                            "guid": "Player-4813-05861A75",
+                            "spent": 0,
+                            "class": "Warlock",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Neblilla-Mandokir",
+                            "guid": "Player-4813-0479AA4F",
+                            "spent": 0,
+                            "class": "Priest",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Bloodlight-Mandokir",
+                            "guid": "Player-4813-03526AF0",
+                            "spent": 0,
+                            "class": "Paladin",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Toucxme-Mandokir",
+                            "guid": "Player-4813-0488476B",
+                            "spent": 0,
+                            "class": "DeathKnight",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Taunkar-Mandokir",
+                            "guid": "Player-4813-058121B6",
+                            "spent": 0,
+                            "class": "DeathKnight",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Helenahell-Mandokir",
+                            "guid": "Player-4813-020D64F3",
+                            "spent": 0,
+                            "class": "Priest",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Twiitch-Mandokir",
+                            "guid": "Player-4813-05953BFE",
+                            "spent": 0,
+                            "class": "DeathKnight",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Talanesti-Mandokir",
+                            "guid": "Player-4813-04B88319",
+                            "spent": 0,
+                            "class": "Paladin",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Jrpalhoyo-Mandokir",
+                            "guid": "Player-4813-03FF9A48",
+                            "spent": 0,
+                            "class": "Hunter",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Koxina-Mandokir",
+                            "guid": "Player-4813-01DA0D26",
+                            "spent": 0,
+                            "class": "Mage",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Eico-Mandokir",
+                            "guid": "Player-4813-0360ED1B",
+                            "spent": 0,
+                            "class": "Druid",
+                            "points": 0,
+                            "spec": "restoration"
+                        },
+                        {
+                            "role": "",
+                            "name": "Thecrows-Mandokir",
+                            "guid": "Player-4813-0594B8A6",
+                            "spent": 0,
+                            "class": "Druid",
+                            "points": 0,
+                            "spec": "feral"
+                        },
+                        {
+                            "role": "",
+                            "name": "Bodegas-Mandokir",
+                            "guid": "Player-4813-03100AD0",
+                            "spent": 0,
+                            "class": "Rogue",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Nemracmarkus-Mandokir",
+                            "guid": "Player-4813-0560985A",
+                            "spent": 0,
+                            "class": "DeathKnight",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Notopic-Mandokir",
+                            "guid": "Player-4813-05995D5B",
+                            "spent": 0,
+                            "class": "Mage",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Pespes-Mandokir",
+                            "guid": "Player-4813-02008212",
+                            "spent": 0,
+                            "class": "Mage",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Mitosiss-Mandokir",
+                            "guid": "Player-4813-0595810D",
+                            "spent": 0,
+                            "class": "DeathKnight",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Mirhaunter-Mandokir",
+                            "guid": "Player-4813-0584B785",
+                            "spent": 0,
+                            "class": "Hunter",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Tænke-Mandokir",
+                            "guid": "Player-4813-0598A68F",
+                            "spent": 0,
+                            "class": "Druid",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Blockelf-Mandokir",
+                            "guid": "Player-4813-033344D9",
+                            "spent": 0,
+                            "class": "Mage",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Mangekiu-Mandokir",
+                            "guid": "Player-4813-03DE7001",
+                            "spent": 0,
+                            "class": "Paladin",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Aeternum-Mandokir",
+                            "guid": "Player-4813-04E66CA7",
+                            "spent": 0,
+                            "class": "DeathKnight",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Skudo-Mandokir",
+                            "guid": "Player-4813-05124C78",
+                            "spent": 0,
+                            "class": "Warrior",
+                            "points": 0,
+                            "spec": "arms"
+                        },
+                        {
+                            "role": "",
+                            "name": "Ashrom-Mandokir",
+                            "guid": "Player-4813-04F31DCB",
+                            "spent": 0,
+                            "class": "Warrior",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Timidin-Mandokir",
+                            "guid": "Player-4813-05935FF7",
+                            "spent": 0,
+                            "class": "Rogue",
+                            "points": 0,
+                            "spec": "assassination"
+                        },
+                        {
+                            "role": "",
+                            "name": "Chomacho-Mandokir",
+                            "guid": "Player-4813-025D9BB0",
+                            "spent": 0,
+                            "class": "Shaman",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Gouthem-Mandokir",
+                            "guid": "Player-4813-046BB76E",
+                            "spent": 0,
+                            "class": "DeathKnight",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Elfumetilla-Mandokir",
+                            "guid": "Player-4813-043A1E40",
+                            "spent": 0,
+                            "class": "Mage",
+                            "points": 0,
+                            "spec": "fire"
+                        },
+                        {
+                            "role": "",
+                            "name": "Smuzz-Mandokir",
+                            "guid": "Player-4813-058A81AB",
+                            "spent": 0,
+                            "class": "Mage",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Øßsçürüs-Mandokir",
+                            "guid": "Player-4813-04E0B9B7",
+                            "spent": 0,
+                            "class": "Warlock",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Basthed-Mandokir",
+                            "guid": "Player-4813-05613CD3",
+                            "spent": 0,
+                            "class": "Paladin",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Alisonhell-Mandokir",
+                            "guid": "Player-4813-045D274E",
+                            "spent": 0,
+                            "class": "Priest",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Pakisman-Mandokir",
+                            "guid": "Player-4813-0556C973",
+                            "spent": 0,
+                            "class": "Paladin",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Nebum-Mandokir",
+                            "guid": "Player-4813-0585EF12",
+                            "spent": 0,
+                            "class": "DeathKnight",
+                            "points": 0,
+                            "spec": "blood"
+                        },
+                        {
+                            "role": "",
+                            "name": "Kherum-Mandokir",
+                            "guid": "Player-4813-01D43471",
+                            "spent": 0,
+                            "class": "Priest",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "TANK",
+                            "name": "Ardiente-Mandokir",
+                            "guid": "Player-4813-02E7DB12",
+                            "spent": 0,
+                            "class": "Mage",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Ouo-Mandokir",
+                            "guid": "Player-4813-05700C1F",
+                            "spent": 0,
+                            "class": "Mage",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Meigen-Mandokir",
+                            "guid": "Player-4813-03BE8D63",
+                            "spent": 0,
+                            "class": "Warrior",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "HEALER",
+                            "name": "Belagilea-Mandokir",
+                            "guid": "Player-4813-0431BB94",
+                            "spent": 0,
+                            "class": "Druid",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Kitigna-Mandokir",
+                            "guid": "Player-4813-05737A7E",
+                            "spent": 0,
+                            "class": "Priest",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Sadoro-Mandokir",
+                            "guid": "Player-4813-058E8432",
+                            "spent": 0,
+                            "class": "Mage",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Shádöw-Mandokir",
+                            "guid": "Player-4813-058C5DB1",
+                            "spent": 0,
+                            "class": "Rogue",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Elsapalaki-Mandokir",
+                            "guid": "Player-4813-04FCCEAD",
+                            "spent": 0,
+                            "class": "Paladin",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Øphidian-Mandokir",
+                            "guid": "Player-4813-04BCBDBB",
+                            "spent": 0,
+                            "class": "Paladin",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Zyrun-Mandokir",
+                            "guid": "Player-4813-0484CABE",
+                            "spent": 0,
+                            "class": "Mage",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Ragnarson-Mandokir",
+                            "guid": "Player-4813-058E49FB",
+                            "spent": 0,
+                            "class": "Paladin",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Chinchets-Mandokir",
+                            "guid": "Player-4813-04DC6336",
+                            "spent": 0,
+                            "class": "Shaman",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Gatzz-Mandokir",
+                            "guid": "Player-4813-04EFFEF3",
+                            "spent": 0,
+                            "class": "Druid",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Caracentollo-Mandokir",
+                            "guid": "Player-4813-058A6E28",
+                            "spent": 0,
+                            "class": "Shaman",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Göwther-Mandokir",
+                            "guid": "Player-4813-046D7003",
+                            "spent": 0,
+                            "class": "DeathKnight",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Ghirâgk-Mandokir",
+                            "guid": "Player-4813-049AA201",
+                            "spent": 0,
+                            "class": "DeathKnight",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Protogema-Mandokir",
+                            "guid": "Player-4813-050ADBCC",
+                            "spent": 0,
+                            "class": "Rogue",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Partepantys-Mandokir",
+                            "guid": "Player-4813-0598B15C",
+                            "spent": 0,
+                            "class": "DeathKnight",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Wilt-Mandokir",
+                            "guid": "Player-4813-0597D585",
+                            "spent": 0,
+                            "class": "Paladin",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Alitasqt-Mandokir",
+                            "guid": "Player-4813-058B73C9",
+                            "spent": 0,
+                            "class": "Paladin",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Kodnak-Mandokir",
+                            "guid": "Player-4813-048BD0FE",
+                            "spent": 0,
+                            "class": "DeathKnight",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Tuatem-Mandokir",
+                            "guid": "Player-4813-01D4FF24",
+                            "spent": 0,
+                            "class": "Shaman",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Ivansifredy-Mandokir",
+                            "guid": "Player-4813-0309E40C",
+                            "spent": 0,
+                            "class": "Warrior",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Carvajal-Mandokir",
+                            "guid": "Player-4813-058FB344",
+                            "spent": 0,
+                            "class": "Paladin",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Whyro-Mandokir",
+                            "guid": "Player-4813-03DE45E8",
+                            "spent": 0,
+                            "class": "Warlock",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Kyosdk-Mandokir",
+                            "guid": "Player-4813-05808D20",
+                            "spent": 0,
+                            "class": "DeathKnight",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Goolfitr-Mandokir",
+                            "guid": "Player-4813-05907EBF",
+                            "spent": 0,
+                            "class": "Mage",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Lësoto-Mandokir",
+                            "guid": "Player-4813-058CD267",
+                            "spent": 0,
+                            "class": "Priest",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Predycador-Mandokir",
+                            "guid": "Player-4813-04F29FBA",
+                            "spent": 0,
+                            "class": "Priest",
+                            "points": 0,
+                            "spec": "shadow"
+                        },
+                        {
+                            "role": "",
+                            "name": "Erlarry-Mandokir",
+                            "guid": "Player-4813-059027F0",
+                            "spent": 0,
+                            "class": "Paladin",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Morlaco-Mandokir",
+                            "guid": "Player-4813-0517E911",
+                            "spent": 0,
+                            "class": "Druid",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Rqser-Mandokir",
+                            "guid": "Player-4813-03B1B36F",
+                            "spent": 0,
+                            "class": "Mage",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Wemc-Mandokir",
+                            "guid": "Player-4813-058BAFB6",
+                            "spent": 0,
+                            "class": "Rogue",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Troliberta-Mandokir",
+                            "guid": "Player-4813-052331E8",
+                            "spent": 0,
+                            "class": "Shaman",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Enhea-Mandokir",
+                            "guid": "Player-4813-04ABD0EA",
+                            "spent": 0,
+                            "class": "Hunter",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Silvanadark-Mandokir",
+                            "guid": "Player-4813-05522045",
+                            "spent": 0,
+                            "class": "Paladin",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Kevh-Mandokir",
+                            "guid": "Player-4813-0567DC0E",
+                            "spent": 0,
+                            "class": "Priest",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Libertador-Mandokir",
+                            "guid": "Player-4813-0338354C",
+                            "spent": 0,
+                            "class": "Paladin",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Kimbus-Mandokir",
+                            "guid": "Player-4813-03AAB7ED",
+                            "spent": 0,
+                            "class": "Druid",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Demagogoo-Mandokir",
+                            "guid": "Player-4813-058BD325",
+                            "spent": 0,
+                            "class": "Mage",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Exiliom-Mandokir",
+                            "guid": "Player-4813-058F8F45",
+                            "spent": 0,
+                            "class": "DeathKnight",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Nakana-Mandokir",
+                            "guid": "Player-4813-05741338",
+                            "spent": 0,
+                            "class": "Hunter",
+                            "points": 0,
+                            "spec": "survival"
+                        },
+                        {
+                            "role": "",
+                            "name": "Drunken-Mandokir",
+                            "guid": "Player-4813-053E912F",
+                            "spent": 0,
+                            "class": "Druid",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Minicast-Mandokir",
+                            "guid": "Player-4813-058F7E29",
+                            "spent": 0,
+                            "class": "Hunter",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Elcharly-Mandokir",
+                            "guid": "Player-4813-04DC125B",
+                            "spent": 0,
+                            "class": "DeathKnight",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Rükïa-Mandokir",
+                            "guid": "Player-4813-049E5132",
+                            "spent": 0,
+                            "class": "Warrior",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Sharköt-Mandokir",
+                            "guid": "Player-4813-0336EFFF",
+                            "spent": 0,
+                            "class": "Paladin",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Reywarro-Mandokir",
+                            "guid": "Player-4813-023BF736",
+                            "spent": 0,
+                            "class": "Warrior",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Garonak-Mandokir",
+                            "guid": "Player-4813-0578261E",
+                            "spent": 0,
+                            "class": "Druid",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Taudruix-Mandokir",
+                            "guid": "Player-4813-05256B01",
+                            "spent": 0,
+                            "class": "Druid",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Daniolmo-Mandokir",
+                            "guid": "Player-4813-0593317E",
+                            "spent": 0,
+                            "class": "Hunter",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Serüns-Mandokir",
+                            "guid": "Player-4813-04B57AC2",
+                            "spent": 0,
+                            "class": "Mage",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Qurok-Mandokir",
+                            "guid": "Player-4813-0504D598",
+                            "spent": 0,
+                            "class": "Warrior",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Takelbosman-Mandokir",
+                            "guid": "Player-4813-01D82A0A",
+                            "spent": 0,
+                            "class": "Druid",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Tusuegro-Mandokir",
+                            "guid": "Player-4813-032F883B",
+                            "spent": 0,
+                            "class": "Paladin",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Khavu-Mandokir",
+                            "guid": "Player-4813-04F31DBC",
+                            "spent": 0,
+                            "class": "Shaman",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Woldruk-Mandokir",
+                            "guid": "Player-4813-0597D584",
+                            "spent": 0,
+                            "class": "DeathKnight",
+                            "points": 0,
+                            "spec": "blood"
+                        },
+                        {
+                            "role": "",
+                            "name": "Ferpecta-Mandokir",
+                            "guid": "Player-4813-037C3FE9",
+                            "spent": 0,
+                            "class": "Hunter",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Grow-Mandokir",
+                            "guid": "Player-4813-025510FD",
+                            "spent": 0,
+                            "class": "Druid",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Magtrol-Mandokir",
+                            "guid": "Player-4813-021B1BDF",
+                            "spent": 0,
+                            "class": "Mage",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Felomenor-Mandokir",
+                            "guid": "Player-4813-033AA419",
+                            "spent": 0,
+                            "class": "Druid",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Puinos-Mandokir",
+                            "guid": "Player-4813-05641C8C",
+                            "spent": 0,
+                            "class": "Shaman",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Tzhunder-Mandokir",
+                            "guid": "Player-4813-036B6698",
+                            "spent": 0,
+                            "class": "Paladin",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Völa-Mandokir",
+                            "guid": "Player-4813-02D4BEA9",
+                            "spent": 0,
+                            "class": "Shaman",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Znîx-Mandokir",
+                            "guid": "Player-4813-03747D86",
+                            "spent": 0,
+                            "class": "Mage",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Tetsuó-Mandokir",
+                            "guid": "Player-4813-01D82956",
+                            "spent": 0,
+                            "class": "Mage",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Irinolf-Mandokir",
+                            "guid": "Player-4813-0555AD72",
+                            "spent": 0,
+                            "class": "Paladin",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Adälid-Mandokir",
+                            "guid": "Player-4813-0356B111",
+                            "spent": 0,
+                            "class": "Hunter",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Sorcfrio-Mandokir",
+                            "guid": "Player-4813-04DD05BF",
+                            "spent": 0,
+                            "class": "Mage",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Darthbinks-Mandokir",
+                            "guid": "Player-4813-04F312B4",
+                            "spent": 0,
+                            "class": "DeathKnight",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Tolas-Mandokir",
+                            "guid": "Player-4813-0594D162",
+                            "spent": 0,
+                            "class": "Hunter",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Aydën-Mandokir",
+                            "guid": "Player-4813-045D4CC1",
+                            "spent": 0,
+                            "class": "Priest",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Curicuri-Mandokir",
+                            "guid": "Player-4813-0518A1AB",
+                            "spent": 0,
+                            "class": "Shaman",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Cazafantas-Mandokir",
+                            "guid": "Player-4813-0564E02A",
+                            "spent": 0,
+                            "class": "Hunter",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Nanuit-Mandokir",
+                            "guid": "Player-4813-04496C97",
+                            "spent": 0,
+                            "class": "Paladin",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Pabliyoo-Mandokir",
+                            "guid": "Player-4813-03ED68B7",
+                            "spent": 0,
+                            "class": "Rogue",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Dädä-Mandokir",
+                            "guid": "Player-4813-02962270",
+                            "spent": 0,
+                            "class": "Hunter",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Aldee-Mandokir",
+                            "guid": "Player-4813-0440389D",
+                            "spent": 0,
+                            "class": "Warrior",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Shadowdk-Mandokir",
+                            "guid": "Player-4813-0590E401",
+                            "spent": 0,
+                            "class": "DeathKnight",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Zampakutho-Mandokir",
+                            "guid": "Player-4813-058BF150",
+                            "spent": 0,
+                            "class": "Druid",
+                            "points": 0,
+                            "spec": "restoration"
+                        },
+                        {
+                            "role": "",
+                            "name": "Farmetroll-Mandokir",
+                            "guid": "Player-4813-056532F9",
+                            "spent": 0,
+                            "class": "Hunter",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Demoni-Mandokir",
+                            "guid": "Player-4813-05171253",
+                            "spent": 0,
+                            "class": "Warlock",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Pozi-Mandokir",
+                            "guid": "Player-4813-044A881E",
+                            "spent": 0,
+                            "class": "Druid",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Cigalodon-Mandokir",
+                            "guid": "Player-4813-0585FCE7",
+                            "spent": 0,
+                            "class": "Hunter",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Valientilla-Mandokir",
+                            "guid": "Player-4813-0375647D",
+                            "spent": 0,
+                            "class": "Priest",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Chïspäs-Mandokir",
+                            "guid": "Player-4813-059196D6",
+                            "spent": 0,
+                            "class": "Shaman",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Gamusinos-Mandokir",
+                            "guid": "Player-4813-0590501B",
+                            "spent": 0,
+                            "class": "Shaman",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "TANK",
+                            "name": "Redpce-Mandokir",
+                            "guid": "Player-4813-045D4CB1",
+                            "spent": 0,
+                            "class": "Warrior",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Tush-Mandokir",
+                            "guid": "Player-4813-058E1F7D",
+                            "spent": 0,
+                            "class": "Paladin",
+                            "points": 0,
+                            "spec": "retribution"
+                        },
+                        {
+                            "role": "",
+                            "name": "Zombieparty-Mandokir",
+                            "guid": "Player-4813-04F8BED2",
+                            "spent": 0,
+                            "class": "Warlock",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Pucherete-Mandokir",
+                            "guid": "Player-4813-058EABDE",
+                            "spent": 0,
+                            "class": "Warlock",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Bumbu-Mandokir",
+                            "guid": "Player-4813-0580EEFB",
+                            "spent": 0,
+                            "class": "Priest",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Draffito-Mandokir",
+                            "guid": "Player-4813-0583C62B",
+                            "spent": 0,
+                            "class": "Rogue",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Kaeldanas-Mandokir",
+                            "guid": "Player-4813-03312A96",
+                            "spent": 0,
+                            "class": "Mage",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Hanybal-Mandokir",
+                            "guid": "Player-4813-02E15E9C",
+                            "spent": 0,
+                            "class": "Warlock",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "HEALER",
+                            "name": "Nun-Mandokir",
+                            "guid": "Player-4813-01E28854",
+                            "spent": 0,
+                            "class": "Priest",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Ilariö-Mandokir",
+                            "guid": "Player-4813-056E41FA",
+                            "spent": 0,
+                            "class": "Shaman",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Diablazz-Mandokir",
+                            "guid": "Player-4813-059283FB",
+                            "spent": 0,
+                            "class": "Warlock",
+                            "points": 0,
+                            "spec": "demonology"
+                        },
+                        {
+                            "role": "",
+                            "name": "Melaniss-Mandokir",
+                            "guid": "Player-4813-058AD7F4",
+                            "spent": 0,
+                            "class": "Priest",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Sauw-Mandokir",
+                            "guid": "Player-4813-01D73A45",
+                            "spent": 0,
+                            "class": "Rogue",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "DAMAGER",
+                            "name": "Mystogux-Mandokir",
+                            "guid": "Player-4813-056DADF5",
+                            "spent": 0,
+                            "class": "Mage",
+                            "points": 0,
+                            "spec": ""
+                        },
+                        {
+                            "role": "",
+                            "name": "Torgall-Mandokir",
+                            "guid": "Player-4813-04FDCFAB",
+                            "spent": 0,
+                            "class": "Shaman",
+                            "points": 0,
+                            "spec": ""
+                        }
+                    ]
+                },
+                "config": {
+                    "itemValueMode": 0,
+                    "allowEqualMax": false,
+                    "baseSpent": 0,
+                    "raidCompletionBonusValue": 0,
+                    "autoAwardOnlineOnly": false,
+                    "dynamicValue": false,
+                    "zeroSumBank": false,
+                    "autoAwardSameZoneOnly": false,
+                    "minimalIncrement": 1,
+                    "weeklyReset": 0,
+                    "always0": false,
+                    "onTimeBonus": false,
+                    "intervalBonusValue": 0,
+                    "onTimeBonusValue": 0,
+                    "minimumPoints": 0,
+                    "useOS": true,
+                    "antiSnipe": 0,
+                    "benchMultiplier": 1,
+                    "selfBenchSubscribe": false,
+                    "baseAlways": false,
+                    "auctionTime": 30,
+                    "raidCompletionBonus": false,
+                    "minGP": 1,
+                    "intervalBonusTime": 0,
+                    "hardCap": 0,
+                    "basePoints": 0,
+                    "autoAwardIncludeBench": true,
+                    "allowBelowMinStandings": false,
+                    "weeklyCap": 0,
+                    "multiplyTime": false,
+                    "bossKillBonus": false,
+                    "intervalBonus": false,
+                    "allowCancelPass": false,
+                    "allInAlways": false,
+                    "zeroSumBankInflation": 0,
+                    "roundPR": 10,
+                    "namedButtons": false,
+                    "bossKillBonusValue": 0,
+                    "autoBenchLeavers": false,
+                    "auctionType": 1,
+                    "rollTime": 20,
+                    "tax": 0,
+                    "roundDecimals": 10
+                },
+                "type": 0
+            }
+        ]
+    }
+}
