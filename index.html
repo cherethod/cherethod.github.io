@@ -1,11 +1,305 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Github proyect site</h1>
-</body>
+<html style="--wm-toolbar-height: 1px">
+  <head>
+    <script src="./includes/athena.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      window.addEventListener("DOMContentLoaded", function () {
+        var v = archive_analytics.values;
+        v.service = "wb";
+        v.server_name = "wwwb-app223.us.archive.org";
+        v.server_ms = 439;
+        archive_analytics.send_pageview({});
+      });
+    </script>
+    <script
+      type="text/javascript"
+      src="./includes/bundle-playback.js"
+      charset="utf-8"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./includes/wombat.js"
+      charset="utf-8"
+    ></script>
+    <script>
+      window.RufflePlayer = window.RufflePlayer || {};
+      window.RufflePlayer.config = {
+        autoplay: "on",
+        unmuteOverlay: "hidden",
+        showSwfDownload: true,
+      };
+    </script>
+    <script type="text/javascript" src="./includes/ruffle.js"></script>
+    <!-- <script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://www.aburridos.tv:80/","20191229113201","https://web.archive.org/","web","https://web-static.archive.org/_static/",
+	      "1577619121");
+</script> -->
+    <link rel="stylesheet" type="text/css" href="./styles/banner-styles.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/iconochive.css" />
+    <!-- End Wayback Rewrite JS Include -->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="aburridos.tv - TU PÁGINA DE INICIO" />
+    <title>aburridos.tv - TU PÁGINA DE INICIO</title>
+    <link rel="shorcut icon" href="http://www.aburridos.tv/favicon.ico" />
+    <link
+      href="https://web.archive.org/web/20191229113201im_/http://www.aburridos.tv/favicon.png"
+      rel="shortcut icon"
+      type="image/png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./styles/aburridos.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="./includes/aburridos.js">
+      if (window != window.top) top.location.href = location.href;
+    </script>
+    <script type="text/javascript" src="./includes/aburridos-barra.js"></script>
+    <script
+      type="text/javascript"
+      src="./includes/aburridos-cookie.js"
+    ></script>
+  </head>
+
+  <body onresize="redimensiona()" onkeypress="return aprietaEnter(event);">
+    <!-- BEGIN WAYBACK TOOLBAR INSERT -->
+    <script>
+      __wm.rw(0);
+    </script>
+    <div
+      id="wm-ipp-base"
+      lang="en"
+      style="display: block; direction: ltr; height: 1px"
+      toolbar-mode="auto"
+    ></div>
+    <div id="wm-ipp-print">
+      The Wayback Machine - http://www.aburridos.tv:80/
+    </div>
+    <script type="text/javascript">
+      //<![CDATA[
+      __wm.bt(
+        775,
+        27,
+        25,
+        2,
+        "web",
+        "http://aburridos.tv/",
+        "20191229113201",
+        1996,
+        "https://web-static.archive.org/_static/",
+        [
+          "https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3",
+          "https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv",
+        ],
+        false,
+      );
+      __wm.rw(1);
+      //]]>
+    </script>
+    <!-- END WAYBACK TOOLBAR INSERT -->
+
+    <table class="fondo" onclick="esconde_todo()">
+      <tbody>
+        <tr>
+          <td colspan="2" align="center">
+            <img
+              src="./media/aburridos-ani.gif"
+              id="logotipo"
+              name="logotipo"
+              class="logo"
+              style="width: 15%"
+            />
+            <hr />
+            <input
+              type="text"
+              id="buscador"
+              name="buscador"
+              style="width: 50%"
+            />
+            <table
+              class="ico"
+              id="tabla_iconos"
+              name="tabla_iconos"
+              style="width: 50%"
+            >
+              <tbody>
+                <tr>
+                  <td align="center">
+                    <img
+                      class="ico2"
+                      src="./media/diccionario.jpg"
+                      alt="Buscar en diccionario"
+                      title="Buscar en diccionario"
+                      id="diccionario"
+                      name="diccionario"
+                      onclick="busca_en('http://dle.rae.es/?w=')"
+                    />
+                    <img
+                      class="ico2"
+                      src="./media/fotos.jpg"
+                      alt="Buscar imágenes"
+                      title="Buscar imágenes"
+                      onclick="
+                        busca_en('http://images.google.es/images?hl=es&amp;q=')
+                      "
+                    />
+                    <img
+                      class="ico2"
+                      src="./media/mapas.jpg"
+                      alt="Buscar dirección"
+                      title="Buscar dirección"
+                      onclick="
+                        busca_en('http://maps.google.es/maps?hl=es&amp;q=')
+                      "
+                    />
+                    <img
+                      class="ico2"
+                      src="./media/traductor.jpg"
+                      alt="Traducir"
+                      title="Traducir"
+                      id="traductor"
+                      name="traductor"
+                      onclick="busca_en('http://translate.google.es/#auto|es|')"
+                    />
+                    <img
+                      class="ico2"
+                      src="./media/videos.jpg"
+                      alt="Buscar videos"
+                      title="Buscar videos"
+                      onclick="
+                        busca_en(
+                          'http://www.google.es/search?hl=es&amp;tbs=vid:1&amp;q=',
+                        )
+                      "
+                    />
+                    <img
+                      class="ico2"
+                      src="./media/wikipedia.jpg"
+                      alt="Buscar en wikipedia"
+                      title="Buscar en wikipedia"
+                      onclick="
+                        busca_en(
+                          'http://es.wikipedia.org/w/index.php?title=Especial%3ABuscar&amp;search=',
+                        )
+                      "
+                    />
+                    <img
+                      class="ico2"
+                      src="./media/youtube.jpg"
+                      alt="Buscar en youtube"
+                      title="Buscar en youtube"
+                      onclick="
+                        busca_en('http://www.youtube.com/results?search_query=')
+                      "
+                    />
+                    <img
+                      class="ico2"
+                      src="./media/google.jpg"
+                      alt="Buscar en google"
+                      title="Buscar en google"
+                      onclick="busca_en('https://www.google.es/search?q=')"
+                    />
+
+                    <img
+                      class="ico2"
+                      src="./media/rtve.jpg"
+                      alt="Radio Televisión Española"
+                      title="Radio Televisión Española"
+                      onclick="abre('www.rtve.es/directo/la-1/')"
+                    />
+                    <img
+                      class="ico2"
+                      src="./media/tv3.jpg"
+                      alt="TV3"
+                      title="TV3"
+                      onclick="abre('www.ccma.cat/tv3/directe/tv3/')"
+                    />
+                    <img
+                      class="ico2"
+                      src="./media/a3media.jpg"
+                      alt="A3 Media"
+                      title="A3 Media"
+                      onclick="abre('www.atresplayer.com/directos/television/')"
+                    />
+                    <img
+                      class="ico2"
+                      src="./media/mitele.jpg"
+                      alt="Mi Tele"
+                      title="Mi Tele"
+                      onclick="abre('www.mitele.es/directo')"
+                    />
+                    <img
+                      class="ico2"
+                      src="./media/movistarplus.jpg"
+                      alt="Movistar+"
+                      title="Movistar+"
+                      onclick="abre('ver.movistarplus.es')"
+                    />
+                    <img
+                      class="ico2"
+                      src="./media/eltiempo.jpg"
+                      alt="El Tiempo"
+                      title="El Tiempo"
+                      onclick="abre('www.eltiempo.es')"
+                    />
+                    <img
+                      class="ico2"
+                      src="./media/whatsapp.jpg"
+                      alt="Whatsapp"
+                      title="Whatsapp"
+                      onclick="abre('web.whatsapp.com')"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="menu_barra_superior">
+      <tbody>
+        <tr>
+          <td class="sin_margen">
+            <img
+              class="ico_menu"
+              onmouseover="menu_abre()"
+              src="./media/menu.png"
+            />
+          </td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    <img class="fondo" id="fondo" name="fondo" src="./media/Standard.jpg" />
+    <div
+      class="menu_superior"
+      id="menu_superior"
+      name="menu_superior"
+      align="center"
+      style="visibility: visible"
+    >
+      <table class="menu_barra_menu_superior">
+        <tbody>
+          <tr>
+            <td class="sin_margen">
+              <img class="ico_menu" src="./media/menu_verde.png" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <script>
+        cargar_barra(catala());
+        redimensiona();
+        document.getElementById("buscador").focus();
+        if (getCookie("background") == "") {
+          document.getElementById("fondo").src = "img/fondos/Standard.jpg";
+        } else {
+          document.getElementById("fondo").src =
+            "img/fondos/" + getCookie("background") + ".jpg";
+        }
+      </script>
+      <table class="barra"></table>
+    </div>
+  </body>
 </html>
+
