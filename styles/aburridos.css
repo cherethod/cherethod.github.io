@@ -89,7 +89,7 @@ div.menu_superior {
 	left: 0;
 	border: 0px #000 solid;
 	visibility: hidden;
-	background-color: grey;
+	/* background-color: grey; */
 	z-index: 5;
 	-webkit-box-shadow: 7px 0px 52px -12px rgba(0,0,0,0.75);
 	-moz-box-shadow: 7px 0px 52px -12px rgba(0,0,0,0.75);
@@ -124,7 +124,7 @@ img.menu_superior {
 	opacity: 0.5;
 }
 
-table.menu_superior
+table.menu_superior {
 	padding: 0px;
 	margin: 0px;
 	width: 100%;
@@ -185,8 +185,8 @@ table.menu_barra_superior {
 
 table.menu_barra_menu_superior {
 	width: 100%;
-	background-color: black;
-	color: white;
+	background-color: white;
+	color: black;
 	z-index: 2;
 	padding: 0px;
 	margin: 0px;
@@ -195,6 +195,7 @@ table.menu_barra_menu_superior {
 table.menu_titulo {
 	border-spacing: 0;
 	border-collapse: collapse;
+	background-color: white;
 }
 
 img.logo_inferior{
@@ -217,23 +218,35 @@ img.ico_menu {
 	padding: 5px;
 	margin: 5px;
 }
-/*
-     FILE ARCHIVED ON 01:28:59 Jan 26, 2019 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 15:32:29 Feb 15, 2026.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
 
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
-*/
-/*
-playback timings (ms):
-  captures_list: 0.716
-  exclusion.robots: 0.027
-  exclusion.robots.policy: 0.012
-  esindex: 0.014
-  cdx.remote: 7.663
-  LoadShardBlock: 141.536 (3)
-  PetaboxLoader3.resolve: 176.088 (5)
-  PetaboxLoader3.datanode: 93.219 (5)
-  load_resource: 192.251 (2)
-*/
+div.menu_superior.visible {
+	visibility: visible !important;
+	
+}
+
+
+div.menu_superior table:not(:first-child) tbody tr td img {
+	width: 24px;
+	height: 24px;
+}
+
+div.menu_superior table:not(:first-child) tbody tr td.celda {
+	object-fit: contain;
+	display: flex;
+	gap: 1rem;
+	max-width: 24px;
+	max-height: 24px;
+}
+
+div#menu_superior table:not(:first-child) tbody tr {
+	background-color: rgb(201, 201, 201);
+	&:hover {
+		background-color: rgb(189, 172, 248);
+	}
+}
+
+.ico_menu {
+	cursor: pointer;
+	opacity: 0.9;
+	z-index: 3;
+}

@@ -83,7 +83,7 @@ function desmarca_todo(){
 	var i;
 	for (i = 0; i < x.length; i++) {
 		x[i].style.color = "black";
-		x[i].style.backgroundColor = "grey";
+		// x[i].style.backgroundColor = "grey";
 	}
 }
 
@@ -91,16 +91,16 @@ function marca(n){
 	menu_superior.scrollTop = "0";
 	desmarca_todo();
 	n.style.color = "black";
-	n.style.backgroundColor = " #C0C0FF";
+	// n.style.backgroundColor = " #C0C0FF";
 }
 
 function darBrillo(n){
-	n.style.backgroundColor = "#C0C0FF";
+	// n.style.backgroundColor = "#C0C0FF";
 	n.style.color ="white";
 }
 
 function quitarBrillo(n){
-	n.style.backgroundColor = "grey";
+	// n.style.backgroundColor = "grey";
 	n.style.color ="black";
 }
 
@@ -126,44 +126,28 @@ function menuFin() {
 }
 
 function celda(titulo,dir){
-	document.write("<tr><td NOWRAP class='celda' onclick=abre('"+dir+"')><img src='img/ico/" + titulo +".png' style='border: 1px grey solid;'> " + titulo +"</td></tr>");
+	const titulofix = titulo.replace(/ /g, "_");
+	document.write("<tr><td NOWRAP class='celda' onclick=abre('"+dir+"')><img src='./media/" + titulofix +".png' style='border: 1px grey solid;'> " + titulo +"</td></tr>");
 }
 
 function celda_s(titulo,dir){
-	document.write("<tr><td NOWRAP class='celda' onclick=abre_s('"+dir+"')><img src='img/ico/" + titulo +".png' style='border: 1px grey solid;'> " + titulo +"</td></tr>");
+	const titulofix = titulo.replace(/ /g, "_");
+	document.write("<tr><td NOWRAP class='celda' onclick=abre_s('"+dir+"')><img src='./media/" + titulofix +".png' style='border: 1px grey solid;'> " + titulo +"</td></tr>");
 }
 
 function idioma(titulo,idioma){
-	document.write("<tr><td NOWRAP class='celda' onclick=setCookie('lang','"+idioma+"')><img width='16' height='16' src='img/ico/" + idioma +".png' style='border: 1px grey solid;'> " + titulo +"</td></tr>");
+	document.write("<tr><td NOWRAP class='celda' onclick=setCookie('lang','"+idioma+"')><img width='16' height='16' src='./media/" + idioma +".png' style='border: 1px grey solid;'> " + titulo +"</td></tr>");
 }
 
 function fondo(titulo){
-	document.write("<tr><td NOWRAP class='celda' onclick=setCookie('background','"+titulo+"')><img width='16' height='16' src='img/ico/" + titulo +".png' style='border: 1px grey solid;'> Wallpaper " + titulo +"</td></tr>");
+	document.write("<tr><td NOWRAP class='celda' onclick=setCookie('background','"+titulo+"')><img width='16' height='16' src='./media/" + titulo +".png' style='border: 1px grey solid;'> Wallpaper " + titulo +"</td></tr>");
 }
 
-function menu_abre(){
-	menu_superior.style.visibility='visible';
-	menu_superior.scrollTop = "0";
+function menu_abre(e){
+	const menu_superior = document.getElementById("menu_superior");
+	menu_superior.classList.toggle("visible");
+	
+	// menu_superior.style.visibility='visible';
+	// menu_superior.scrollTop = "0";
 }
 }
-
-/*
-     FILE ARCHIVED ON 12:00:03 Jan 26, 2019 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 15:32:29 Feb 15, 2026.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
-*/
-/*
-playback timings (ms):
-  captures_list: 0.504
-  exclusion.robots: 0.022
-  exclusion.robots.policy: 0.01
-  esindex: 0.009
-  cdx.remote: 11.964
-  LoadShardBlock: 141.955 (3)
-  PetaboxLoader3.datanode: 505.094 (5)
-  load_resource: 603.262 (2)
-  PetaboxLoader3.resolve: 210.258 (2)
-*/

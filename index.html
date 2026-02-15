@@ -96,7 +96,7 @@
     </script>
     <!-- END WAYBACK TOOLBAR INSERT -->
 
-    <table class="fondo" onclick="esconde_todo()">
+    <table class="fondo">
       <tbody>
         <tr>
           <td colspan="2" align="center">
@@ -262,8 +262,8 @@
           <td class="sin_margen">
             <img
               class="ico_menu"
-              onmouseover="menu_abre()"
               src="./media/menu.png"
+              onclick="menu_abre(event)"
             />
           </td>
           <td></td>
@@ -276,13 +276,13 @@
       id="menu_superior"
       name="menu_superior"
       align="center"
-      style="visibility: visible"
     >
       <table class="menu_barra_menu_superior">
         <tbody>
           <tr>
             <td class="sin_margen">
-              <img class="ico_menu" src="./media/menu_verde.png" />
+              <img 
+              class="ico_menu" src="./media/menu.png" onclick="menu_abre(event)" />
             </td>
           </tr>
         </tbody>
@@ -292,10 +292,10 @@
         redimensiona();
         document.getElementById("buscador").focus();
         if (getCookie("background") == "") {
-          document.getElementById("fondo").src = "img/fondos/Standard.jpg";
+          document.getElementById("fondo").src = "media/fondos/Standard.jpg";
         } else {
           document.getElementById("fondo").src =
-            "img/fondos/" + getCookie("background") + ".jpg";
+            "media/fondos/" + getCookie("background") + ".jpg";
         }
       </script>
       <table class="barra"></table>
